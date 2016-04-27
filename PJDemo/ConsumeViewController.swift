@@ -76,6 +76,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartData.setValueTextColor(UIColor.darkGrayColor())
         lineChartView.data = lineChartData
+        lineChartView.animate(xAxisDuration: 1.0, easingOption: ChartEasingOption.EaseInOutBounce)
        
     }
     func setChartDailySet(dataPoints:[String])

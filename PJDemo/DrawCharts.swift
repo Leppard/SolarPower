@@ -77,6 +77,7 @@ func drawLineCharts(lineChartView:LineChartView,dataPoints : [String],values: [D
     lineChartData.setValueTextColor(UIColor.whiteColor())
     lineChartView.data = lineChartData
     lineChartView.descriptionText = ""
+    lineChartView.animate(xAxisDuration: 3.0)
     
 }
 
@@ -100,6 +101,7 @@ func drawPieCharts(pieChartView:PieChartView,dataPoints : [String],values: [Doub
         colors.append(pieColors[i])
     }
     pieChartDataSet.colors = colors
+    pieChartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0)
     
 }
 func drawMultiBarCharts(barChartView:BarChartView,dataPoints : [String],values: [[Double]],labels:[String])
@@ -122,6 +124,9 @@ func drawMultiBarCharts(barChartView:BarChartView,dataPoints : [String],values: 
     let data: BarChartData = BarChartData(xVals: dataPoints, dataSets: dataSets)
     barChartView.data = data
     barChartView.descriptionText = ""
+    //barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption:)
+    barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+
 }
 
 func drawBarCharts(barChartView:BarChartView,dataPoints : [String],values: [Double])
@@ -135,6 +140,22 @@ func drawBarCharts(barChartView:BarChartView,dataPoints : [String],values: [Doub
     let barChartDataSet = BarChartDataSet(yVals: dataEntries, label: "some")
     let barChartData = BarChartData(xVals: dataPoints, dataSet: barChartDataSet)
     barChartDataSet.colors = [UIColor(red: 230/255, green: 126/255, blue: 34/255, alpha: 1)]
+    barChartView.data = barChartData
+    barChartView.descriptionText = " "
+    
+}
+
+func drawHorizontalBarCharts(barChartView:HorizontalBarChartView,dataPoints : [String],values: [Double])
+{
+    var dataEntries : [BarChartDataEntry] = []
+    for i in 0 ..< dataPoints.count{
+        let dataEntry = BarChartDataEntry(value: values[i], xIndex: i)
+        dataEntries.append(dataEntry)
+    }
+    
+    let barChartDataSet = BarChartDataSet(yVals: dataEntries, label: "some")
+    let barChartData = BarChartData(xVals: dataPoints, dataSet: barChartDataSet)
+    barChartDataSet.colors = [UIColor.lightGrayColor()]
     barChartView.data = barChartData
     barChartView.descriptionText = " "
     
