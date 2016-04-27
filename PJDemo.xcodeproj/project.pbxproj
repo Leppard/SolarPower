@@ -8,31 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		410E0070E12668B20A0BDFA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82875C5222022ABAE24092A4 /* libPods.a */; };
+		8CD2A8C91CD109D600505B4A /* GenerateDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2A8C81CD109D600505B4A /* GenerateDataModel.swift */; };
 		9416E4E31C47776B003EE611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E4E21C47776B003EE611 /* AppDelegate.swift */; };
 		9416E4E51C47776B003EE611 /* GrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E4E41C47776B003EE611 /* GrossViewController.swift */; };
 		9416E4EC1C47776B003EE611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9416E4EB1C47776B003EE611 /* Assets.xcassets */; };
 		9416E4EF1C47776B003EE611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9416E4ED1C47776B003EE611 /* LaunchScreen.storyboard */; };
 		9416E4FA1C47776B003EE611 /* PJDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E4F91C47776B003EE611 /* PJDemoTests.swift */; };
 		9416E5051C47776B003EE611 /* PJDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E5041C47776B003EE611 /* PJDemoUITests.swift */; };
-		9416E5131C477C59003EE611 /* DeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E5121C477C59003EE611 /* DeviceTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9416E5151C477D67003EE611 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E5141C477D67003EE611 /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9416E5131C477C59003EE611 /* DeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E5121C477C59003EE611 /* DeviceTableViewController.swift */; };
+		9416E5151C477D67003EE611 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E5141C477D67003EE611 /* ProfileViewController.swift */; };
 		9416E53F1C479733003EE611 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9416E53A1C47972A003EE611 /* Charts.framework */; };
 		9416E5401C479733003EE611 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9416E53A1C47972A003EE611 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941A3C9F1CB2821200621E84 /* DataTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4ED1CD04EC400D37694 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EC1CD04EC400D37694 /* GenerateViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4EF1CD08F2500D37694 /* ConVSGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EE1CD08F2500D37694 /* ConVSGenViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4F11CD0947F00D37694 /* SubstitueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F01CD0947F00D37694 /* SubstitueViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4F41CD0A14100D37694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9437B4F21CD0A14100D37694 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		9437B4F61CD0A45300D37694 /* EfficiencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F51CD0A45300D37694 /* EfficiencyViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9446585F1CCC8CE200CE54E0 /* PredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446585E1CCC8CE200CE54E0 /* PredictViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		944658611CCCC52B00CE54E0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944658601CCCC52B00CE54E0 /* Weather.swift */; settings = {ASSET_TAGS = (); }; };
-		945D2FAC1CCE6A6200DB3138 /* SpinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D2FAB1CCE6A6200DB3138 /* SpinningView.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BE61CCFA76200E95DEB /* ConsumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BE51CCFA76200E95DEB /* ConsumeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BED1CCFA80E00E95DEB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEA1CCFA80E00E95DEB /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BEE1CCFA80E00E95DEB /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEB1CCFA80E00E95DEB /* ResetPasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEC1CCFA80E00E95DEB /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E0651CB2364A00211152 /* CompositionTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E06B1CB24D7F00211152 /* DrawCharts.swift */; settings = {ASSET_TAGS = (); }; };
+		941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941A3C9F1CB2821200621E84 /* DataTableViewCell.swift */; };
+		9437B4ED1CD04EC400D37694 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EC1CD04EC400D37694 /* GenerateViewController.swift */; };
+		9437B4EF1CD08F2500D37694 /* ConVSGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EE1CD08F2500D37694 /* ConVSGenViewController.swift */; };
+		9437B4F11CD0947F00D37694 /* SubstitueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F01CD0947F00D37694 /* SubstitueViewController.swift */; };
+		9437B4F41CD0A14100D37694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9437B4F21CD0A14100D37694 /* Main.storyboard */; };
+		9437B4F61CD0A45300D37694 /* EfficiencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F51CD0A45300D37694 /* EfficiencyViewController.swift */; };
+		9446585F1CCC8CE200CE54E0 /* PredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446585E1CCC8CE200CE54E0 /* PredictViewController.swift */; };
+		944658611CCCC52B00CE54E0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944658601CCCC52B00CE54E0 /* Weather.swift */; };
+		945D2FAC1CCE6A6200DB3138 /* SpinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D2FAB1CCE6A6200DB3138 /* SpinningView.swift */; };
+		94964BE61CCFA76200E95DEB /* ConsumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BE51CCFA76200E95DEB /* ConsumeViewController.swift */; };
+		94964BED1CCFA80E00E95DEB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEA1CCFA80E00E95DEB /* LoginViewController.swift */; };
+		94964BEE1CCFA80E00E95DEB /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEB1CCFA80E00E95DEB /* ResetPasswordViewController.swift */; };
+		94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEC1CCFA80E00E95DEB /* SignUpViewController.swift */; };
+		94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E0651CB2364A00211152 /* CompositionTableViewController.swift */; };
+		94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E06B1CB24D7F00211152 /* DrawCharts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 /* Begin PBXFileReference section */
 		51D3D4BB5460A70AE05307DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		82875C5222022ABAE24092A4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD2A8C81CD109D600505B4A /* GenerateDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateDataModel.swift; sourceTree = "<group>"; };
 		9416E4DF1C47776B003EE611 /* PJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9416E4E21C47776B003EE611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9416E4E41C47776B003EE611 /* GrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrossViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8CD2A8C51CD109B900505B4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CD2A8C81CD109D600505B4A /* GenerateDataModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9416E4D61C47776B003EE611 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 		9416E4E11C47776B003EE611 /* PJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8CD2A8C51CD109B900505B4A /* Model */,
 				9416E4E21C47776B003EE611 /* AppDelegate.swift */,
 				94F5E0791CB252C600211152 /* Source */,
 				94F5E0771CB2523600211152 /* Login */,
@@ -507,6 +518,7 @@
 				941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */,
 				9437B4EF1CD08F2500D37694 /* ConVSGenViewController.swift in Sources */,
 				944658611CCCC52B00CE54E0 /* Weather.swift in Sources */,
+				8CD2A8C91CD109D600505B4A /* GenerateDataModel.swift in Sources */,
 				94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */,
 				9416E4E31C47776B003EE611 /* AppDelegate.swift in Sources */,
 				94964BED1CCFA80E00E95DEB /* LoginViewController.swift in Sources */,
