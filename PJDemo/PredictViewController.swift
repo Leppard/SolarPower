@@ -62,6 +62,11 @@ class PredictViewController: UIViewController ,UITableViewDelegate, UITableViewD
         return cell
     }
     
+    @IBAction func unwindToPredictScreen(segue: UIStoryboardSegue){
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

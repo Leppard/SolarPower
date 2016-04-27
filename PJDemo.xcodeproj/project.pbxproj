@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		410E0070E12668B20A0BDFA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82875C5222022ABAE24092A4 /* libPods.a */; };
+		941151DD1CD0A92F007844E4 /* PredictStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941151DC1CD0A92F007844E4 /* PredictStateViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		941151E11CD102F2007844E4 /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941151E01CD102F2007844E4 /* ComparisonViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9416E4E31C47776B003EE611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E4E21C47776B003EE611 /* AppDelegate.swift */; };
 		9416E4E51C47776B003EE611 /* GrossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E4E41C47776B003EE611 /* GrossViewController.swift */; };
 		9416E4EC1C47776B003EE611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9416E4EB1C47776B003EE611 /* Assets.xcassets */; };
@@ -97,6 +99,8 @@
 /* Begin PBXFileReference section */
 		51D3D4BB5460A70AE05307DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		82875C5222022ABAE24092A4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		941151DC1CD0A92F007844E4 /* PredictStateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictStateViewController.swift; sourceTree = "<group>"; };
+		941151E01CD102F2007844E4 /* ComparisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 		9416E4DF1C47776B003EE611 /* PJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9416E4E21C47776B003EE611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9416E4E41C47776B003EE611 /* GrossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrossViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 				9437B4EE1CD08F2500D37694 /* ConVSGenViewController.swift */,
 				9437B4F01CD0947F00D37694 /* SubstitueViewController.swift */,
 				9437B4F51CD0A45300D37694 /* EfficiencyViewController.swift */,
+				941151DC1CD0A92F007844E4 /* PredictStateViewController.swift */,
+				941151E01CD102F2007844E4 /* ComparisonViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -500,7 +506,9 @@
 				945D2FAC1CCE6A6200DB3138 /* SpinningView.swift in Sources */,
 				94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */,
 				9437B4ED1CD04EC400D37694 /* GenerateViewController.swift in Sources */,
+				941151DD1CD0A92F007844E4 /* PredictStateViewController.swift in Sources */,
 				94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */,
+				941151E11CD102F2007844E4 /* ComparisonViewController.swift in Sources */,
 				9416E5131C477C59003EE611 /* DeviceTableViewController.swift in Sources */,
 				9416E5151C477D67003EE611 /* ProfileViewController.swift in Sources */,
 				9437B4F11CD0947F00D37694 /* SubstitueViewController.swift in Sources */,
