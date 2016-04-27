@@ -76,7 +76,7 @@ class DeviceTableViewController: UITableViewController{
         break;
         case 1: self.performSegueWithIdentifier("generateSegue", sender: self);
         break;
-        case 2: //self.performSegueWithIdentifier("academic", sender: self);
+        case 2: self.performSegueWithIdentifier("efficientSegue", sender: self);
         break;
         default:
             break

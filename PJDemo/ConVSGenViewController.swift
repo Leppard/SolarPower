@@ -1,5 +1,5 @@
 //
-//  GenerateViewController.swift
+//  ConVSGenViewController.swift
 //  PJDemo
 //
 //  Created by apple on 16/4/27.
@@ -9,24 +9,19 @@
 import UIKit
 import Charts
 
-class GenerateViewController: UIViewController {
-    
-    @IBOutlet weak var substituteButton: UIButton!
-    @IBOutlet weak var compareButton: UIButton!
-    var daily = ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"]
-    
-    let unitsData_daily1 = [20.0, 4.0, 6.0, 3.0, 12.0, 1.0,2.0, 14.0, 3.0, 7.0, 9.0, 4.0,5.0, 2.0, 6.0, 13.0, 2.0,8.0,10.0, 14.0, 9.0, 3.0, 12.0, 16.0]
+class ConVSGenViewController: UIViewController {
+
+    let consume_v_generate = ["1","2","3","4","5","6","7"]
+    let consume_data = [3.0 , 6.6 , 7.9 , 4.7 , 9.7 , 3.6 , 2.0]
+    let generate_value = [2.5 , 6.9, 4.1, 10.0 , 3.9, 9.0 , 5.0 ]
     
     @IBAction func indexChanged(sender: AnyObject) {
     }
-
     @IBOutlet weak var barChartView: BarChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    drawMultiBarCharts(barChartView, dataPoints: daily, values: [unitsData_daily1],labels:["发电"])
-        compareButton.layer.cornerRadius = 4
-        substituteButton.layer.cornerRadius = 4
+        drawMultiBarCharts(barChartView,dataPoints: consume_v_generate, values: [consume_data,generate_value], labels: ["耗电","发电"])
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

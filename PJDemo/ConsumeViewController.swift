@@ -127,12 +127,12 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         self.lineChartView.delegate = self
         
         //lineChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
-        self.lineChartView.xAxis.labelPosition = .Bottom
+       // self.lineChartView.xAxis.labelPosition = .Bottom
         self.lineChartView.leftAxis.labelPosition = .OutsideChart
         //self.lineChartView.descriptionTextColor = UIColor.whiteColor()
-        self.lineChartView.backgroundColor = UIColor.whiteColor()
-        self.lineChartView.gridBackgroundColor = UIColor.whiteColor()
-
+       // self.lineChartView.backgroundColor = UIColor.whiteColor()
+       // self.lineChartView.gridBackgroundColor = UIColor.whiteColor()
+        self.lineChartView.descriptionText = ""
         
         drawMultiLineCharts(lineChartView, dataPoints: daily, values: [unitsData_daily1,unitsData_daily2],labels:["总耗","空调"])
         

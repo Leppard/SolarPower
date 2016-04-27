@@ -12,6 +12,8 @@ import Charts
 
 var chartColors : [UIColor] = [UIColor.lightGrayColor(),UIColor(red: 127/255, green: 1, blue: 212/255, alpha: 0.8), UIColor(red: 1, green: 250/255, blue: 205/255, alpha: 0.8), UIColor.purpleColor(), UIColor.yellowColor(),UIColor(red: 123/255, green: 104/255, blue: 238/255, alpha: 0.6)]
 //(127,255,212) (255,250,205)(123,104,238)
+
+var pieColors : [UIColor] = [UIColor.lightGrayColor(), UIColor(red: 1.0, green: 0, blue: 0, alpha: 0.7)]
 func setChartLineData(set: LineChartDataSet, color: UIColor)
 {
     let lineColor = color.colorWithAlphaComponent(0.5)
@@ -45,9 +47,10 @@ func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:
             let dataEntry = ChartDataEntry(value: (values[i])[j], xIndex: j)
             dataEntries.append(dataEntry)
         }
-        
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: labels[i])
-        lineChartDataSet.circleRadius = 1.0
+        lineChartDataSet.circleRadius = 0.2
+        lineChartDataSet.circleColors = [UIColor.blackColor()]
+        lineChartDataSet.lineWidth = 5
         lineChartDataSet.circleColors = [chartColors[i]]
         setChartLineData(lineChartDataSet, color: chartColors[i])
         dataSets.append(lineChartDataSet)
@@ -56,6 +59,7 @@ func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:
     let data: LineChartData = LineChartData(xVals: dataPoints, dataSets: dataSets)
     
     lineChartView.data = data
+
     
 }
 
@@ -77,7 +81,7 @@ func drawLineCharts(lineChartView:LineChartView,dataPoints : [String],values: [D
 }
 
 
-func drawPieCharts(pieChartView:PieChartView,dataPoints : [String],values: [Double])
+func drawPieCharts(pieChartView:PieChartView,dataPoints : [String],values: [Double], description: String)
 {
     var dataEntries : [ChartDataEntry] = []
     for i in 0 ..< dataPoints.count{
@@ -85,21 +89,15 @@ func drawPieCharts(pieChartView:PieChartView,dataPoints : [String],values: [Doub
         dataEntries.append(dataEntry)
     }
     
-    let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "Unit Sold")
+    let pieChartDataSet = PieChartDataSet(yVals: dataEntries, label: "")
     let pieChartData = PieChartData(xVals: dataPoints, dataSet: pieChartDataSet)
-    
     pieChartView.data = pieChartData
-    pieChartView.descriptionText = " "
-    
-    
+    pieChartView.descriptionText = description
+    pieChartView.legend.position = ChartLegend.ChartLegendPosition.BelowChartCenter
     var colors : [UIColor] = []
     
     for i in 0..<dataPoints.count {
-//        let red = Double(arc4random_uniform(256))
-//        let green = Double(arc4random_uniform(256))
-//        let blue = Double(arc4random_uniform(256))
-//        let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
-        colors.append(chartColors[i])
+        colors.append(pieColors[i])
     }
     pieChartDataSet.colors = colors
     

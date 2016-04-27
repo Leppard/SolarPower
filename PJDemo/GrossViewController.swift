@@ -87,12 +87,11 @@ class GrossViewController: UIViewController,SpinningViewDataSource ,CLLocationMa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.ConvsGenBarChartView.descriptionTextColor = UIColor.whiteColor()
+        self.ConvsGenBarChartView.descriptionText = ""
         self.ConvsGenBarChartView.xAxis.labelPosition = .Bottom
         self.ConvsGenBarChartView.leftAxis.labelPosition = .OutsideChart
-        self.ConvsGenBarChartView.backgroundColor = UIColor.whiteColor()
+       // self.ConvsGenBarChartView.backgroundColor = UIColor.whiteColor()
         self.ConvsGenBarChartView.gridBackgroundColor = UIColor.whiteColor()
-        //drawPieCharts(consumePieChartView, dataPoints: consume, values: consume_value)
         drawMultiBarCharts(ConvsGenBarChartView, dataPoints: consume_v_generate, values: [consume_data,generate_value], labels: ["耗电","发电"])
         
         percentLabel.text = "75%"
