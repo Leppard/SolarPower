@@ -10,7 +10,7 @@
 		410E0070E12668B20A0BDFA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82875C5222022ABAE24092A4 /* libPods.a */; };
 		8C3680D71CD1DCCE003F20D6 /* DataApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680D61CD1DCCE003F20D6 /* DataApi.swift */; };
 		8C3680DB1CD1EB38003F20D6 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680DA1CD1EB38003F20D6 /* GlobalConstants.swift */; };
-		8CD2A8C91CD109D600505B4A /* GenerateDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2A8C81CD109D600505B4A /* GenerateDataModel.swift */; };
+		8C3680DD1CD21BDA003F20D6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680DC1CD21BDA003F20D6 /* DataModel.swift */; };
 		941151DD1CD0A92F007844E4 /* PredictStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941151DC1CD0A92F007844E4 /* PredictStateViewController.swift */; };
 		941151E11CD102F2007844E4 /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941151E01CD102F2007844E4 /* ComparisonViewController.swift */; };
 		9416E4E31C47776B003EE611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416E4E21C47776B003EE611 /* AppDelegate.swift */; };
@@ -104,7 +104,7 @@
 		82875C5222022ABAE24092A4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3680D61CD1DCCE003F20D6 /* DataApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataApi.swift; sourceTree = "<group>"; };
 		8C3680DA1CD1EB38003F20D6 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
-		8CD2A8C81CD109D600505B4A /* GenerateDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateDataModel.swift; sourceTree = "<group>"; };
+		8C3680DC1CD21BDA003F20D6 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		941151DC1CD0A92F007844E4 /* PredictStateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictStateViewController.swift; sourceTree = "<group>"; };
 		941151E01CD102F2007844E4 /* ComparisonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
 		9416E4DF1C47776B003EE611 /* PJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,7 +180,7 @@
 		8CD2A8C51CD109B900505B4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8CD2A8C81CD109D600505B4A /* GenerateDataModel.swift */,
+				8C3680DC1CD21BDA003F20D6 /* DataModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -534,13 +534,13 @@
 				941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */,
 				9437B4EF1CD08F2500D37694 /* ConVSGenViewController.swift in Sources */,
 				944658611CCCC52B00CE54E0 /* Weather.swift in Sources */,
-				8CD2A8C91CD109D600505B4A /* GenerateDataModel.swift in Sources */,
 				94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */,
 				9416E4E31C47776B003EE611 /* AppDelegate.swift in Sources */,
 				94964BED1CCFA80E00E95DEB /* LoginViewController.swift in Sources */,
 				9416E4E51C47776B003EE611 /* GrossViewController.swift in Sources */,
 				94964BE61CCFA76200E95DEB /* ConsumeViewController.swift in Sources */,
 				9437B4F61CD0A45300D37694 /* EfficiencyViewController.swift in Sources */,
+				8C3680DD1CD21BDA003F20D6 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
