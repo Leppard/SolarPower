@@ -59,6 +59,8 @@ class PredictViewController: UIViewController ,UITableViewDelegate, UITableViewD
         let cell = predictTableView.dequeueReusableCellWithIdentifier("predictCell", forIndexPath: indexPath) as! UITableViewCell
         let weather = temperaturePredict[indexPath.row]
         cell.textLabel?.text = dateArray[indexPath.row] + "      " + String(weather.weatherType) + "      " + String(weather.temperature)
+        cell.textLabel?.textColor = UIColor.darkGrayColor()
+        cell.userInteractionEnabled = false
         return cell
     }
     
@@ -90,7 +92,7 @@ class PredictViewController: UIViewController ,UITableViewDelegate, UITableViewD
         temperaturePredict.append(Weather(weatherType: .Sunny, temperature: 29.0))
         
         let powerSet =  self.getAllPredictPower(self.temperaturePredict)
-        drawMultiLineCharts(self.predictChartView, dataPoints: dateArray, values: [powerSet], labels: ["预测发电量"])
+        drawMultiLineCharts(self.predictChartView, dataPoints: dateArray, values: [powerSet], lineColor:[generateColor],labels: ["预测发电量"])
         
         predictTableView.delegate = self
         predictTableView.dataSource = self

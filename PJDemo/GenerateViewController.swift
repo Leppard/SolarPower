@@ -24,7 +24,7 @@ class GenerateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    drawMultiBarCharts(barChartView, dataPoints: daily, values: [unitsData_daily1],labels:["发电"])
+    drawMultiBarCharts(barChartView, dataPoints: daily, values: [unitsData_daily1], barColor: [generateColor], labels:["发电"])
         compareButton.layer.cornerRadius = 4
         substituteButton.layer.cornerRadius = 4
     }

@@ -29,7 +29,7 @@ public class BarChartView: BarLineChartViewBase, BarChartDataProvider
     internal override func initialize()
     {
         super.initialize()
-        
+        self.userInteractionEnabled = false
         renderer = BarChartRenderer(dataProvider: self, animator: _animator, viewPortHandler: _viewPortHandler)
         _xAxisRenderer = ChartXAxisRendererBarChart(viewPortHandler: _viewPortHandler, xAxis: _xAxis, transformer: _leftAxisTransformer, chart: self)
         

@@ -46,10 +46,10 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         dateFormatter.dateFormat = "HH"
         
         switch sender.selectedSegmentIndex{
-        case 0: drawMultiLineCharts(lineChartView, dataPoints: daily, values: [unitsData_daily1,unitsData_daily2],labels:["总耗","空调"])
+        case 0: drawMultiLineCharts(lineChartView, dataPoints: daily, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗","空调"])
                 currentIndex = 0
         case 1:
-            drawMultiLineCharts(lineChartView, dataPoints: weekly, values: [unitsData_weekly], labels: ["总耗"])
+            drawMultiLineCharts(lineChartView, dataPoints: weekly, values: [unitsData_weekly], lineColor: [consumeColor],labels: ["总耗"])
             
             //drawLineCharts(lineChartView,dataPoints: monthly, values: unitsSold_monthly)
                 currentIndex = 1
@@ -135,7 +135,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
        // self.lineChartView.gridBackgroundColor = UIColor.whiteColor()
         self.lineChartView.descriptionText = ""
         
-        drawMultiLineCharts(lineChartView, dataPoints: daily, values: [unitsData_daily1,unitsData_daily2],labels:["总耗","空调"])
+        drawMultiLineCharts(lineChartView, dataPoints: daily, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()],labels:["总耗","空调"])
         
 //        totalSwitch.addTarget(self, action: Selector("switchIsChanged:"), forControlEvents: UIControlEvents.ValueChanged)
 

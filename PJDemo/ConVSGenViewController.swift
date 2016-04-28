@@ -20,7 +20,7 @@ class ConVSGenViewController: UIViewController {
     @IBOutlet weak var barChartView: BarChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        drawMultiBarCharts(barChartView,dataPoints: consume_v_generate, values: [consume_data,generate_value], labels: ["耗电","发电"])
+        drawMultiBarCharts(barChartView,dataPoints: consume_v_generate, values: [consume_data,generate_value], barColor: [consumeColor, generateColor],labels: ["耗电","发电"])
         // Do any additional setup after loading the view.
     }
 

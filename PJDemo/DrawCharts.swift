@@ -9,9 +9,7 @@
 import Foundation
 import Charts
 
-
 var chartColors : [UIColor] = [UIColor.lightGrayColor(),UIColor(red: 127/255, green: 1, blue: 212/255, alpha: 0.8), UIColor(red: 1, green: 250/255, blue: 205/255, alpha: 0.8), UIColor.purpleColor(), UIColor.yellowColor(),UIColor(red: 123/255, green: 104/255, blue: 238/255, alpha: 0.6)]
-//(127,255,212) (255,250,205)(123,104,238)
 
 var pieColors : [UIColor] = [UIColor.lightGrayColor(), UIColor(red: 1.0, green: 0, blue: 0, alpha: 0.7)]
 func setChartLineData(set: LineChartDataSet, color: UIColor)
@@ -36,7 +34,7 @@ func randomColor()->UIColor
     return color
 }
 
-func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:[[Double]],labels:[String])
+func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:[[Double]], lineColor:[UIColor], labels:[String])
 {
     var dataSets : [LineChartDataSet] = [LineChartDataSet]()
     for i in 0..<values.count
@@ -49,10 +47,9 @@ func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:
         }
         let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: labels[i])
         lineChartDataSet.circleRadius = 0.2
-        lineChartDataSet.circleColors = [UIColor.blackColor()]
         lineChartDataSet.lineWidth = 5
         lineChartDataSet.circleColors = [chartColors[i]]
-        setChartLineData(lineChartDataSet, color: chartColors[i])
+        setChartLineData(lineChartDataSet, color: lineColor[i])
         dataSets.append(lineChartDataSet)
         
     }
@@ -104,7 +101,7 @@ func drawPieCharts(pieChartView:PieChartView,dataPoints : [String],values: [Doub
     pieChartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0)
     
 }
-func drawMultiBarCharts(barChartView:BarChartView,dataPoints : [String],values: [[Double]],labels:[String])
+func drawMultiBarCharts(barChartView:BarChartView,dataPoints : [String],values: [[Double]], barColor:[UIColor], labels:[String])
 {
     var dataSets : [BarChartDataSet] = [BarChartDataSet]()
     for i in 0..<values.count
@@ -117,7 +114,7 @@ func drawMultiBarCharts(barChartView:BarChartView,dataPoints : [String],values: 
         }
         let barChartDataSet = BarChartDataSet(yVals: dataEntries, label: labels[i])
         //barChartDataSet.colors = [randomColor()]
-        barChartDataSet.colors = [chartColors[i]]
+        barChartDataSet.colors = [barColor[i]]
         dataSets.append(barChartDataSet)
         
     }
