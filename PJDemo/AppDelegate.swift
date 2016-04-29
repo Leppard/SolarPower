@@ -20,8 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("SgowEgooeZnxvaWJYQ6FmMJKVm65f0AlPpKiwpCu", clientKey: "ddRJyU3BAaFQl3CfFZbwZqpL3zOMjPebLtC077gF")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
-        //var tableVC : DeviceTableViewController = DeviceTableViewController(className: "Cat")
-        //UINavigationBar
         return true
     }
 
