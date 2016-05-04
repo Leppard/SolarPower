@@ -47,7 +47,25 @@ class GrossViewController: UIViewController,SpinningViewDataSource ,CLLocationMa
         }
     }
     func updateUI(){
-        spinningView.setNeedsDisplay()
+        
+        
+        //spinningView.setup()
+        
+        
+        spinningView.updateAnimation()
+        
+        self.ConvsGenBarChartView.descriptionText = ""
+        self.ConvsGenBarChartView.xAxis.labelPosition = .Bottom
+        self.ConvsGenBarChartView.leftAxis.labelPosition = .OutsideChart
+        // self.ConvsGenBarChartView.backgroundColor = UIColor.whiteColor()
+        self.ConvsGenBarChartView.gridBackgroundColor = UIColor.whiteColor()
+        drawMultiBarCharts(ConvsGenBarChartView, dataPoints: consume_v_generate, values: [consume_data,generate_value], labels: ["耗电","发电"])
+        
+        percentLabel.text = "75%"
+        temperatureLabel.text = "27"
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        dateLabel.text = dateFormatter.stringFromDate(date)
+
     }
     
     func percentForSpinningView(sender: SpinningView) -> Double? {
@@ -80,27 +98,30 @@ class GrossViewController: UIViewController,SpinningViewDataSource ,CLLocationMa
                 
             }
         }
+        percentage = 0.5
         updateUI()
+        
     }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.ConvsGenBarChartView.descriptionText = ""
-        self.ConvsGenBarChartView.xAxis.labelPosition = .Bottom
-        self.ConvsGenBarChartView.leftAxis.labelPosition = .OutsideChart
-       // self.ConvsGenBarChartView.backgroundColor = UIColor.whiteColor()
-        self.ConvsGenBarChartView.gridBackgroundColor = UIColor.whiteColor()
-        drawMultiBarCharts(ConvsGenBarChartView, dataPoints: consume_v_generate, values: [consume_data,generate_value], labels: ["耗电","发电"])
+//        self.ConvsGenBarChartView.descriptionText = ""
+//        self.ConvsGenBarChartView.xAxis.labelPosition = .Bottom
+//        self.ConvsGenBarChartView.leftAxis.labelPosition = .OutsideChart
+//       // self.ConvsGenBarChartView.backgroundColor = UIColor.whiteColor()
+//        self.ConvsGenBarChartView.gridBackgroundColor = UIColor.whiteColor()
+//        drawMultiBarCharts(ConvsGenBarChartView, dataPoints: consume_v_generate, values: [consume_data,generate_value], labels: ["耗电","发电"])
+//        
+//        percentLabel.text = "75%"
+//        temperatureLabel.text = "27"
+//        dateFormatter.dateFormat = "YYYY-MM-dd"
+//        dateLabel.text = dateFormatter.stringFromDate(date)
         
-        percentLabel.text = "75%"
-        temperatureLabel.text = "27"
-        dateFormatter.dateFormat = "YYYY-MM-dd"
-        dateLabel.text = dateFormatter.stringFromDate(date)
-        
-        getUserLocation()
-        print(locationManager.location?.coordinate.longitude)
+        //getUserLocation()
+        //print(locationManager.location?.coordinate.longitude)
+        updateUI()
     }
 
     override func didReceiveMemoryWarning() {
