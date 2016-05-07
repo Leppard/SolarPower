@@ -34,7 +34,50 @@ func randomColor()->UIColor
     return color
 }
 
-func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:[[Double]], lineColor:[UIColor], labels:[String])
+func drawRadarChart(radarChartView:RadarChartView, dataPoints : [String], values: [Double])
+{
+    var dataEntries : [ChartDataEntry] = []
+    for i in 0..<dataPoints.count{
+        let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
+        dataEntries.append(dataEntry)
+    }
+    let radarChartDataSet = RadarChartDataSet(yVals: dataEntries, label: "")
+    radarChartDataSet.lineWidth = 2.0
+    radarChartDataSet.colors = chartColors
+    
+    let radarChartData = RadarChartData(xVals: dataPoints, dataSet: radarChartDataSet)
+    radarChartView.data = radarChartData
+    radarChartView.descriptionText = "Radar Chart"
+    radarChartView.animate(xAxisDuration: 2)
+    
+    
+}
+
+func drawMultiRadarChart(radarChartView: RadarChartView, dataPoints: [String], values: [[Double]], labels:[String] = [])
+{
+    var dataSets = [RadarChartDataSet]()
+    for i in 0..<values.count
+    {
+        var dataEntries = [ChartDataEntry]()
+        for j in 0..<values[i].count{
+            let dataEntry = ChartDataEntry(value: (values[i])[j], xIndex: j)
+            dataEntries.append(dataEntry)
+        }
+        let radarChartDataSet = RadarChartDataSet(yVals: dataEntries, label: labels[i])
+        radarChartDataSet.lineWidth = 5
+        radarChartDataSet.colors = [chartColors[i+1]]
+        
+        dataSets.append(radarChartDataSet)
+    
+    }
+    radarChartView.descriptionText = "Radar Chart"
+    let data : RadarChartData = RadarChartData(xVals: dataPoints, dataSets: dataSets)
+
+    radarChartView.data = data
+}
+
+
+func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:[[Double]], lineColor:[UIColor], labels:[String] = [])
 {
     var dataSets : [LineChartDataSet] = [LineChartDataSet]()
     for i in 0..<values.count
@@ -56,7 +99,7 @@ func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:
     let data: LineChartData = LineChartData(xVals: dataPoints, dataSets: dataSets)
     
     lineChartView.data = data
-
+    
     
 }
 
@@ -69,12 +112,14 @@ func drawLineCharts(lineChartView:LineChartView,dataPoints : [String],values: [D
         dataEntries.append(dataEntry)
     }
     let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "")
-    setChartLineData(lineChartDataSet, color: UIColor.whiteColor())
+    lineChartDataSet.lineWidth = 5
+    lineChartDataSet.circleRadius = 0.2
+    
+    setChartLineData(lineChartDataSet, color: UIColor.lightGrayColor().colorWithAlphaComponent(0.5))
     let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
-    lineChartData.setValueTextColor(UIColor.whiteColor())
     lineChartView.data = lineChartData
     lineChartView.descriptionText = ""
-    lineChartView.animate(xAxisDuration: 3.0)
+    lineChartView.animate(xAxisDuration: 2.0, easingOption: ChartEasingOption.Linear)
     
 }
 
@@ -123,7 +168,7 @@ func drawMultiBarCharts(barChartView:BarChartView,dataPoints : [String],values: 
     barChartView.descriptionText = ""
     //barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption:)
     barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
-
+    
 }
 
 func drawBarCharts(barChartView:BarChartView,dataPoints : [String],values: [Double])
@@ -150,10 +195,13 @@ func drawHorizontalBarCharts(barChartView:HorizontalBarChartView,dataPoints : [S
         dataEntries.append(dataEntry)
     }
     
-    let barChartDataSet = BarChartDataSet(yVals: dataEntries, label: "some")
+    let barChartDataSet = BarChartDataSet(yVals: dataEntries, label: "Photovoltaic Generation Comparison")
     let barChartData = BarChartData(xVals: dataPoints, dataSet: barChartDataSet)
-    barChartDataSet.colors = [UIColor.lightGrayColor()]
+    barChartDataSet.colors = [UIColor.redColor().colorWithAlphaComponent(0.5),UIColor.lightGrayColor().colorWithAlphaComponent(0.5)]
     barChartView.data = barChartData
-    barChartView.descriptionText = " "
+    barChartView.descriptionText = ""
+    //barChartView.descriptionText = "Photovoltaic Generation Comparison"
+    //barChartView.descriptionTextPosition = CGPoint(x: barChartView.center.x + barChartView.bounds.width/2, y: barChartView.center.y + barChartView.bounds.height)
+    barChartView.animate(yAxisDuration: 2.0)
     
 }

@@ -68,7 +68,17 @@ class PredictViewController: UIViewController ,UITableViewDelegate, UITableViewD
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUI()
+    }
     
+    func updateUI()
+    {
+        predictChartView.clear()
+        let powerSet =  self.getAllPredictPower(self.temperaturePredict)
+        drawLineCharts(self.predictChartView, dataPoints: dateArray, values: powerSet)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,9 +101,9 @@ class PredictViewController: UIViewController ,UITableViewDelegate, UITableViewD
         temperaturePredict.append(Weather(weatherType: .Overcast, temperature: 27.0))
         temperaturePredict.append(Weather(weatherType: .Sunny, temperature: 29.0))
         
-        let powerSet =  self.getAllPredictPower(self.temperaturePredict)
-        drawMultiLineCharts(self.predictChartView, dataPoints: dateArray, values: [powerSet], lineColor:[generateColor],labels: ["预测发电量"])
-        
+//        let powerSet =  self.getAllPredictPower(self.temperaturePredict)
+//        drawLineCharts(self.predictChartView, dataPoints: dateArray, values: powerSet)
+        updateUI()
         predictTableView.delegate = self
         predictTableView.dataSource = self
         // Do any additional setup after loading the view.

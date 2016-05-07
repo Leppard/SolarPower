@@ -40,6 +40,24 @@
 		94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEC1CCFA80E00E95DEB /* SignUpViewController.swift */; };
 		94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E0651CB2364A00211152 /* CompositionTableViewController.swift */; };
 		94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E06B1CB24D7F00211152 /* DrawCharts.swift */; };
+		941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941A3C9F1CB2821200621E84 /* DataTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		941BC38A1CD9B6D500945622 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3871CD9B6D500945622 /* MasterViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		941BC38B1CD9B6D500945622 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3881CD9B6D500945622 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		941BC38C1CD9B6D500945622 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3891CD9B6D500945622 /* AddContactViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9437B4ED1CD04EC400D37694 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EC1CD04EC400D37694 /* GenerateViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9437B4EF1CD08F2500D37694 /* ConVSGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EE1CD08F2500D37694 /* ConVSGenViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9437B4F11CD0947F00D37694 /* SubstitueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F01CD0947F00D37694 /* SubstitueViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9437B4F41CD0A14100D37694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9437B4F21CD0A14100D37694 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		9437B4F61CD0A45300D37694 /* EfficiencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F51CD0A45300D37694 /* EfficiencyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9446585F1CCC8CE200CE54E0 /* PredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446585E1CCC8CE200CE54E0 /* PredictViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		944658611CCCC52B00CE54E0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944658601CCCC52B00CE54E0 /* Weather.swift */; settings = {ASSET_TAGS = (); }; };
+		945D2FAC1CCE6A6200DB3138 /* SpinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D2FAB1CCE6A6200DB3138 /* SpinningView.swift */; settings = {ASSET_TAGS = (); }; };
+		94964BE61CCFA76200E95DEB /* ConsumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BE51CCFA76200E95DEB /* ConsumeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		94964BED1CCFA80E00E95DEB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEA1CCFA80E00E95DEB /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		94964BEE1CCFA80E00E95DEB /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEB1CCFA80E00E95DEB /* ResetPasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEC1CCFA80E00E95DEB /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E0651CB2364A00211152 /* CompositionTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E06B1CB24D7F00211152 /* DrawCharts.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +201,9 @@
 		9416E5141C477D67003EE611 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9416E5331C47972A003EE611 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		941A3C9F1CB2821200621E84 /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		941BC3871CD9B6D500945622 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		941BC3881CD9B6D500945622 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		941BC3891CD9B6D500945622 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		9437B4EC1CD04EC400D37694 /* GenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
 		9437B4EE1CD08F2500D37694 /* ConVSGenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConVSGenViewController.swift; sourceTree = "<group>"; };
 		9437B4F01CD0947F00D37694 /* SubstitueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubstitueViewController.swift; sourceTree = "<group>"; };
@@ -343,6 +364,9 @@
 		94F5E0781CB2529300211152 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				941BC3871CD9B6D500945622 /* MasterViewController.swift */,
+				941BC3881CD9B6D500945622 /* DetailViewController.swift */,
+				941BC3891CD9B6D500945622 /* AddContactViewController.swift */,
 				9416E4E41C47776B003EE611 /* GrossViewController.swift */,
 				9416E5121C477C59003EE611 /* DeviceTableViewController.swift */,
 				94F5E0651CB2364A00211152 /* CompositionTableViewController.swift */,
@@ -654,11 +678,13 @@
 				94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */,
 				8C3680D71CD1DCCE003F20D6 /* DataApi.swift in Sources */,
 				9437B4ED1CD04EC400D37694 /* GenerateViewController.swift in Sources */,
+				941BC38A1CD9B6D500945622 /* MasterViewController.swift in Sources */,
 				941151DD1CD0A92F007844E4 /* PredictStateViewController.swift in Sources */,
 				94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */,
 				941151E11CD102F2007844E4 /* ComparisonViewController.swift in Sources */,
 				9416E5131C477C59003EE611 /* DeviceTableViewController.swift in Sources */,
 				9416E5151C477D67003EE611 /* ProfileViewController.swift in Sources */,
+				941BC38B1CD9B6D500945622 /* DetailViewController.swift in Sources */,
 				9437B4F11CD0947F00D37694 /* SubstitueViewController.swift in Sources */,
 				8C3680DB1CD1EB38003F20D6 /* GlobalConstants.swift in Sources */,
 				941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */,
@@ -668,6 +694,7 @@
 				9416E4E31C47776B003EE611 /* AppDelegate.swift in Sources */,
 				94964BED1CCFA80E00E95DEB /* LoginViewController.swift in Sources */,
 				9416E4E51C47776B003EE611 /* GrossViewController.swift in Sources */,
+				941BC38C1CD9B6D500945622 /* AddContactViewController.swift in Sources */,
 				94964BE61CCFA76200E95DEB /* ConsumeViewController.swift in Sources */,
 				9437B4F61CD0A45300D37694 /* EfficiencyViewController.swift in Sources */,
 				8C3680DD1CD21BDA003F20D6 /* DataModel.swift in Sources */,

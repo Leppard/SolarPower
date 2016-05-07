@@ -12,19 +12,29 @@ import Charts
 class ComparisonViewController: UIViewController {
     
     
+    var friendName : String?{
+        didSet{
+            redraw()
+        }
+    }
     
-    let value = [6.9,86.7,66.7]
+    func redraw(){
+        labels[labels.endIndex-1] = friendName ?? "Friend"
+    }
     
-    let dataPoints = ["Jun" , "May", "Apr"]
+    @IBOutlet weak var radarChartView: RadarChartView!
+    
 
-    @IBOutlet weak var comparisonView: HorizontalBarChartView!
+    let dataPoints = ["发电","耗电","空调"]
+    let values1 = [25.0, 14.0, 10]
+    let values2 = [30.0, 20.0, 15]
+    var labels = ["YOU", "FRIEND"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        comparisonView.xAxis.labelPosition = .Bottom
-        comparisonView.gridBackgroundColor = UIColor.whiteColor()
-        
-        drawHorizontalBarCharts(comparisonView, dataPoints: dataPoints, values: value)
-        // Do any additional setup after loading the view.
+
+        radarChartView.innerWebColor = UIColor.lightGrayColor()
+        radarChartView.innerWebLineWidth = 1.0
+        drawMultiRadarChart(radarChartView, dataPoints: dataPoints, values: [values1, values2], labels: labels)
     }
 
     override func didReceiveMemoryWarning() {

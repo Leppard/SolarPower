@@ -18,15 +18,6 @@ class SpinningView: UIView {
     
     var percentageLabel = UILabel()
     
-    //    override init(frame: CGRect) {
-    //        super.init(frame: frame)
-    //        setup()
-    //    }
-    //
-    //    required init?(coder aDecoder: NSCoder) {
-    //        super.init(coder: aDecoder)
-    //    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         setup()
@@ -113,7 +104,7 @@ class SpinningView: UIView {
         circleLayer.addAnimation(strokeEndAnimation, forKey: "strokeEnd")
         circleLayer.strokeStart = 0
         var percentage = dataSource?.percentForSpinningView(self) ?? 0.0
-        circleLayer.strokeEnd =  0.75
+        circleLayer.strokeEnd =  CGFloat(percentage)
         
     }
     
