@@ -8,20 +8,29 @@
 
 import Foundation
 
-struct dataItem {
+struct DataItem {
     var time: String = ""
     var value: String = ""
-    init(time: String, value: String) {
-        self.time = time
-        self.value = value
+    
+    init(dictionary: NSDictionary) {
+        self.time = dictionary.objectForKey("time") as! String
+        self.value = dictionary.objectForKey("value") as! String
     }
 }
 
-struct dataGroup {
+struct DataGroup {
     var total: String = ""
-    var list: [dataItem] = []
-    init(total: String, list: [dataItem]) {
-        self.total = total
-        self.list = list
+    var list: [DataItem] = []
+    
+    init(dictionary: NSDictionary) {
+        self.total = dictionary.objectForKey("total") as! String
+        let list: [NSDictionary] = dictionary.objectForKey("dataList") as! [NSDictionary]
+        for item in list {
+            self.list.append(DataItem.init(dictionary: item))
+        }
+    }
+    init() {
+        self.total = ""
+        self.list = []
     }
 }

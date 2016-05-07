@@ -12,6 +12,7 @@ import Charts
 class ConsumeViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var lineChartView: LineChartView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     
     @IBOutlet weak var totalSwitch: UISwitch!
     @IBOutlet weak var pumpSwitch: UISwitch!
@@ -22,10 +23,10 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
     let currentDate = NSDate()
     let dateFormatter = NSDateFormatter()
     
-    
-    
-    
-    var daily = ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"]
+    var dailyData: DataGroup = DataGroup()
+    var weeklyData: DataGroup = DataGroup()
+    var monthlyData: DataGroup = DataGroup()
+    var yearlyData: DataGroup = DataGroup()
     
     let unitsData_daily1 = [20.0, 4.0, 6.0, 3.0, 12.0, 1.0,2.0, 14.0, 3.0, 7.0, 9.0, 4.0,5.0, 2.0, 6.0, 13.0, 2.0,8.0,10.0, 14.0, 9.0, 3.0, 12.0, 16.0]
     let unitsData_daily2 = [4.0, 2.0, 3.0, 3.0, 6.0, 8.0,10.0, 4.0, 6.0, 3.0, 5.0, 6.0,10.0, 4.0, 6.0, 3.0, 12.0, 16.0,20.0, 4.0, 3.0, 3.0, 6.0, 2.0]
@@ -45,8 +46,17 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
     @IBAction func indexChanged(sender: UISegmentedControl) {
         dateFormatter.dateFormat = "HH"
         
+        DataApi.getDayData({ (data: NSDictionary) -> Void in
+            self.dailyData = DataGroup.init(dictionary: data)
+        })
+        
+        var xArray: [String] = []
+        for DataItem in self.dailyData.list {
+            xArray.append(DataItem.time)
+        }
+        
         switch sender.selectedSegmentIndex{
-        case 0: drawMultiLineCharts(lineChartView, dataPoints: daily, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗","空调"])
+        case 0: drawMultiLineCharts(lineChartView, dataPoints: xArray, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗","空调"])
                 currentIndex = 0
         case 1:
             drawMultiLineCharts(lineChartView, dataPoints: weekly, values: [unitsData_weekly], lineColor: [consumeColor],labels: ["总耗"])
@@ -59,10 +69,9 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         case 3: setChart(yearly, values: unitsSold_yearly)
                 currentIndex = 3
         default : break
-            
-            
         }
     }
+    
     func setChart(dataPoints : [String],values: [Double]){
         var dataEntries : [ChartDataEntry] = []
         for i in 0 ..< dataPoints.count{
@@ -79,6 +88,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         lineChartView.animate(xAxisDuration: 1.0, easingOption: ChartEasingOption.EaseInOutBounce)
        
     }
+    
     func setChartDailySet(dataPoints:[String])
     {
         var dataEntries: [ChartDataEntry] = []
@@ -109,6 +119,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         
         lineChartView.data = data
     }
+    
     func setChartLineData(set: LineChartDataSet, color: UIColor)
     {
         let lineColor = color.colorWithAlphaComponent(0.5)
@@ -120,41 +131,15 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         set.fillColor = color
         set.highlightColor = UIColor.whiteColor()
         set.drawCircleHoleEnabled = true
-        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lineChartView.delegate = self
         
-        //lineChartView.backgroundColor = UIColor(red: 189/255, green: 195/255, blue: 199/255, alpha: 1)
-       // self.lineChartView.xAxis.labelPosition = .Bottom
         self.lineChartView.leftAxis.labelPosition = .OutsideChart
-        //self.lineChartView.descriptionTextColor = UIColor.whiteColor()
-       // self.lineChartView.backgroundColor = UIColor.whiteColor()
-       // self.lineChartView.gridBackgroundColor = UIColor.whiteColor()
         self.lineChartView.descriptionText = ""
         
-        drawMultiLineCharts(lineChartView, dataPoints: daily, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()],labels:["总耗","空调"])
-        
-//        totalSwitch.addTarget(self, action: Selector("switchIsChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-
+        self.segmentControl.selectedSegmentIndex = 0;
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }
