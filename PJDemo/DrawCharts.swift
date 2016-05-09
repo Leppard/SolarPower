@@ -92,15 +92,14 @@ func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:
         lineChartDataSet.circleRadius = 0.2
         lineChartDataSet.lineWidth = 5
         lineChartDataSet.circleColors = [chartColors[i]]
+        lineChartDataSet.drawValuesEnabled = false
         setChartLineData(lineChartDataSet, color: lineColor[i])
         dataSets.append(lineChartDataSet)
-        
     }
     let data: LineChartData = LineChartData(xVals: dataPoints, dataSets: dataSets)
-    
     lineChartView.data = data
-    
-    
+    lineChartView.animate(xAxisDuration: 2.0, easingOption: ChartEasingOption.Linear)
+    lineChartView.xAxis.labelPosition = .Bottom
 }
 
 func drawLineCharts(lineChartView:LineChartView,dataPoints : [String],values: [Double])

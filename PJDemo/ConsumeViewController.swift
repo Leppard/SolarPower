@@ -85,8 +85,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
                 self.activityIndicator.hidden = true
                 self.lineChartView.hidden = false
             })
-            
-            default : break
+        default : break
         }
     }
     
@@ -102,7 +101,6 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineChartData.setValueTextColor(UIColor.darkGrayColor())
         lineChartView.data = lineChartData
-        lineChartView.animate(xAxisDuration: 1.0, easingOption: ChartEasingOption.EaseInOutBounce)
        
     }
     
