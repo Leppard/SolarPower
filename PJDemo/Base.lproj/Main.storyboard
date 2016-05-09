@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -304,11 +304,6 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONu-5j-4kI" customClass="LineChartView" customModule="Charts">
                                         <rect key="frame" x="11" y="11" width="304" height="313"/>
-                                        <subviews>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="idB-zf-Y9c">
-                                                <rect key="frame" x="142" y="147" width="20" height="20"/>
-                                            </activityIndicatorView>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -317,9 +312,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clZ-Cq-0T6">
                                         <rect key="frame" x="11" y="324" width="304" height="103"/>
                                     </view>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="idB-zf-Y9c">
+                                        <rect key="frame" x="153" y="157.5" width="20" height="20"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="idB-zf-Y9c" firstAttribute="centerY" secondItem="ONu-5j-4kI" secondAttribute="centerY" id="9ae-O5-IP5"/>
+                                    <constraint firstItem="idB-zf-Y9c" firstAttribute="centerX" secondItem="ONu-5j-4kI" secondAttribute="centerX" id="DyM-Fz-x3c"/>
                                     <constraint firstAttribute="bottom" secondItem="ONu-5j-4kI" secondAttribute="bottom" constant="103" id="Ezd-IC-Ns6"/>
                                     <constraint firstAttribute="trailing" secondItem="ONu-5j-4kI" secondAttribute="trailing" constant="11" id="IqC-GN-ld5"/>
                                     <constraint firstItem="clZ-Cq-0T6" firstAttribute="leading" secondItem="ONu-5j-4kI" secondAttribute="leading" id="LFW-hl-d3n"/>
@@ -330,18 +330,14 @@
                                     <constraint firstItem="ONu-5j-4kI" firstAttribute="leading" secondItem="Z2v-Q1-ncV" secondAttribute="leading" constant="11" id="v6Y-vt-3yY"/>
                                 </constraints>
                             </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zga-in-8sc">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Zga-in-8sc">
                                 <rect key="frame" x="6" y="72" width="304" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <segments>
-                                    <segment title="Daily" width="75.25"/>
-                                    <segment title="Weekly"/>
-                                    <segment title="Monthly"/>
-                                    <segment title="Yearly"/>
+                                    <segment title="逐时电耗" width="75.25"/>
+                                    <segment title="逐日电耗"/>
+                                    <segment title="逐月电耗"/>
                                 </segments>
-                                <connections>
-                                    <action selector="indexChanged:" destination="Yfy-8d-nHd" eventType="valueChanged" id="nkp-zk-9Ft"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -357,6 +353,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Comsumption" id="jDc-dL-0u1"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="idB-zf-Y9c" id="wKQ-14-Kcr"/>
                         <outlet property="lineChartView" destination="ONu-5j-4kI" id="pcc-1Z-e7d"/>
                         <outlet property="segmentControl" destination="Zga-in-8sc" id="F8M-zE-XuO"/>
                     </connections>
@@ -368,7 +365,6 @@
         <!--Compare-->
         <scene sceneID="dNL-zV-ZAt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dtU-rh-s0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="CZ8-Fr-tQA" customClass="ComparisonViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Aqm-6F-a0c"/>
@@ -381,6 +377,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Compare" image="Compare" selectedImage="Compare" id="kcY-5w-Jrf"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtU-rh-s0M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-611" y="291"/>
         </scene>

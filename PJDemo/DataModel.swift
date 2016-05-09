@@ -10,27 +10,27 @@ import Foundation
 
 struct DataItem {
     var time: String = ""
-    var value: String = ""
+    var value: Double = 0.0
     
     init(dictionary: NSDictionary) {
         self.time = dictionary.objectForKey("time") as! String
-        self.value = dictionary.objectForKey("value") as! String
+        self.value = dictionary.objectForKey("value") as! Double
     }
 }
 
 struct DataGroup {
-    var total: String = ""
+    var total: Double = 0.0
     var list: [DataItem] = []
     
     init(dictionary: NSDictionary) {
-        self.total = dictionary.objectForKey("total") as! String
+        self.total = dictionary.objectForKey("totalValue") as! Double
         let list: [NSDictionary] = dictionary.objectForKey("dataList") as! [NSDictionary]
         for item in list {
             self.list.append(DataItem.init(dictionary: item))
         }
     }
     init() {
-        self.total = ""
+        self.total = 0.0
         self.list = []
     }
 }

@@ -14,12 +14,52 @@ let urlSchema = "http://15013vr175.imwork.net:7777"
 class DataApi {
     static func getDayData(success: (NSDictionary) -> Void) {
         let urlString = urlSchema.stringByAppendingString(kConsume_Day_Data)
-        Alamofire.request(.GET, urlString, parameters: nil)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, urlString, parameters: params)
             .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
+    static func getMonthData(success: (NSDictionary) -> Void) {
+        let urlString = urlSchema.stringByAppendingString(kConsume_Month_Data)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, urlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
+    static func getYearData(success: (NSDictionary) -> Void) {
+        let urlString = urlSchema.stringByAppendingString(kConsume_Year_Data)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, urlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
         }
     }
 }
