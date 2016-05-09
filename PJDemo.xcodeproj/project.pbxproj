@@ -26,6 +26,9 @@
 		9416E53F1C479733003EE611 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9416E53A1C47972A003EE611 /* Charts.framework */; };
 		9416E5401C479733003EE611 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9416E53A1C47972A003EE611 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941A3C9F1CB2821200621E84 /* DataTableViewCell.swift */; };
+		941BC38A1CD9B6D500945622 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3871CD9B6D500945622 /* MasterViewController.swift */; };
+		941BC38B1CD9B6D500945622 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3881CD9B6D500945622 /* DetailViewController.swift */; };
+		941BC38C1CD9B6D500945622 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3891CD9B6D500945622 /* AddContactViewController.swift */; };
 		9437B4ED1CD04EC400D37694 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EC1CD04EC400D37694 /* GenerateViewController.swift */; };
 		9437B4EF1CD08F2500D37694 /* ConVSGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EE1CD08F2500D37694 /* ConVSGenViewController.swift */; };
 		9437B4F11CD0947F00D37694 /* SubstitueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F01CD0947F00D37694 /* SubstitueViewController.swift */; };
@@ -40,24 +43,6 @@
 		94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEC1CCFA80E00E95DEB /* SignUpViewController.swift */; };
 		94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E0651CB2364A00211152 /* CompositionTableViewController.swift */; };
 		94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E06B1CB24D7F00211152 /* DrawCharts.swift */; };
-		941A3CA01CB2821200621E84 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941A3C9F1CB2821200621E84 /* DataTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		941BC38A1CD9B6D500945622 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3871CD9B6D500945622 /* MasterViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		941BC38B1CD9B6D500945622 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3881CD9B6D500945622 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		941BC38C1CD9B6D500945622 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941BC3891CD9B6D500945622 /* AddContactViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4ED1CD04EC400D37694 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EC1CD04EC400D37694 /* GenerateViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4EF1CD08F2500D37694 /* ConVSGenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4EE1CD08F2500D37694 /* ConVSGenViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4F11CD0947F00D37694 /* SubstitueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F01CD0947F00D37694 /* SubstitueViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9437B4F41CD0A14100D37694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9437B4F21CD0A14100D37694 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		9437B4F61CD0A45300D37694 /* EfficiencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9437B4F51CD0A45300D37694 /* EfficiencyViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		9446585F1CCC8CE200CE54E0 /* PredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9446585E1CCC8CE200CE54E0 /* PredictViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		944658611CCCC52B00CE54E0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944658601CCCC52B00CE54E0 /* Weather.swift */; settings = {ASSET_TAGS = (); }; };
-		945D2FAC1CCE6A6200DB3138 /* SpinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D2FAB1CCE6A6200DB3138 /* SpinningView.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BE61CCFA76200E95DEB /* ConsumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BE51CCFA76200E95DEB /* ConsumeViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BED1CCFA80E00E95DEB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEA1CCFA80E00E95DEB /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BEE1CCFA80E00E95DEB /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEB1CCFA80E00E95DEB /* ResetPasswordViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94964BEF1CCFA80E00E95DEB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964BEC1CCFA80E00E95DEB /* SignUpViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94F5E0661CB2364A00211152 /* CompositionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E0651CB2364A00211152 /* CompositionTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		94F5E06C1CB24D7F00211152 /* DrawCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F5E06B1CB24D7F00211152 /* DrawCharts.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -477,7 +462,7 @@
 				TargetAttributes = {
 					9416E4DE1C47776B003EE611 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 45P8MP3ZML;
+						DevelopmentTeam = L5B4TBT7H9;
 					};
 					9416E4F41C47776B003EE611 = {
 						CreatedOnToolsVersion = 7.0;
@@ -852,12 +837,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jane.project.PJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PJDemo/PJDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -870,12 +857,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = PJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jane.project.PJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PJDemo/PJDemo-Bridging-Header.h";
 			};
 			name = Release;

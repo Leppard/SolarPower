@@ -15,18 +15,26 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    @IBOutlet weak var totalSwitch: UISwitch!
-    @IBOutlet weak var pumpSwitch: UISwitch!
-    @IBOutlet weak var airConSwitch: UISwitch!
-    
-    @IBOutlet weak var furnitureSwitch: UISwitch!
-    
     let currentDate = NSDate()
     let dateFormatter = NSDateFormatter()
     
     var dailyData: DataGroup = DataGroup()
     var monthlyData: DataGroup = DataGroup()
     var yearlyData: DataGroup = DataGroup()
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.lineChartView.delegate = self
+        
+        self.lineChartView.leftAxis.labelPosition = .OutsideChart
+        self.lineChartView.descriptionText = ""
+        
+        self.segmentControl.addTarget(self, action: #selector(ConsumeViewController.segmentControlIndexChanged), forControlEvents: .ValueChanged)
+        
+        self.segmentControl.selectedSegmentIndex = 0;
+        self.segmentControlIndexChanged()
+    }
     
     func segmentControlIndexChanged() {
         
@@ -36,7 +44,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         
         switch self.segmentControl.selectedSegmentIndex{
         case 0:
-            DataApi.getDayData({ (data: NSDictionary) -> Void in
+            DataApi.consumeDayData({ (data: NSDictionary) -> Void in
                 self.dailyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -53,7 +61,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
             })
         
         case 1:
-            DataApi.getMonthData({ (data: NSDictionary) -> Void in
+            DataApi.consumeMonthData({ (data: NSDictionary) -> Void in
                 self.monthlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -70,7 +78,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
             })
             
         case 2:
-            DataApi.getYearData({ (data: NSDictionary) -> Void in
+            DataApi.consumeYearData({ (data: NSDictionary) -> Void in
                 self.yearlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -115,18 +123,5 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         set.fillColor = color
         set.highlightColor = UIColor.whiteColor()
         set.drawCircleHoleEnabled = true
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.lineChartView.delegate = self
-        
-        self.lineChartView.leftAxis.labelPosition = .OutsideChart
-        self.lineChartView.descriptionText = ""
-        
-        self.segmentControl.addTarget(self, action: #selector(ConsumeViewController.segmentControlIndexChanged), forControlEvents: .ValueChanged)
-        
-        self.segmentControl.selectedSegmentIndex = 0;
-        self.segmentControlIndexChanged()
     }
 }

@@ -287,7 +287,7 @@
             </objects>
             <point key="canvasLocation" x="1403.7333333333333" y="240.45333333333332"/>
         </scene>
-        <!--Comsumption-->
+        <!--建筑能耗-->
         <scene sceneID="YqM-CO-SnF">
             <objects>
                 <viewController id="Yfy-8d-nHd" customClass="ConsumeViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -331,10 +331,10 @@
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Zga-in-8sc">
-                                <rect key="frame" x="6" y="72" width="304" height="29"/>
+                                <rect key="frame" x="6" y="72" width="302" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <segments>
-                                    <segment title="逐时电耗" width="75.25"/>
+                                    <segment title="逐时电耗"/>
                                     <segment title="逐日电耗"/>
                                     <segment title="逐月电耗"/>
                                 </segments>
@@ -347,11 +347,11 @@
                             <constraint firstItem="Zga-in-8sc" firstAttribute="top" secondItem="xAL-SG-Yki" secondAttribute="bottom" constant="8" symbolic="YES" id="DoM-Cg-4aU"/>
                             <constraint firstItem="Z2v-Q1-ncV" firstAttribute="bottom" secondItem="mfn-xy-2sR" secondAttribute="top" id="J9G-sf-Jef"/>
                             <constraint firstItem="Z2v-Q1-ncV" firstAttribute="leading" secondItem="K5E-FU-W3g" secondAttribute="leadingMargin" constant="-22" id="RHS-Cy-ekC"/>
-                            <constraint firstItem="Z2v-Q1-ncV" firstAttribute="centerX" secondItem="Zga-in-8sc" secondAttribute="centerX" constant="-1" id="bco-5e-K2J"/>
+                            <constraint firstItem="Z2v-Q1-ncV" firstAttribute="centerX" secondItem="Zga-in-8sc" secondAttribute="centerX" id="bco-5e-K2J"/>
                             <constraint firstAttribute="trailing" secondItem="Z2v-Q1-ncV" secondAttribute="trailing" id="ncl-DR-iCx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Comsumption" id="jDc-dL-0u1"/>
+                    <navigationItem key="navigationItem" title="建筑能耗" id="jDc-dL-0u1"/>
                     <connections>
                         <outlet property="activityIndicator" destination="idB-zf-Y9c" id="wKQ-14-Kcr"/>
                         <outlet property="lineChartView" destination="ONu-5j-4kI" id="pcc-1Z-e7d"/>
@@ -988,7 +988,7 @@
             </objects>
             <point key="canvasLocation" x="681.60000000000002" y="-1169.1333333333332"/>
         </scene>
-        <!--Photovoltaic-->
+        <!--光伏发电-->
         <scene sceneID="xsa-l3-OTU">
             <objects>
                 <viewController id="D12-gD-T0r" customClass="GenerateViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -1000,14 +1000,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-eV-Gze">
-                                <rect key="frame" x="6" y="72" width="304" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-eV-Gze">
+                                <rect key="frame" x="8" y="72" width="304" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <segments>
-                                    <segment title="Daily" width="75.25"/>
-                                    <segment title="Weekly"/>
-                                    <segment title="Monthly"/>
-                                    <segment title="Yearly"/>
+                                    <segment title="逐时发电"/>
+                                    <segment title="逐日发电"/>
+                                    <segment title="逐月发电"/>
                                 </segments>
                                 <connections>
                                     <action selector="indexChanged:" destination="Yfy-8d-nHd" eventType="valueChanged" id="TUM-5r-IN7"/>
@@ -1016,13 +1015,11 @@
                             </segmentedControl>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLk-OC-DyM" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="6" y="108" width="304" height="313"/>
-                                <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UOK-DC-cv2">
-                                        <rect key="frame" x="142" y="147" width="20" height="20"/>
-                                    </activityIndicatorView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UOK-DC-cv2">
+                                <rect key="frame" x="150" y="254.5" width="20" height="20"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-Fh-QjU">
                                 <rect key="frame" x="20" y="456" width="156" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1050,6 +1047,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Tqz-hK-W2s" firstAttribute="top" secondItem="tLk-OC-DyM" secondAttribute="bottom" constant="98" id="0at-8H-Q9Y"/>
+                            <constraint firstItem="UOK-DC-cv2" firstAttribute="centerX" secondItem="tLk-OC-DyM" secondAttribute="centerX" id="4wU-ko-m40"/>
                             <constraint firstItem="ypy-Q5-wmu" firstAttribute="leading" secondItem="jCN-Fh-QjU" secondAttribute="trailing" constant="80" id="5v0-bM-Jmm"/>
                             <constraint firstItem="jCN-Fh-QjU" firstAttribute="top" secondItem="tLk-OC-DyM" secondAttribute="bottom" constant="35" id="7UC-KF-kTJ"/>
                             <constraint firstItem="jCN-Fh-QjU" firstAttribute="leading" secondItem="AcW-rH-kL8" secondAttribute="leadingMargin" id="BtI-Jg-54S"/>
@@ -1060,13 +1058,16 @@
                             <constraint firstItem="ypy-Q5-wmu" firstAttribute="top" secondItem="tLk-OC-DyM" secondAttribute="bottom" constant="35" id="gcc-Fu-J9t"/>
                             <constraint firstItem="vyX-eV-Gze" firstAttribute="centerX" secondItem="AcW-rH-kL8" secondAttribute="centerX" id="jzC-zc-637"/>
                             <constraint firstItem="tLk-OC-DyM" firstAttribute="trailing" secondItem="vyX-eV-Gze" secondAttribute="trailing" id="rbF-KU-oAW"/>
+                            <constraint firstItem="UOK-DC-cv2" firstAttribute="centerY" secondItem="tLk-OC-DyM" secondAttribute="centerY" id="ssX-mq-Rqv"/>
                             <constraint firstItem="vyX-eV-Gze" firstAttribute="top" secondItem="kxt-M3-tLQ" secondAttribute="bottom" constant="8" symbolic="YES" id="tL9-Ss-5Am"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Photovoltaic" id="3Vm-oW-H1g"/>
+                    <navigationItem key="navigationItem" title="光伏发电" id="3Vm-oW-H1g"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="UOK-DC-cv2" id="GWi-tK-UiV"/>
                         <outlet property="barChartView" destination="tLk-OC-DyM" id="852-ER-gYd"/>
                         <outlet property="compareButton" destination="jCN-Fh-QjU" id="BG0-3I-Rsp"/>
+                        <outlet property="segmentControl" destination="vyX-eV-Gze" id="p27-tX-bWe"/>
                         <outlet property="substituteButton" destination="ypy-Q5-wmu" id="vRJ-JC-XSx"/>
                     </connections>
                 </viewController>
@@ -1177,7 +1178,7 @@
             </objects>
             <point key="canvasLocation" x="1950" y="1743"/>
         </scene>
-        <!--Building Efficiency-->
+        <!--建筑能效-->
         <scene sceneID="I15-ji-hAM">
             <objects>
                 <viewController id="X3J-qP-gBW" customClass="EfficiencyViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -1207,7 +1208,7 @@
                             <constraint firstItem="7Bd-Hx-OOB" firstAttribute="bottom" secondItem="gNo-F0-yRW" secondAttribute="top" constant="-124" id="wMM-rf-IbU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Building Efficiency" id="9Yl-lA-00b"/>
+                    <navigationItem key="navigationItem" title="建筑能效" id="9Yl-lA-00b"/>
                     <connections>
                         <outlet property="barChartView" destination="7Bd-Hx-OOB" id="39y-cE-hD2"/>
                     </connections>

@@ -13,36 +13,86 @@ class GenerateViewController: UIViewController {
     
     @IBOutlet weak var substituteButton: UIButton!
     @IBOutlet weak var compareButton: UIButton!
-    var daily = ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"]
-    
-    let unitsData_daily1 = [20.0, 4.0, 6.0, 3.0, 12.0, 1.0,2.0, 14.0, 3.0, 7.0, 9.0, 4.0,5.0, 2.0, 6.0, 13.0, 2.0,8.0,10.0, 14.0, 9.0, 3.0, 12.0, 16.0]
-    
-    @IBAction func indexChanged(sender: AnyObject) {
-    }
 
     @IBOutlet weak var barChartView: BarChartView!
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
+    var dailyData: DataGroup = DataGroup()
+    var monthlyData: DataGroup = DataGroup()
+    var yearlyData: DataGroup = DataGroup()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    drawMultiBarCharts(barChartView, dataPoints: daily, values: [unitsData_daily1], barColor: [generateColor], labels:["发电"])
         compareButton.layer.cornerRadius = 4
         substituteButton.layer.cornerRadius = 4
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        self.barChartView.leftAxis.labelPosition = .OutsideChart
+        self.barChartView.descriptionText = ""
+        
+        self.segmentControl.addTarget(self, action: #selector(ConsumeViewController.segmentControlIndexChanged), forControlEvents: .ValueChanged)
+        self.segmentControl.selectedSegmentIndex = 0;
+        self.segmentControlIndexChanged()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func segmentControlIndexChanged() {
+        
+        self.activityIndicator.startAnimating()
+        self.activityIndicator.hidden = false
+        self.barChartView.hidden = true
+        
+        switch self.segmentControl.selectedSegmentIndex{
+        case 0:
+            DataApi.consumeDayData({ (data: NSDictionary) -> Void in
+                self.dailyData = DataGroup.init(dictionary: data)
+                var xArray: [String] = []
+                var yArray: [Double] = []
+                for DataItem in self.dailyData.list {
+                    xArray.append(DataItem.time)
+                    yArray.append(DataItem.value)
+                }
+                drawMultiBarCharts(self.barChartView, dataPoints: xArray, values: [yArray], barColor: [generateColor], labels:["发电"])
+                
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.hidden = true
+                self.barChartView.hidden = false
+            })
+            
+        case 1:
+            DataApi.consumeMonthData({ (data: NSDictionary) -> Void in
+                self.monthlyData = DataGroup.init(dictionary: data)
+                var xArray: [String] = []
+                var yArray: [Double] = []
+                for DataItem in self.monthlyData.list {
+                    xArray.append(DataItem.time)
+                    yArray.append(DataItem.value)
+                }
+                drawMultiBarCharts(self.barChartView, dataPoints: xArray, values: [yArray], barColor: [generateColor], labels:["发电"])
+                
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.hidden = true
+                self.barChartView.hidden = false
+            })
+            
+        case 2:
+            DataApi.consumeYearData({ (data: NSDictionary) -> Void in
+                self.yearlyData = DataGroup.init(dictionary: data)
+                var xArray: [String] = []
+                var yArray: [Double] = []
+                for DataItem in self.yearlyData.list {
+                    xArray.append(DataItem.time)
+                    yArray.append(DataItem.value)
+                }
+                drawMultiBarCharts(self.barChartView, dataPoints: xArray, values: [yArray], barColor: [generateColor], labels:["发电"])
+                
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.hidden = true
+                self.barChartView.hidden = false
+            })
+        default : break
+        }
     }
-    */
 
 }
