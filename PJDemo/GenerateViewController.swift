@@ -32,7 +32,7 @@ class GenerateViewController: UIViewController {
         self.barChartView.leftAxis.labelPosition = .OutsideChart
         self.barChartView.descriptionText = ""
         
-        self.segmentControl.addTarget(self, action: #selector(ConsumeViewController.segmentControlIndexChanged), forControlEvents: .ValueChanged)
+        self.segmentControl.addTarget(self, action: #selector(GenerateViewController.segmentControlIndexChanged), forControlEvents: .ValueChanged)
         self.segmentControl.selectedSegmentIndex = 0;
         self.segmentControlIndexChanged()
     }
@@ -45,7 +45,7 @@ class GenerateViewController: UIViewController {
         
         switch self.segmentControl.selectedSegmentIndex{
         case 0:
-            DataApi.consumeDayData({ (data: NSDictionary) -> Void in
+            DataApi.generateDayData({ (data: NSDictionary) -> Void in
                 self.dailyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -61,7 +61,7 @@ class GenerateViewController: UIViewController {
             })
             
         case 1:
-            DataApi.consumeMonthData({ (data: NSDictionary) -> Void in
+            DataApi.generateMonthData({ (data: NSDictionary) -> Void in
                 self.monthlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -77,7 +77,7 @@ class GenerateViewController: UIViewController {
             })
             
         case 2:
-            DataApi.consumeYearData({ (data: NSDictionary) -> Void in
+            DataApi.generateYearData({ (data: NSDictionary) -> Void in
                 self.yearlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []

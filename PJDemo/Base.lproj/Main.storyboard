@@ -1008,10 +1008,6 @@
                                     <segment title="逐日发电"/>
                                     <segment title="逐月发电"/>
                                 </segments>
-                                <connections>
-                                    <action selector="indexChanged:" destination="Yfy-8d-nHd" eventType="valueChanged" id="TUM-5r-IN7"/>
-                                    <action selector="indexChanged:" destination="D12-gD-T0r" eventType="valueChanged" id="ZJX-ml-da9"/>
-                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLk-OC-DyM" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="6" y="108" width="304" height="313"/>

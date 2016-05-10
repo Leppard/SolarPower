@@ -13,12 +13,17 @@ let urlSchema = "http://15013vr175.imwork.net:7777"
 
 class DataApi {
     
+    static let date = NSDate()
+    static let dateFormatter = NSDateFormatter()
+    
     // MARK: power consume
     
     static func consumeDayData(success: (NSDictionary) -> Void) {
-        let urlString = urlSchema.stringByAppendingString(kConsume_Day_Data)
+        self.dateFormatter.dateFormat = "yyyy/MM/dd"
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
-        Alamofire.request(.GET, urlString, parameters: params)
+        Alamofire.request(.GET, fullUrlString, parameters: params)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -33,9 +38,11 @@ class DataApi {
     }
     
     static func consumeMonthData(success: (NSDictionary) -> Void) {
-        let urlString = urlSchema.stringByAppendingString(kConsume_Month_Data)
+        self.dateFormatter.dateFormat = "yyyy/MM"
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
-        Alamofire.request(.GET, urlString, parameters: params)
+        Alamofire.request(.GET, fullUrlString, parameters: params)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -50,9 +57,11 @@ class DataApi {
     }
     
     static func consumeYearData(success: (NSDictionary) -> Void) {
-        let urlString = urlSchema.stringByAppendingString(kConsume_Year_Data)
+        self.dateFormatter.dateFormat = "yyyy"
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
-        Alamofire.request(.GET, urlString, parameters: params)
+        Alamofire.request(.GET, fullUrlString, parameters: params)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -69,9 +78,11 @@ class DataApi {
     // MARK: power generate
     
     static func generateDayData(success: (NSDictionary) -> Void) {
-        let urlString = urlSchema.stringByAppendingString(kGenrate_Day_Data)
+        self.dateFormatter.dateFormat = "yyyy/MM/dd"
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
-        Alamofire.request(.GET, urlString, parameters: params)
+        Alamofire.request(.GET, fullUrlString, parameters: params)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -86,9 +97,11 @@ class DataApi {
     }
     
     static func generateMonthData(success: (NSDictionary) -> Void) {
-        let urlString = urlSchema.stringByAppendingString(kGenrate_Month_Data)
+        self.dateFormatter.dateFormat = "yyyy/MM"
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
-        Alamofire.request(.GET, urlString, parameters: params)
+        Alamofire.request(.GET, fullUrlString, parameters: params)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -103,9 +116,11 @@ class DataApi {
     }
     
     static func generateYearData(success: (NSDictionary) -> Void) {
-        let urlString = urlSchema.stringByAppendingString(kGenrate_Year_Data)
+        self.dateFormatter.dateFormat = "yyyy"
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
-        Alamofire.request(.GET, urlString, parameters: params)
+        Alamofire.request(.GET, fullUrlString, parameters: params)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -118,5 +133,4 @@ class DataApi {
                 }
         }
     }
-
 }
