@@ -18,10 +18,6 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
     let currentDate = NSDate()
     let dateFormatter = NSDateFormatter()
     
-    var dailyData: DataGroup = DataGroup()
-    var monthlyData: DataGroup = DataGroup()
-    var yearlyData: DataGroup = DataGroup()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,85 +41,105 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         switch self.segmentControl.selectedSegmentIndex{
         case 0:
             DataApi.consumeTotalDayData({ (data: NSDictionary) -> Void in
-                self.dailyData = DataGroup.init(dictionary: data)
+                let totalData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
-                var yArray: [Double] = []
-                for DataItem in self.dailyData.list {
+                var totalArray: [Double] = []
+                for DataItem in totalData.list {
                     xArray.append(DataItem.time)
-                    yArray.append(DataItem.value)
+                    totalArray.append(DataItem.value)
                 }
-                
-                DataApi.consumeTotalDayData(<#T##success: (NSDictionary) -> Void##(NSDictionary) -> Void#>)
-                //                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗","空调"])
-                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [yArray], lineColor:[consumeColor], labels:["总耗"])
-                
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.hidden = true
-                self.lineChartView.hidden = false
+                DataApi.consumeAirDayData({ (data: NSDictionary) -> Void in
+                    let airData = DataGroup.init(dictionary: data)
+                    var airArray: [Double] = []
+                    for DataItem in airData.list {
+                        airArray.append(DataItem.value)
+                    }
+                    
+                    drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [totalArray, airArray], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗", "空调"])
+                    
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.hidden = true
+                    self.lineChartView.hidden = false
+                })
             })
         
         case 1:
             DataApi.consumeTotalMonthData({ (data: NSDictionary) -> Void in
-                self.monthlyData = DataGroup.init(dictionary: data)
+                let monthlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
-                var yArray: [Double] = []
-                for DataItem in self.monthlyData.list {
+                var totalArray: [Double] = []
+                for DataItem in monthlyData.list {
                     xArray.append(DataItem.time)
-                    yArray.append(DataItem.value)
+                    totalArray.append(DataItem.value)
                 }
-                //                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗","空调"])
-                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [yArray], lineColor:[consumeColor], labels:["总耗"])
-                
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.hidden = true
-                self.lineChartView.hidden = false
+                DataApi.consumeAirMonthData({ (data: NSDictionary) -> Void in
+                    let dailyData = DataGroup.init(dictionary: data)
+                    var airArray: [Double] = []
+                    for DataItem in dailyData.list {
+                        airArray.append(DataItem.value)
+                    }
+                    
+                    drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [totalArray, airArray], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗", "空调"])
+                    
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.hidden = true
+                    self.lineChartView.hidden = false
+                })
             })
             
         case 2:
             DataApi.consumeTotalYearData({ (data: NSDictionary) -> Void in
-                self.yearlyData = DataGroup.init(dictionary: data)
+                let yearlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
-                var yArray: [Double] = []
-                for DataItem in self.yearlyData.list {
+                var totalArray: [Double] = []
+                for DataItem in yearlyData.list {
                     xArray.append(DataItem.time)
-                    yArray.append(DataItem.value)
+                    totalArray.append(DataItem.value)
                 }
-                //                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗","空调"])
-                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [yArray], lineColor:[consumeColor], labels:["总耗"])
-                
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.hidden = true
-                self.lineChartView.hidden = false
+                DataApi.consumeAirYearData({ (data: NSDictionary) -> Void in
+                    let dailyData = DataGroup.init(dictionary: data)
+                    var airArray: [Double] = []
+                    for DataItem in dailyData.list {
+                        airArray.append(DataItem.value)
+                    }
+                    
+                    drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [totalArray, airArray], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗", "空调"])
+                    
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.hidden = true
+                    self.lineChartView.hidden = false
+                })
             })
+            
         default : break
         }
     }
-    
-    func setChart(dataPoints : [String],values: [Double]){
-        var dataEntries : [ChartDataEntry] = []
-        for i in 0 ..< dataPoints.count{
-            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
-            dataEntries.append(dataEntry)
-        }
-        
-        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Unit Sold")
-        setChartLineData(lineChartDataSet, color: UIColor.darkGrayColor())
-        let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
-        lineChartData.setValueTextColor(UIColor.darkGrayColor())
-        lineChartView.data = lineChartData
-       
-    }
-    
-    func setChartLineData(set: LineChartDataSet, color: UIColor)
-    {
-        let lineColor = color.colorWithAlphaComponent(0.5)
-        set.setColor(lineColor)
-        set.setCircleColor(color)
-        set.lineWidth = 2.0
-        set.circleRadius = 4.0
-        set.fillAlpha = 65 / 255.0
-        set.fillColor = color
-        set.highlightColor = UIColor.whiteColor()
-        set.drawCircleHoleEnabled = true
-    }
+//    
+//    func setChart(dataPoints : [String],values: [Double]){
+//        var dataEntries : [ChartDataEntry] = []
+//        for i in 0 ..< dataPoints.count{
+//            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
+//            dataEntries.append(dataEntry)
+//        }
+//        
+//        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Unit Sold")
+//        setChartLineData(lineChartDataSet, color: UIColor.darkGrayColor())
+//        let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
+//        lineChartData.setValueTextColor(UIColor.darkGrayColor())
+//        lineChartView.data = lineChartData
+//       
+//    }
+//    
+//    func setChartLineData(set: LineChartDataSet, color: UIColor)
+//    {
+//        let lineColor = color.colorWithAlphaComponent(0.5)
+//        set.setColor(lineColor)
+//        set.setCircleColor(color)
+//        set.lineWidth = 2.0
+//        set.circleRadius = 4.0
+//        set.fillAlpha = 65 / 255.0
+//        set.fillColor = color
+//        set.highlightColor = UIColor.whiteColor()
+//        set.drawCircleHoleEnabled = true
+//    }
 }

@@ -19,10 +19,6 @@ class GenerateViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
-    var dailyData: DataGroup = DataGroup()
-    var monthlyData: DataGroup = DataGroup()
-    var yearlyData: DataGroup = DataGroup()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +42,14 @@ class GenerateViewController: UIViewController {
         switch self.segmentControl.selectedSegmentIndex{
         case 0:
             DataApi.generateTotalDayData({ (data: NSDictionary) -> Void in
-                self.dailyData = DataGroup.init(dictionary: data)
+                let dailyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
-                for DataItem in self.dailyData.list {
+                for DataItem in dailyData.list {
                     xArray.append(DataItem.time)
                     yArray.append(DataItem.value)
                 }
+                
                 drawMultiBarCharts(self.barChartView, dataPoints: xArray, values: [yArray], barColor: [generateColor], labels:["发电"])
                 
                 self.activityIndicator.stopAnimating()
@@ -62,10 +59,10 @@ class GenerateViewController: UIViewController {
             
         case 1:
             DataApi.generateTotalMonthData({ (data: NSDictionary) -> Void in
-                self.monthlyData = DataGroup.init(dictionary: data)
+                let monthlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
-                for DataItem in self.monthlyData.list {
+                for DataItem in monthlyData.list {
                     xArray.append(DataItem.time)
                     yArray.append(DataItem.value)
                 }
@@ -78,10 +75,10 @@ class GenerateViewController: UIViewController {
             
         case 2:
             DataApi.generateTotalYearData({ (data: NSDictionary) -> Void in
-                self.yearlyData = DataGroup.init(dictionary: data)
+                let yearlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
-                for DataItem in self.yearlyData.list {
+                for DataItem in yearlyData.list {
                     xArray.append(DataItem.time)
                     yArray.append(DataItem.value)
                 }

@@ -11,6 +11,8 @@ import Alamofire
 
 let urlSchema = "http://15013vr175.imwork.net:7777"
 
+let needFakeData: Bool = true
+
 class DataApi {
     
     static let date = NSDate()
@@ -21,7 +23,8 @@ class DataApi {
     
     static func consumeTotalDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
-        let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(needFakeData ? "2015/10/01" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -40,7 +43,7 @@ class DataApi {
     
     static func consumeTotalMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
-        let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(needFakeData ? "2015/10" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -59,7 +62,7 @@ class DataApi {
     
     static func consumeTotalYearData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy"
-        let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(needFakeData ? "2015" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -80,7 +83,7 @@ class DataApi {
     
     static func consumeAirDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
-        let urlString = kCONSUME_AIR.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015/10/01" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -99,7 +102,7 @@ class DataApi {
     
     static func consumeAirMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
-        let urlString = kCONSUME_AIR.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015/10" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -118,7 +121,7 @@ class DataApi {
     
     static func consumeAirYearData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy"
-        let urlString = kCONSUME_AIR.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -140,7 +143,7 @@ class DataApi {
     
     static func generateTotalDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
-        let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015/10/01" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -159,7 +162,7 @@ class DataApi {
     
     static func generateTotalMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
-        let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015/10" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -178,7 +181,7 @@ class DataApi {
     
     static func generateTotalYearData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy"
-        let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)

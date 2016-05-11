@@ -92,7 +92,7 @@ func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:
         lineChartDataSet.circleRadius = 0.2
         lineChartDataSet.lineWidth = 5
         lineChartDataSet.circleColors = [chartColors[i]]
-        lineChartDataSet.drawValuesEnabled = false
+        lineChartDataSet.drawValuesEnabled = true
         setChartLineData(lineChartDataSet, color: lineColor[i])
         dataSets.append(lineChartDataSet)
     }

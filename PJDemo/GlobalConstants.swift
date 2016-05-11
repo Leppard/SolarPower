@@ -23,3 +23,6 @@ let kGENERATE_TOTAL = "/TAN/powergeneration/"
 
 let kWEATHER_SHANGHAI = "/weather/2016-04-28/上海"
 
+// MARK: Global Variables
+var yearConsume: Double = 0.0
+var yearGenerate: Double = 0.0
