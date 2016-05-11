@@ -22,6 +22,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lineChartView.delegate = self
+        self.activityIndicator.color = UIColor.grayColor()
         
         self.lineChartView.leftAxis.labelPosition = .OutsideChart
         self.lineChartView.descriptionText = ""

@@ -312,8 +312,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clZ-Cq-0T6">
                                         <rect key="frame" x="11" y="324" width="304" height="103"/>
                                     </view>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="idB-zf-Y9c">
-                                        <rect key="frame" x="153" y="157.5" width="20" height="20"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="idB-zf-Y9c">
+                                        <rect key="frame" x="145" y="148.5" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1013,8 +1013,8 @@
                                 <rect key="frame" x="6" y="108" width="304" height="313"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UOK-DC-cv2">
-                                <rect key="frame" x="150" y="254.5" width="20" height="20"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="UOK-DC-cv2">
+                                <rect key="frame" x="142" y="245.5" width="37" height="37"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-Fh-QjU">
                                 <rect key="frame" x="20" y="456" width="156" height="30"/>
@@ -1188,24 +1188,25 @@
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Bd-Hx-OOB" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="8" y="82" width="304" height="313"/>
-                                <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="b8A-D0-OU9">
-                                        <rect key="frame" x="142" y="147" width="20" height="20"/>
-                                    </activityIndicatorView>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="b8A-D0-OU9">
+                                <rect key="frame" x="139" y="220" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7Bd-Hx-OOB" firstAttribute="top" secondItem="Pbm-xd-m6g" secondAttribute="bottom" constant="18" id="0DI-1v-81C"/>
                             <constraint firstItem="7Bd-Hx-OOB" firstAttribute="leading" secondItem="wvD-eU-qMH" secondAttribute="leadingMargin" constant="-12" id="4eb-Cw-27H"/>
+                            <constraint firstItem="b8A-D0-OU9" firstAttribute="centerX" secondItem="7Bd-Hx-OOB" secondAttribute="centerX" id="BNp-2q-lkl"/>
+                            <constraint firstItem="b8A-D0-OU9" firstAttribute="centerY" secondItem="7Bd-Hx-OOB" secondAttribute="centerY" id="DAN-dV-tN0"/>
                             <constraint firstAttribute="trailing" secondItem="7Bd-Hx-OOB" secondAttribute="trailing" constant="8" id="jkc-UX-Wyy"/>
                             <constraint firstItem="7Bd-Hx-OOB" firstAttribute="bottom" secondItem="gNo-F0-yRW" secondAttribute="top" constant="-124" id="wMM-rf-IbU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="建筑能效" id="9Yl-lA-00b"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="b8A-D0-OU9" id="ap4-06-fI2"/>
                         <outlet property="barChartView" destination="7Bd-Hx-OOB" id="39y-cE-hD2"/>
                     </connections>
                 </viewController>

@@ -24,6 +24,7 @@ class GenerateViewController: UIViewController {
         super.viewDidLoad()
         compareButton.layer.cornerRadius = 4
         substituteButton.layer.cornerRadius = 4
+        self.activityIndicator.color = UIColor.grayColor()
         
         self.barChartView.leftAxis.labelPosition = .OutsideChart
         self.barChartView.descriptionText = ""

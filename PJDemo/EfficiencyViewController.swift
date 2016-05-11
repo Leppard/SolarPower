@@ -11,30 +11,20 @@ import Charts
 
 class EfficiencyViewController: UIViewController {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var barChartView: BarChartView!
+    
     let mode = ["0","1","2"]
     let data :[Double] = [20.0,40.0,15.0]
-    @IBOutlet weak var barChartView: BarChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        drawMultiBarCharts(barChartView, dataPoints: mode, values: [data], barColor: [efficiencyColor], labels: ["Efficiency"])
-
-        // Do any additional setup after loading the view.
+        
+        self.activityIndicator.color = UIColor.grayColor()
+        self.activityIndicator.startAnimating()
+        self.barChartView.hidden = true
+        
+        // get data via API
+//        drawMultiBarCharts(barChartView, dataPoints: mode, values: [data], barColor: [efficiencyColor], labels: ["Efficiency"])
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
