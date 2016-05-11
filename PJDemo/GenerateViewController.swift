@@ -45,7 +45,7 @@ class GenerateViewController: UIViewController {
         
         switch self.segmentControl.selectedSegmentIndex{
         case 0:
-            DataApi.generateDayData({ (data: NSDictionary) -> Void in
+            DataApi.generateTotalDayData({ (data: NSDictionary) -> Void in
                 self.dailyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -61,7 +61,7 @@ class GenerateViewController: UIViewController {
             })
             
         case 1:
-            DataApi.generateMonthData({ (data: NSDictionary) -> Void in
+            DataApi.generateTotalMonthData({ (data: NSDictionary) -> Void in
                 self.monthlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -77,7 +77,7 @@ class GenerateViewController: UIViewController {
             })
             
         case 2:
-            DataApi.generateYearData({ (data: NSDictionary) -> Void in
+            DataApi.generateTotalYearData({ (data: NSDictionary) -> Void in
                 self.yearlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []

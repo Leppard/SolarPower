@@ -17,8 +17,9 @@ class DataApi {
     static let dateFormatter = NSDateFormatter()
     
     // MARK: power consume
+    // MARK: Total
     
-    static func consumeDayData(success: (NSDictionary) -> Void) {
+    static func consumeTotalDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
         let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
@@ -37,7 +38,7 @@ class DataApi {
         }
     }
     
-    static func consumeMonthData(success: (NSDictionary) -> Void) {
+    static func consumeTotalMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
         let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
@@ -56,7 +57,7 @@ class DataApi {
         }
     }
     
-    static func consumeYearData(success: (NSDictionary) -> Void) {
+    static func consumeTotalYearData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy"
         let urlString = kCONSUME_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
@@ -75,9 +76,69 @@ class DataApi {
         }
     }
     
-    // MARK: power generate
+    // MARK: Aircondition
     
-    static func generateDayData(success: (NSDictionary) -> Void) {
+    static func consumeAirDayData(success: (NSDictionary) -> Void) {
+        self.dateFormatter.dateFormat = "yyyy/MM/dd"
+        let urlString = kCONSUME_AIR.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, fullUrlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
+    static func consumeAirMonthData(success: (NSDictionary) -> Void) {
+        self.dateFormatter.dateFormat = "yyyy/MM"
+        let urlString = kCONSUME_AIR.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, fullUrlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
+    static func consumeAirYearData(success: (NSDictionary) -> Void) {
+        self.dateFormatter.dateFormat = "yyyy"
+        let urlString = kCONSUME_AIR.stringByAppendingString(dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, fullUrlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
+    // MARK: power generate
+    // MARK: Total
+    
+    static func generateTotalDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
         let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
@@ -96,7 +157,7 @@ class DataApi {
         }
     }
     
-    static func generateMonthData(success: (NSDictionary) -> Void) {
+    static func generateTotalMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
         let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
@@ -115,7 +176,7 @@ class DataApi {
         }
     }
     
-    static func generateYearData(success: (NSDictionary) -> Void) {
+    static func generateTotalYearData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy"
         let urlString = kGENERATE_TOTAL.stringByAppendingString(dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)

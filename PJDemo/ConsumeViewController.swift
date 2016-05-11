@@ -44,7 +44,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         
         switch self.segmentControl.selectedSegmentIndex{
         case 0:
-            DataApi.consumeDayData({ (data: NSDictionary) -> Void in
+            DataApi.consumeTotalDayData({ (data: NSDictionary) -> Void in
                 self.dailyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -52,6 +52,8 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
                     xArray.append(DataItem.time)
                     yArray.append(DataItem.value)
                 }
+                
+                DataApi.consumeTotalDayData(<#T##success: (NSDictionary) -> Void##(NSDictionary) -> Void#>)
                 //                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [unitsData_daily1,unitsData_daily2], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗","空调"])
                 drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [yArray], lineColor:[consumeColor], labels:["总耗"])
                 
@@ -61,7 +63,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
             })
         
         case 1:
-            DataApi.consumeMonthData({ (data: NSDictionary) -> Void in
+            DataApi.consumeTotalMonthData({ (data: NSDictionary) -> Void in
                 self.monthlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
@@ -78,7 +80,7 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
             })
             
         case 2:
-            DataApi.consumeYearData({ (data: NSDictionary) -> Void in
+            DataApi.consumeTotalYearData({ (data: NSDictionary) -> Void in
                 self.yearlyData = DataGroup.init(dictionary: data)
                 var xArray: [String] = []
                 var yArray: [Double] = []
