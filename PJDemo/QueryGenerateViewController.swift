@@ -1,36 +1,39 @@
 //
-//  QueryConsumeViewController.swift
+//  QueryGenerateViewController.swift
 //  PJDemo
 //
 //  Created by Leppard on 5/12/16.
 //  Copyright © 2016 apple. All rights reserved.
 //
 
+import Foundation
+
 import UIKit
 import Charts
 
-class QueryConsumeViewController: UIViewController, ChartViewDelegate {
+class QueryGenerateViewController: UIViewController, ChartViewDelegate {
     
-    @IBOutlet weak var lineChartView: LineChartView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var barChartView: BarChartView!
     @IBOutlet weak var pickerView: UIPickerView!
     
     let dateArray: [[String]] = [["2010", "2011", "2012", "2013", "2014", "2015", "2016"], ["--", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"], ["--", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.lineChartView.delegate = self
+        self.barChartView.delegate = self
         self.activityIndicator.color = UIColor.grayColor()
         self.activityIndicator.hidden = true
         
-        self.lineChartView.leftAxis.labelPosition = .OutsideChart
-        self.lineChartView.descriptionText = ""
+        self.barChartView.leftAxis.labelPosition = .OutsideChart
+        self.barChartView.descriptionText = ""
     }
-    
+
+
     @IBAction func startQuery(sender: AnyObject) {
         self.activityIndicator.startAnimating()
         self.activityIndicator.hidden = false
-        self.lineChartView.hidden = true
+        self.barChartView.hidden = true
         
         var dateString = ""
         for i in 0..<dateArray.count {
@@ -40,32 +43,25 @@ class QueryConsumeViewController: UIViewController, ChartViewDelegate {
             }
             dateString = dateString.stringByAppendingString(str+"/")
         }
-        DataApi.queryConsumeTotalData(dateString, success: { (data: NSDictionary) -> Void in
+        DataApi.queryGenerateTotalData(dateString, success: { (data: NSDictionary) -> Void in
             let totalData = DataGroup.init(dictionary: data)
             var xArray: [String] = []
-            var totalArray: [Double] = []
+            var yArray: [Double] = []
             for DataItem in totalData.list {
                 xArray.append(DataItem.time)
-                totalArray.append(DataItem.value)
+                yArray.append(DataItem.value)
             }
-            DataApi.queryConsumeAirData(dateString, success: { (data: NSDictionary) -> Void in
-                let airData = DataGroup.init(dictionary: data)
-                var airArray: [Double] = []
-                for DataItem in airData.list {
-                    airArray.append(DataItem.value)
-                }
+            drawMultiBarCharts(self.barChartView, dataPoints: xArray, values: [yArray], barColor: [generateColor], labels:["发电"])
             
-                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [totalArray, airArray], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗", "空调"])
-            
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.hidden = true
-                self.lineChartView.hidden = false
-            })
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.hidden = true
+            self.barChartView.hidden = false
         })
+
     }
 }
 
-extension QueryConsumeViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+extension QueryGenerateViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return self.dateArray.count

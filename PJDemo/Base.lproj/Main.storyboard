@@ -312,20 +312,6 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clZ-Cq-0T6">
                                         <rect key="frame" x="11" y="324" width="304" height="103"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s17-KP-Ycm">
-                                                <rect key="frame" x="87" y="29" width="130" height="46"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <state key="normal" title="耗电查询"/>
-                                                <connections>
-                                                    <segue destination="sdL-PQ-jcs" kind="push" id="6Jz-ZZ-unZ"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="s17-KP-Ycm" firstAttribute="centerY" secondItem="clZ-Cq-0T6" secondAttribute="centerY" id="3PS-m9-CrB"/>
-                                            <constraint firstItem="s17-KP-Ycm" firstAttribute="centerX" secondItem="clZ-Cq-0T6" secondAttribute="centerX" id="Lzv-RG-6gh"/>
-                                        </constraints>
                                     </view>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="idB-zf-Y9c">
                                         <rect key="frame" x="145" y="148.5" width="37" height="37"/>
@@ -366,7 +352,13 @@
                             <constraint firstAttribute="trailing" secondItem="Z2v-Q1-ncV" secondAttribute="trailing" id="ncl-DR-iCx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="建筑能耗" id="jDc-dL-0u1"/>
+                    <navigationItem key="navigationItem" title="建筑能耗" id="jDc-dL-0u1">
+                        <barButtonItem key="rightBarButtonItem" title="耗电查询" id="MLx-9n-WTf">
+                            <connections>
+                                <segue destination="sdL-PQ-jcs" kind="push" id="CP5-SC-vsA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="idB-zf-Y9c" id="wKQ-14-Kcr"/>
                         <outlet property="lineChartView" destination="ONu-5j-4kI" id="pcc-1Z-e7d"/>
@@ -1073,7 +1065,13 @@
                             <constraint firstItem="vyX-eV-Gze" firstAttribute="top" secondItem="kxt-M3-tLQ" secondAttribute="bottom" constant="8" symbolic="YES" id="tL9-Ss-5Am"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="光伏发电" id="3Vm-oW-H1g"/>
+                    <navigationItem key="navigationItem" title="光伏发电" id="3Vm-oW-H1g">
+                        <barButtonItem key="rightBarButtonItem" title="发电查询" id="bOz-wg-fp6">
+                            <connections>
+                                <segue destination="5Io-c3-IKj" kind="push" id="jff-QN-ML9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="UOK-DC-cv2" id="GWi-tK-UiV"/>
                         <outlet property="barChartView" destination="tLk-OC-DyM" id="852-ER-gYd"/>
@@ -1085,6 +1083,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWi-LL-pUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1129" y="1037"/>
+        </scene>
+        <!--Query Generate View Controller-->
+        <scene sceneID="bnJ-4K-XqO">
+            <objects>
+                <viewController id="5Io-c3-IKj" customClass="QueryGenerateViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Sd-Mk-vtx"/>
+                        <viewControllerLayoutGuide type="bottom" id="2eC-Hj-fO0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="av6-Wz-zFJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlw-CL-hVY">
+                                <rect key="frame" x="0.0" y="386" width="320" height="133"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5Io-c3-IKj" id="GqL-K2-eaF"/>
+                                    <outlet property="delegate" destination="5Io-c3-IKj" id="sVv-Z8-Pyy"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dj-2I-Fym" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="8" y="72" width="304" height="313"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="867-Ct-o1d">
+                                <rect key="frame" x="142" y="210" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zlw-CL-hVY" firstAttribute="top" secondItem="0dj-2I-Fym" secondAttribute="bottom" constant="1" id="0Qb-v5-QU3"/>
+                            <constraint firstItem="zlw-CL-hVY" firstAttribute="width" secondItem="av6-Wz-zFJ" secondAttribute="height" multiplier="40:71" id="28M-VX-zq4"/>
+                            <constraint firstItem="0dj-2I-Fym" firstAttribute="leading" secondItem="av6-Wz-zFJ" secondAttribute="leadingMargin" constant="-12" id="2Ym-Ix-hEx"/>
+                            <constraint firstItem="867-Ct-o1d" firstAttribute="centerX" secondItem="0dj-2I-Fym" secondAttribute="centerX" id="8YI-mG-LyM"/>
+                            <constraint firstItem="0dj-2I-Fym" firstAttribute="top" secondItem="6Sd-Mk-vtx" secondAttribute="bottom" constant="8" id="Oyj-DA-Mf8"/>
+                            <constraint firstItem="867-Ct-o1d" firstAttribute="centerY" secondItem="0dj-2I-Fym" secondAttribute="centerY" id="RoW-5G-tcc"/>
+                            <constraint firstItem="0dj-2I-Fym" firstAttribute="centerX" secondItem="av6-Wz-zFJ" secondAttribute="centerX" id="VIX-Ik-Tam"/>
+                            <constraint firstItem="2eC-Hj-fO0" firstAttribute="top" secondItem="zlw-CL-hVY" secondAttribute="bottom" id="cLu-eQ-too"/>
+                            <constraint firstItem="zlw-CL-hVY" firstAttribute="centerX" secondItem="av6-Wz-zFJ" secondAttribute="centerX" id="fKY-qM-b0X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0dj-2I-Fym" secondAttribute="trailing" constant="-12" id="kIR-zW-SqS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YOZ-an-G8N">
+                        <barButtonItem key="rightBarButtonItem" title="查询" id="p9A-Gt-DXK">
+                            <connections>
+                                <action selector="startQuery:" destination="5Io-c3-IKj" id="6GR-Y4-Bco"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="867-Ct-o1d" id="4Nw-mH-pzl"/>
+                        <outlet property="barChartView" destination="0dj-2I-Fym" id="Kle-Kc-Seu"/>
+                        <outlet property="pickerView" destination="zlw-CL-hVY" id="N9r-d9-kcp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZpB-Hh-XN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="1037"/>
         </scene>
         <!--Query Consume View Controller-->
         <scene sceneID="MCP-41-d3C">
@@ -1290,7 +1346,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxq-es-RUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1613" y="885"/>
+            <point key="canvasLocation" x="1916" y="899"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Xwq-sZ-NYd">

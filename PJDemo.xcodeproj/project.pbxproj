@@ -11,6 +11,7 @@
 		8C3680D71CD1DCCE003F20D6 /* DataApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680D61CD1DCCE003F20D6 /* DataApi.swift */; };
 		8C3680DB1CD1EB38003F20D6 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680DA1CD1EB38003F20D6 /* GlobalConstants.swift */; };
 		8C3680DD1CD21BDA003F20D6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3680DC1CD21BDA003F20D6 /* DataModel.swift */; };
+		8C6C3C9D1CE46D5A00FD9D04 /* QueryGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6C3C9C1CE46D5A00FD9D04 /* QueryGenerateViewController.swift */; };
 		8CA5BBF41CD73F4F006F96A1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA5BBE51CD73F3B006F96A1 /* Alamofire.framework */; };
 		8CA5BBF51CD73F4F006F96A1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA5BBE51CD73F3B006F96A1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CE6B8031CE45ACB00E7208F /* QueryConsumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6B8021CE45ACB00E7208F /* QueryConsumeViewController.swift */; };
@@ -168,6 +169,7 @@
 		8C3680D61CD1DCCE003F20D6 /* DataApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataApi.swift; sourceTree = "<group>"; };
 		8C3680DA1CD1EB38003F20D6 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		8C3680DC1CD21BDA003F20D6 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		8C6C3C9C1CE46D5A00FD9D04 /* QueryGenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryGenerateViewController.swift; sourceTree = "<group>"; };
 		8CA5BBDA1CD73F3B006F96A1 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		8CE6B8021CE45ACB00E7208F /* QueryConsumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryConsumeViewController.swift; sourceTree = "<group>"; };
 		941151DC1CD0A92F007844E4 /* PredictStateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictStateViewController.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				941151DC1CD0A92F007844E4 /* PredictStateViewController.swift */,
 				941151E01CD102F2007844E4 /* ComparisonViewController.swift */,
 				8CE6B8021CE45ACB00E7208F /* QueryConsumeViewController.swift */,
+				8C6C3C9C1CE46D5A00FD9D04 /* QueryGenerateViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6C3C9D1CE46D5A00FD9D04 /* QueryGenerateViewController.swift in Sources */,
 				9446585F1CCC8CE200CE54E0 /* PredictViewController.swift in Sources */,
 				94964BEE1CCFA80E00E95DEB /* ResetPasswordViewController.swift in Sources */,
 				945D2FAC1CCE6A6200DB3138 /* SpinningView.swift in Sources */,
