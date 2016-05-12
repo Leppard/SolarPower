@@ -79,6 +79,24 @@ class DataApi {
         }
     }
     
+    static func queryConsumeTotalData(date: String , success: (NSDictionary) -> Void) {
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(date)
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, fullUrlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
     // MARK: Aircondition
     
     static func consumeAirDayData(success: (NSDictionary) -> Void) {
@@ -122,6 +140,24 @@ class DataApi {
     static func consumeAirYearData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy"
         let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015" : dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, fullUrlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
+    static func queryConsumeAirData(date: String , success: (NSDictionary) -> Void) {
+        let urlString = kCONSUME_AIR.stringByAppendingString(date)
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -182,6 +218,24 @@ class DataApi {
     static func generateTotalYearData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy"
         let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015" : dateFormatter.stringFromDate(self.date))
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
+        let params = ["Content-type": "application/json", ]
+        Alamofire.request(.GET, fullUrlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+    
+    static func queryGenerateTotalData(date: String , success: (NSDictionary) -> Void) {
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(date)
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)

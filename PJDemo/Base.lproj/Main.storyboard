@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -311,6 +312,20 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clZ-Cq-0T6">
                                         <rect key="frame" x="11" y="324" width="304" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s17-KP-Ycm">
+                                                <rect key="frame" x="87" y="29" width="130" height="46"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <state key="normal" title="耗电查询"/>
+                                                <connections>
+                                                    <segue destination="sdL-PQ-jcs" kind="push" id="6Jz-ZZ-unZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="s17-KP-Ycm" firstAttribute="centerY" secondItem="clZ-Cq-0T6" secondAttribute="centerY" id="3PS-m9-CrB"/>
+                                            <constraint firstItem="s17-KP-Ycm" firstAttribute="centerX" secondItem="clZ-Cq-0T6" secondAttribute="centerX" id="Lzv-RG-6gh"/>
+                                        </constraints>
                                     </view>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="idB-zf-Y9c">
                                         <rect key="frame" x="145" y="148.5" width="37" height="37"/>
@@ -557,7 +572,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7V5-GR-KHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="icP-SV-X9l" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="874" y="1815"/>
+            <point key="canvasLocation" x="605" y="1853"/>
         </scene>
         <!--Predict-->
         <scene sceneID="Ilj-19-mi0">
@@ -1070,6 +1085,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EWi-LL-pUU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1129" y="1037"/>
+        </scene>
+        <!--Query Consume View Controller-->
+        <scene sceneID="MCP-41-d3C">
+            <objects>
+                <viewController id="sdL-PQ-jcs" customClass="QueryConsumeViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G8S-5s-5HK"/>
+                        <viewControllerLayoutGuide type="bottom" id="eQG-Wy-ciH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q8t-QQ-H75">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NyD-Yf-BwO" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="8" y="72" width="304" height="313"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                            </view>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grj-qN-X0A">
+                                <rect key="frame" x="0.0" y="386" width="320" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="grj-qN-X0A" secondAttribute="height" multiplier="320:133" id="Q16-2E-6SL"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="sdL-PQ-jcs" id="XkJ-fh-bWV"/>
+                                    <outlet property="delegate" destination="sdL-PQ-jcs" id="Shl-hz-cyC"/>
+                                </connections>
+                            </pickerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lXA-7h-CxF">
+                                <rect key="frame" x="142" y="210" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="grj-qN-X0A" firstAttribute="top" secondItem="NyD-Yf-BwO" secondAttribute="bottom" constant="1" id="7IZ-tc-tfn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NyD-Yf-BwO" secondAttribute="trailing" constant="-12" id="OB0-2d-OOd"/>
+                            <constraint firstItem="grj-qN-X0A" firstAttribute="centerX" secondItem="Q8t-QQ-H75" secondAttribute="centerX" id="V7i-rC-lNl"/>
+                            <constraint firstItem="lXA-7h-CxF" firstAttribute="centerX" secondItem="NyD-Yf-BwO" secondAttribute="centerX" id="a0W-50-W9R"/>
+                            <constraint firstItem="NyD-Yf-BwO" firstAttribute="centerX" secondItem="Q8t-QQ-H75" secondAttribute="centerX" id="cPU-nu-6Ak"/>
+                            <constraint firstItem="lXA-7h-CxF" firstAttribute="centerY" secondItem="NyD-Yf-BwO" secondAttribute="centerY" id="dc8-CM-OIG"/>
+                            <constraint firstItem="NyD-Yf-BwO" firstAttribute="top" secondItem="G8S-5s-5HK" secondAttribute="bottom" constant="8" id="dvC-CY-oDj"/>
+                            <constraint firstItem="eQG-Wy-ciH" firstAttribute="top" secondItem="grj-qN-X0A" secondAttribute="bottom" id="m6q-BX-cby"/>
+                            <constraint firstItem="NyD-Yf-BwO" firstAttribute="leading" secondItem="Q8t-QQ-H75" secondAttribute="leadingMargin" constant="-12" id="uqf-bO-yk6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="m5t-sd-Fx0">
+                        <barButtonItem key="rightBarButtonItem" title="查询" id="zGR-pq-Mgn">
+                            <connections>
+                                <action selector="startQuery:" destination="sdL-PQ-jcs" id="jgh-4H-N0C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="lXA-7h-CxF" id="IHg-Tc-q7d"/>
+                        <outlet property="lineChartView" destination="NyD-Yf-BwO" id="e8E-Uf-Z38"/>
+                        <outlet property="pickerView" destination="grj-qN-X0A" id="GhC-Sq-OCA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Neb-9B-ODc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1003" y="1853"/>
         </scene>
         <!--Consume vs. Generate-->
         <scene sceneID="f3v-cg-Hgc">
