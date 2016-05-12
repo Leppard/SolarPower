@@ -14,9 +14,6 @@ class EfficiencyViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var barChartView: BarChartView!
     
-    let mode = ["0","1","2"]
-    let data :[Double] = [20.0,40.0,15.0]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +21,22 @@ class EfficiencyViewController: UIViewController {
         self.activityIndicator.startAnimating()
         self.barChartView.hidden = true
         
-        // get data via API
-//        drawMultiBarCharts(barChartView, dataPoints: mode, values: [data], barColor: [efficiencyColor], labels: ["Efficiency"])
+        DataApi.consumeTotalYearData({ (data: NSDictionary) -> Void in
+            let totalValue = DataGroup.init(dictionary: data).total
+            
+            DataApi.consumeAirYearData({ (data: NSDictionary) -> Void in
+                let airValue = DataGroup.init(dictionary: data).total
+                
+                let otherValue = totalValue - airValue
+                
+                drawMultiBarCharts(self.barChartView, dataPoints: ["总能耗", "季节能耗", "非季节能耗"], values: [[totalValue, airValue, otherValue]], barColor: [efficiencyColor], labels: ["建筑能效"])
+                
+                self.activityIndicator.stopAnimating()
+                self.activityIndicator.hidden = true
+                self.barChartView.hidden = false
+            })
+        })
+
+
     }
 }
