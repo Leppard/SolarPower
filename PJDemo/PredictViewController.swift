@@ -77,7 +77,8 @@ class PredictViewController: UIViewController ,UITableViewDelegate, UITableViewD
     {
         predictChartView.clear()
         let powerSet =  self.getAllPredictPower(self.temperaturePredict)
-        drawLineCharts(self.predictChartView, dataPoints: dateArray, values: powerSet)
+//        drawLineCharts(self.predictChartView, dataPoints: dateArray, values: powerSet)
+        drawSingleLineChart(self.predictChartView, dataPoints: dateArray, values: powerSet, color: consumeColor)
     }
     
     override func viewDidLoad() {

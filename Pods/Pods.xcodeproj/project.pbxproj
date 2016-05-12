@@ -23,17 +23,32 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>0114B187F6D976BC9C18710F98DF1182</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFProductTableViewController.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/ProductTableViewController/PFProductTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>01BA92CE350AB5A0B4867F7032520439</key>
 		<dict>
 			<key>fileRef</key>
-			<string>621C75CC7C5A0E42F49D763C040CA4B3</string>
+			<string>501DCE5405C20FE8AA2F85E15E27A84F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>0271BB929A340FDB58C4E60A5379A1DD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A79367D60278AFE69A3630E0ABC0AF04</string>
+			<string>92CEFDF5B9EFA61670F668A08210AE4A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -60,7 +75,7 @@
 		<key>0498551E82AA21A13075932D6AD4026B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>785DF5075F24B4D10FAE01391771B14F</string>
+			<string>8ABB1170A5CC7562B104BB4F93B13F24</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -71,7 +86,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>05FD24FC1AAEC77DF5B9FC4218DE71E3</key>
+		<key>0649EA51EEB02F91BF45EEA453C939C6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -79,10 +94,8 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFRect.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFRect.h</string>
+			<string>PFNullability.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -97,7 +110,20 @@
 			<key>targetProxy</key>
 			<string>C0EC5469F39FEC78C6A19C867C3599C0</string>
 		</dict>
-		<key>092C3FBAAA04F5744A7ADDEC24DC1D4A</key>
+		<key>072E5E5FE68796881F10295225F414CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFAnonymousUtils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>074065A22BE0BF7C5F9D16BABF0512B2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -106,9 +132,66 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFQueryCollectionViewController.m</string>
+			<string>PFSignUpView.m</string>
 			<key>path</key>
-			<string>ParseUI/Classes/QueryCollectionViewController/PFQueryCollectionViewController.m</string>
+			<string>ParseUI/Classes/SignUpViewController/PFSignUpView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0758D281980EFF73FFF8B7995F857167</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>87E819E3D709CD59F178D27406DCB8DB</string>
+				<string>3282B77147A7636A6C745F1AD1D511A1</string>
+				<string>43A9F0780AEEC8D14D56BFDB796BD8D8</string>
+				<string>515F0028C53B32543AE54439A73C625B</string>
+				<string>928C4C64A8D5AB87274B36D64A943DFE</string>
+				<string>10BDCEF298AB7A5C3B1C69025F52DA20</string>
+				<string>79A27A6D1D152573F9213C0040568A78</string>
+				<string>5E688CFACBC5079D14CBA7DC8A256F26</string>
+				<string>09DD1DE40531CA6821F61415A620FFA2</string>
+				<string>40EC865D3D6CCE2EF6767DD349448903</string>
+				<string>BDFA21F6EEAA3C08B3A9D9400322F0DA</string>
+				<string>CFED606410B2BB5FB4B14D1E65128E35</string>
+				<string>CBE356C006EF794246C95F736E332460</string>
+				<string>EDFAD2A2DAED692136B8433A2C2BF151</string>
+				<string>CD4AA0F4BCEC8752F788FE971403357E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Tasks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>098684E58720F0B948C67B5F92E263B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFProductTableViewController.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/ProductTableViewController/PFProductTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09DD1DE40531CA6821F61415A620FFA2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BFTask.h</string>
+			<key>path</key>
+			<string>Bolts/Common/BFTask.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -126,7 +209,27 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>0AF5F8F6A6F9C3CC3739417F882B09D6</key>
+		<key>0A0BF7FBBD8ED8EF387E245412707857</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFPush.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0C3BE2C46881453E1CF2831E2A6C37CA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>59D1C99C2374806086903AFBE8B10F76</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0CDCE201A90803703D413FE8D9D1BE2F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -135,33 +238,82 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFSignUpView.m</string>
+			<string>PFLogInView.m</string>
 			<key>path</key>
-			<string>ParseUI/Classes/SignUpViewController/PFSignUpView.m</string>
+			<string>ParseUI/Classes/LogInViewController/PFLogInView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0C3BE2C46881453E1CF2831E2A6C37CA</key>
+		<key>0D789E34F185D9803EFC4114E4564E8F</key>
 		<dict>
-			<key>fileRef</key>
-			<string>3BA61CE4F95AAEFCD09230DC48D706C3</string>
+			<key>children</key>
+			<array>
+				<string>BDDAA949F6203821B83A1B355B2513BB</string>
+				<string>AFF649E30810621D264FE740E69E9E5C</string>
+				<string>6E7730A9ADAAAFD1425644B9F095EAC1</string>
+				<string>CAE80756DFE0A7EC30F03711076FFF33</string>
+				<string>1198830E5B1F79540FD3ADEF1A04183C</string>
+				<string>C53B85CA79AEE0B6303014B230CA4AD7</string>
+				<string>2652133B644676064A1D58666CFBADE0</string>
+				<string>0E63C1684BB9CD55E1C398DFA6C2A1B4</string>
+				<string>E78D4B5F3AC560330959D9A13C3F3D01</string>
+				<string>501DCE5405C20FE8AA2F85E15E27A84F</string>
+				<string>D8F3F15F9448AB765EDCFA37146F9D5E</string>
+				<string>22EA785FBF5463B8B20154A4A7998C43</string>
+				<string>4FF883B4C309BB6905F69FEFDAE189DF</string>
+				<string>7EC65363CDDAEAD9F53AC8722B8C398F</string>
+				<string>6FFFFEC6272D9590E3431721C6A019A3</string>
+				<string>59D1C99C2374806086903AFBE8B10F76</string>
+				<string>3B12F79E80DE34A69EEDE274885CA0F6</string>
+				<string>30FE71154943719A8FAEF53A423B50A6</string>
+				<string>C3DF72429B7335CE1241BD58B15445A7</string>
+				<string>B5183666C931CE8480520CB6ADCA2CB9</string>
+				<string>9804D490001CB210923E9701B8E982EB</string>
+				<string>CA604C67CAB72A4B65C40013518326F8</string>
+				<string>F78E7B4306C14B37418D20802BFC42AA</string>
+				<string>23B6BBEEEC72E57AE9006B504880804B</string>
+				<string>0D9A220D45B5E9492544B99A08C7F01C</string>
+				<string>BDBA12BB1FF533646D4FA8B9AEE6BC33</string>
+				<string>0CDCE201A90803703D413FE8D9D1BE2F</string>
+				<string>AB5894B7D679F9D9CF499D57503094B3</string>
+				<string>B59E2BF6E7DB88FF318D1BE512E8A1EE</string>
+				<string>BFE1608E20BD3861468A9DFD295F8376</string>
+				<string>2A0A615E79B46E6043569EFB066182A8</string>
+				<string>098684E58720F0B948C67B5F92E263B2</string>
+				<string>0114B187F6D976BC9C18710F98DF1182</string>
+				<string>EED843A09E78D25D86D1CBAFF3EF1C25</string>
+				<string>5EF36EAA66FD8548464951A1D986FF15</string>
+				<string>1DC5CD9D5BE92DEB0FCB26AC176BB7A8</string>
+				<string>E8EABC50977C7AFCBF86FB39587993C8</string>
+				<string>92CEFDF5B9EFA61670F668A08210AE4A</string>
+				<string>49239E8C5A260DCF9793EC83685F1B25</string>
+				<string>BC5D5E72656E9159DA65156A59047D47</string>
+				<string>856A123F3837A101683820B5CF6533CC</string>
+				<string>FB419E4B82FDC8C584932C3B8A16C816</string>
+				<string>B1E2DC6A1B29C22926F96667D1EEB725</string>
+				<string>517D3E0C6E3E58ABAF650CE014BD0F60</string>
+				<string>074065A22BE0BF7C5F9D16BABF0512B2</string>
+				<string>4949404D15C97A2C3D82579375DF348D</string>
+				<string>4F0BE56B7F1AD77B29FF4E025A0F3FC9</string>
+				<string>53ECA1952D0F3C7818544F550276EBFF</string>
+				<string>5B9B2845027F492B195FA7E9817C11B4</string>
+				<string>B7F6B875E4928FDDD920DE3A80396991</string>
+				<string>FA9FC03FBFC116CC4A7C5CC3A1CE236A</string>
+				<string>B8FB139AC114A3A868AE3B593327DA72</string>
+				<string>168D3DEDB328B4D378D832D120A37EC2</string>
+				<string>C730382540772CCEBE42F0B664882380</string>
+				<string>F78CE00BBB5F9B3D4B94421C7D22D2B9</string>
+			</array>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0CEFDBADC58112ADD62616042ADC80FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ParseUI</string>
 			<key>path</key>
-			<string>ParseUI-prefix.pch</string>
+			<string>ParseUI</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0DC66C6394017D57525A938357F870F9</key>
+		<key>0D9A220D45B5E9492544B99A08C7F01C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -170,9 +322,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFImageView.h</string>
+			<string>PFLocalization.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Views/PFImageView.h</string>
+			<string>ParseUI/Classes/Internal/PFLocalization.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -183,7 +335,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>0EABC66DBF11D415B26686DDA5CB42A0</key>
+		<key>0E63C1684BB9CD55E1C398DFA6C2A1B4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -192,16 +344,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFCollectionViewCell.m</string>
+			<string>PFActivityIndicatorTableViewCell.m</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Cells/PFCollectionViewCell.m</string>
+			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorTableViewCell.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>0FFA8D12E2B23F91AAF739999C30FE18</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A973477ADCE0E0E078C4B2A62DC22502</string>
+			<string>BDBA12BB1FF533646D4FA8B9AEE6BC33</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -232,6 +384,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>10BDCEF298AB7A5C3B1C69025F52DA20</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BFCancellationTokenSource.m</string>
+			<key>path</key>
+			<string>Bolts/Common/BFCancellationTokenSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>11901E03200246C6C68F137AA8FFCFA6</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -247,18 +414,18 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>12067EEF2CF0FCC39A4E3F80A466016C</key>
+		<key>1198830E5B1F79540FD3ADEF1A04183C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BFCancellationTokenRegistration.m</string>
+			<string>PFActivityIndicatorCollectionReusableView.h</string>
 			<key>path</key>
-			<string>Bolts/Common/BFCancellationTokenRegistration.m</string>
+			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorCollectionReusableView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -294,34 +461,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>12E32222E0013D377A06850AF36F0066</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFSession.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>12FDBD75ABE82A6A717E9E7F3A5C51B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFResources.h</string>
-			<key>path</key>
-			<string>ParseUI/Generated/PFResources.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>1340C6F8334E4DB89AE6451B5C07E726</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -337,23 +476,10 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>138CDCFAEF3A4C2122BA853AAF3C8BDA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>path</key>
-			<string>libParseLib.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>15249CCE9F034E123E410F02F3008D64</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D5F1A16678DC81F976AA2E7C022176EE</string>
+			<string>1DC7534431C7143D8196AF9BFF7F0A67</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -367,7 +493,7 @@
 		<key>153A92D7611FE98B8F1105359B8EA798</key>
 		<dict>
 			<key>fileRef</key>
-			<string>345B2F5171D6C01C78E3492B1BFC6809</string>
+			<string>EED843A09E78D25D86D1CBAFF3EF1C25</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -381,7 +507,7 @@
 		<key>165112F9E6A11D456459D3AA32918BC6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A059C2606E6F7D8135B28DE491665915</string>
+			<string>F78E7B4306C14B37418D20802BFC42AA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -399,10 +525,25 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>168D3DEDB328B4D378D832D120A37EC2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFTextField.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Views/PFTextField.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>16C7AB36E50B1B3062260FCB05A48D12</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DBBE7012CDCD78376A88DB9C18C45BD1</string>
+			<string>517D3E0C6E3E58ABAF650CE014BD0F60</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -416,7 +557,7 @@
 		<key>174469D9701FA13F29071D1330C19214</key>
 		<dict>
 			<key>fileRef</key>
-			<string>92CBE18F1FCB839E2D5F08821545B772</string>
+			<string>BDFA21F6EEAA3C08B3A9D9400322F0DA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -427,7 +568,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>17ACBAC03F2B5877A17F31BFD9226BB8</key>
+		<key>199BC0F05F1FD6D8482DDEA7554FF75C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -436,7 +577,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>PFConstants.h</string>
+			<string>PFPurchase.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -456,7 +597,7 @@
 		<key>1A5265AED690F03D97211A95F1A43DDC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>428B9F9767EC8B9F52B623950306A81F</string>
+			<string>4EBFDD3CC9544C417059FA340AA121A2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -470,14 +611,14 @@
 		<key>1BE264FC57A39CD6D3251020C710744A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2CA51EF42850F12FA4AA35704E21810A</string>
+			<string>5EF36EAA66FD8548464951A1D986FF15</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>1C9A2271DA3A40CEFFF681F3820BDE68</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F03B0B7A58D155E3452DB984C09BF336</string>
+			<string>BFE1608E20BD3861468A9DFD295F8376</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -488,10 +629,38 @@
 				</array>
 			</dict>
 		</dict>
+		<key>1DC5CD9D5BE92DEB0FCB26AC176BB7A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFQueryCollectionViewController.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/QueryCollectionViewController/PFQueryCollectionViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1DC7534431C7143D8196AF9BFF7F0A67</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFACL.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>1E48D26229877323D17BD9378FCCF596</key>
 		<dict>
 			<key>fileRef</key>
-			<string>820979B11D37F54EF8EE5933DBFA5430</string>
+			<string>3309483898C42D4297B2FB098B2771F1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -505,22 +674,20 @@
 		<key>1E77C11B047DC15CBB965E18624B7F58</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F2B046D4879232D69BF018DA14798421</string>
+			<string>CA604C67CAB72A4B65C40013518326F8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>1FBAE04013F2D0D3ED92ACDAA4EB7C00</key>
+		<key>1FA631C5AC15A29BCBC7CCF1081F2834</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>BFExecutor.m</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Bolts/Common/BFExecutor.m</string>
+			<string>PFNetworkActivityIndicatorManager.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -537,22 +704,7 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>20985CD463DD0871E4CD82E55B40EAC9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFQueryCollectionViewController.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/QueryCollectionViewController/PFQueryCollectionViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>229428FCE2EDD051B2C7E58DEDFD8DA8</key>
+		<key>212676B512BFE8C236771333EAA09CDC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -561,57 +713,58 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Bolts-prefix.pch</string>
+			<string>PFUser.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>229790C8556D4AB68E5F8761B10E04DF</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2BFEC8CCC08D72D550E7C5E0DA3B9D32</string>
+			<string>0114B187F6D976BC9C18710F98DF1182</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>22A2FF09D05B081DBC60615EFC8D963C</key>
+		<key>22EA785FBF5463B8B20154A4A7998C43</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFCollectionViewCell.m</string>
 			<key>path</key>
-			<string>PFObject+Subclass.h</string>
+			<string>ParseUI/Classes/Cells/PFCollectionViewCell.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>22FBFCFC443D65A67E54EFD102B54954</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B69FCCDEE6F6E19FE212AD5D46F3E3B2</string>
+			<string>49239E8C5A260DCF9793EC83685F1B25</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>23972BF4B27D076B83BB96C1F29D2D49</key>
+		<key>23B6BBEEEC72E57AE9006B504880804B</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>568B43C33D3C697669D34BA93301F1F5</string>
-				<string>825E02BF678E9D126D77C2648EA960E0</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Bolts</string>
+			<string>PFLoadingView.m</string>
 			<key>path</key>
-			<string>Bolts</string>
+			<string>ParseUI/Classes/Internal/Views/PFLoadingView.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2526D24966F0C7690740348125464638</key>
 		<dict>
 			<key>fileRef</key>
-			<string>65D40472B1B793A5C247C82C43B5685A</string>
+			<string>CD4AA0F4BCEC8752F788FE971403357E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -622,7 +775,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>25A31988041810EB59E1750C99DE510A</key>
+		<key>2652133B644676064A1D58666CFBADE0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -630,21 +783,10 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFActivityIndicatorTableViewCell.h</string>
 			<key>path</key>
-			<string>PFAnalytics.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>26F1320A0D47462FB138A277F0F16732</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Parse.xcconfig</string>
+			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorTableViewCell.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -664,37 +806,11 @@
 		<key>294508C6C209BD2608B05E5F54F30B3E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B6D8AC212E0A11F894C4B3B30230B3F9</string>
+			<string>168D3DEDB328B4D378D832D120A37EC2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>2B6B5AF48A70C96386462A5B16087121</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Bolts.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BC750A6C7C22C7BAF7AE1A73CDF8372</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFSubclassing.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BFEC8CCC08D72D550E7C5E0DA3B9D32</key>
+		<key>2A0A615E79B46E6043569EFB066182A8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -703,24 +819,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFProductTableViewController.m</string>
+			<string>PFPrimaryButton.m</string>
 			<key>path</key>
-			<string>ParseUI/Classes/ProductTableViewController/PFProductTableViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2CA51EF42850F12FA4AA35704E21810A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFPurchaseTableViewCell.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Cells/PFPurchaseTableViewCell.m</string>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFPrimaryButton.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -738,23 +839,10 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>2E0118151BA19EB0C69B142D84F0F4F8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Parse-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>2E2A6E2A5C55C28191EC83907B8B2FEB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D6F4E54CEA3277AEE3CB837B7CDAA2A2</string>
+			<string>C3DF72429B7335CE1241BD58B15445A7</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -768,7 +856,7 @@
 		<key>2EB551F694532052AF3C30A741D1C49C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>CC2E4CB12A14FA8DF212A12871DB7A24</string>
+			<string>0D9A220D45B5E9492544B99A08C7F01C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -779,20 +867,19 @@
 				</array>
 			</dict>
 		</dict>
-		<key>2F6CAA077C4074928CAE586F64C4F575</key>
+		<key>2F554C6C665514D4AEF9CC3B141C4D05</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>532935540613E6E77D955E3A8E0C254E</string>
-				<string>94C6FCD13A83972160293D94622427C1</string>
-				<string>0CEFDBADC58112ADD62616042ADC80FA</string>
+				<string>92E47F18124DB0B35DC5A92701A953BA</string>
+				<string>6259D586E016FA62D5DF905F8A85719F</string>
+				<string>0D789E34F185D9803EFC4114E4564E8F</string>
+				<string>EAED8908A01AFC758870D1EB15BEAA94</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/ParseUI</string>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -826,11 +913,11 @@
 		<key>304E5450213224ADFAA7D7CC49D0217F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>A1F1D26E1126068883EBC40EBE5386DF</string>
+			<string>23B6BBEEEC72E57AE9006B504880804B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>30D7CD47E1EFA8A1EC09AD6E16A15AA9</key>
+		<key>30FE71154943719A8FAEF53A423B50A6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -839,9 +926,76 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFActivityIndicatorTableViewCell.m</string>
+			<string>PFImage.m</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorTableViewCell.m</string>
+			<string>ParseUI/Classes/Internal/Extensions/PFImage.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3177520AB56113C340C01443F0CD7E9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFSubclassing.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>323AF5EF8148AA937B55AD5C5321FA71</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFCloud.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3259463222EC54873D7B7D305BC42CF3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>ParseUI.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3282B77147A7636A6C745F1AD1D511A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BFCancellationToken.m</string>
+			<key>path</key>
+			<string>Bolts/Common/BFCancellationToken.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3309483898C42D4297B2FB098B2771F1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFConfig.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -859,25 +1013,10 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>345B2F5171D6C01C78E3492B1BFC6809</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFPurchaseTableViewCell.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Cells/PFPurchaseTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>34880D11F912F172EF67F358D0612FB8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F6990A4D483C4F5DA78BD5A2BBFCA25B</string>
+			<string>AB5894B7D679F9D9CF499D57503094B3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -887,26 +1026,11 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>3552F466066D3B20ABE2ADDCA2A48147</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>BFTaskCompletionSource.m</string>
-			<key>path</key>
-			<string>Bolts/Common/BFTaskCompletionSource.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>35B7134D9A084CC992F119BFD8DDA729</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9102B11129EEFF1279DC3A09A3D250DB</string>
+			<string>09DD1DE40531CA6821F61415A620FFA2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -916,21 +1040,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>36BD20A5E6B5E33D4E5D9E998552CD57</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFTextField.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Views/PFTextField.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>37DB56D75062CC75FCB0966E1C6E8A8E</key>
 		<dict>
@@ -955,7 +1064,7 @@
 		<key>3897DE8420ED23EDEFCA0A2EE271A945</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>26F1320A0D47462FB138A277F0F16732</string>
+			<string>B539BAF4124CBF25759BC59051774844</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -986,33 +1095,18 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>3BA61CE4F95AAEFCD09230DC48D706C3</key>
+		<key>3B12F79E80DE34A69EEDE274885CA0F6</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFDismissButton.m</string>
+			<string>PFImage.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFDismissButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D42ECC6BFABC448BC37FA0473E2C5F6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFTableViewCell.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Cells/PFTableViewCell.m</string>
+			<string>ParseUI/Classes/Internal/Extensions/PFImage.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1033,7 +1127,7 @@
 		<key>3D98E0B85ECAF7ACC77DCA022DC6A1FF</key>
 		<dict>
 			<key>fileRef</key>
-			<string>17ACBAC03F2B5877A17F31BFD9226BB8</string>
+			<string>A189949E6A6D43E0062404C2060F700D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1043,41 +1137,11 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>3E6B52C0AD1DF7119678860653E62CF4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFActivityIndicatorTableViewCell.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3F05F18763934439B1255C370434F248</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFTextButton.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFTextButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3FD5E8D743033DAE426E52B9EDFFA59D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DD0D66E928FC91F59D00C3E5DEA0BD0E</string>
+			<string>323AF5EF8148AA937B55AD5C5321FA71</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1088,25 +1152,10 @@
 				</array>
 			</dict>
 		</dict>
-		<key>4012CFEC0EE1ED9C09717947B201ECD2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFActivityIndicatorCollectionReusableView.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorCollectionReusableView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>40A2AC297B0610F6C841FC8FBB44926F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8C88AE3DB54B4DFBF32D8F7C3032C1A7</string>
+			<string>3B12F79E80DE34A69EEDE274885CA0F6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1117,7 +1166,29 @@
 				</array>
 			</dict>
 		</dict>
-		<key>4154D17D90957877084FA7B1F1E1DB86</key>
+		<key>40EC865D3D6CCE2EF6767DD349448903</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BFTask.m</string>
+			<key>path</key>
+			<string>Bolts/Common/BFTask.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4173272F66C562D0BFC073B781B05F9B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5B9B2845027F492B195FA7E9817C11B4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4215940A78C8CD6EC5375FFA7BB77E28</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1126,21 +1197,27 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>PFFile.h</string>
+			<string>PFSession.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4173272F66C562D0BFC073B781B05F9B</key>
+		<key>4248172C855F86619FA6573FE8C5DBD4</key>
 		<dict>
-			<key>fileRef</key>
-			<string>3D42ECC6BFABC448BC37FA0473E2C5F6</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFInstallation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4273CAD1457F19E15F88C8BD3861D27F</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>532935540613E6E77D955E3A8E0C254E</string>
+			<string>3259463222EC54873D7B7D305BC42CF3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1171,19 +1248,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>428B9F9767EC8B9F52B623950306A81F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFTwitterUtils.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>42A37823C86787D2B618F32A391FE4FD</key>
 		<dict>
 			<key>fileRef</key>
@@ -1207,7 +1271,7 @@
 		<key>439A9B4DFF10C46047A1E2A4DCFA88EF</key>
 		<dict>
 			<key>fileRef</key>
-			<string>74D497BF24F4D977DB03D13B7CF03B38</string>
+			<string>9CD73C2082B8BE62EFE766A1838B3874</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1218,14 +1282,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>45F7A7965148A7E0D9FA943FC5C4B45F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>092C3FBAAA04F5744A7ADDEC24DC1D4A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>45FD44D02B5C14D6B44F8C1EBDA0431F</key>
+		<key>43A9F0780AEEC8D14D56BFDB796BD8D8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1234,16 +1291,36 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFTableViewCell.h</string>
+			<string>BFCancellationTokenRegistration.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Cells/PFTableViewCell.h</string>
+			<string>Bolts/Common/BFCancellationTokenRegistration.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>442AC7D492FE80025A63AACC1693D590</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Bolts-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45F7A7965148A7E0D9FA943FC5C4B45F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8EABC50977C7AFCBF86FB39587993C8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>463A691EEC2FEAD456DA5271C17E5518</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>26F1320A0D47462FB138A277F0F16732</string>
+			<string>B539BAF4124CBF25759BC59051774844</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1287,25 +1364,10 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>46A058FA94D65FEC96B77A777BA4A9DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFImageCache.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/PFImageCache.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>47B0D0AE6587A3221848E1449F43883B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>12E32222E0013D377A06850AF36F0066</string>
+			<string>4215940A78C8CD6EC5375FFA7BB77E28</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1316,27 +1378,25 @@
 				</array>
 			</dict>
 		</dict>
-		<key>4818361AB73D5C94B7CFDA08AB5790B3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FCFB095A22D0C45E54C65678126AA9DA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4827B300F42B7B097DC7E392970D5183</key>
+		<key>47BA35A7AFD6311ADF5E9EC54B9A0F42</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFActionButton.m</string>
+			<string>archive.ar</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFActionButton.m</string>
+			<string>libParseLib.a</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4818361AB73D5C94B7CFDA08AB5790B3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>40EC865D3D6CCE2EF6767DD349448903</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>48B174A9A620E44AC4616ACC3B8FF893</key>
 		<dict>
@@ -1371,10 +1431,40 @@
 			<key>remoteInfo</key>
 			<string>Parse</string>
 		</dict>
+		<key>49239E8C5A260DCF9793EC83685F1B25</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFQueryTableViewController.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/QueryTableViewController/PFQueryTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4949404D15C97A2C3D82579375DF348D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFSignUpViewController.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/SignUpViewController/PFSignUpViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>495841439A74D0BE73996377980B62F6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>999869B863B3218EA1471726B32ABA4D</string>
+			<string>0649EA51EEB02F91BF45EEA453C939C6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1384,19 +1474,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>4B4C07A9752FB24AE6C5C8E6069B982B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFQuery.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4CD92797A96766670A60AE5197C5FB82</key>
 		<dict>
@@ -1430,6 +1507,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>4E32B7AFF293BF3C57A025CF85AEDE78</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Parse-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4E762F23EC34ED4A6FF3312D84E33A40</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1440,6 +1530,94 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4EBFDD3CC9544C417059FA340AA121A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFTwitterUtils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F0BE56B7F1AD77B29FF4E025A0F3FC9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFSignUpViewController.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/SignUpViewController/PFSignUpViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4FF883B4C309BB6905F69FEFDAE189DF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFColor.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Extensions/PFColor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>501DCE5405C20FE8AA2F85E15E27A84F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFAlertView.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Extensions/PFAlertView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>515F0028C53B32543AE54439A73C625B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BFCancellationTokenRegistration.m</string>
+			<key>path</key>
+			<string>Bolts/Common/BFCancellationTokenRegistration.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>517D3E0C6E3E58ABAF650CE014BD0F60</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFSignUpView.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/SignUpViewController/PFSignUpView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1494,38 +1672,10 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>532935540613E6E77D955E3A8E0C254E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>ParseUI.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>539F185D0C975B992F4EC56796519ABE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFColor.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFColor.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>53A95AF058EA6FEC4C485F6AE9476AF2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>BD1D331D32366FB313201EAEEAA12588</string>
+			<string>212676B512BFE8C236771333EAA09CDC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1535,6 +1685,21 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>53ECA1952D0F3C7818544F550276EBFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFTableViewCell.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Cells/PFTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>54F7935FCDBD3E29AA5E934273D1DC6A</key>
 		<dict>
@@ -1570,42 +1735,23 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>568B43C33D3C697669D34BA93301F1F5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2B6B5AF48A70C96386462A5B16087121</string>
-				<string>92865B58A3582A66EE601FF8DC679B64</string>
-				<string>229428FCE2EDD051B2C7E58DEDFD8DA8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Bolts</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>572119A4B19985E5AEBB6044FB371C5D</key>
+		<key>57932A6B08E4EAC14C1324B47ABFED99</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFRect.m</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFRect.m</string>
+			<string>Bolts-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5901581E63DC796A1282DBB537A6CB8F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>05FD24FC1AAEC77DF5B9FC4218DE71E3</string>
+			<string>BC5D5E72656E9159DA65156A59047D47</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1616,10 +1762,38 @@
 				</array>
 			</dict>
 		</dict>
+		<key>59D1C99C2374806086903AFBE8B10F76</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFDismissButton.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFDismissButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5A7F573BA3466CC238E1CD6187924D88</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B1396871A03269D81DBA67B9F57A7F96</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5B41B0847FA4B6874D409585B6EBBBC7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>84ABC185997D14AA591E33E4143927AF</string>
+			<string>0A0BF7FBBD8ED8EF387E245412707857</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1630,10 +1804,25 @@
 				</array>
 			</dict>
 		</dict>
+		<key>5B9B2845027F492B195FA7E9817C11B4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFTableViewCell.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Cells/PFTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5C7BC4A7386956C74351A6BC9B3E7E07</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2B6B5AF48A70C96386462A5B16087121</string>
+			<string>FA5D4D829CC54BE91BBEB81926374F4D</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -1737,22 +1926,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>5D62B1404B97AF6C6B9C2C47BF2E97F6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFImage.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFImage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5E2D5F5B17591A7EBABBC1A54460FE0C</key>
+		<key>5D7AE991D322832C36BB8C98BD15B521</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1761,14 +1935,14 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>PFAnonymousUtils.h</string>
+			<string>PFQuery.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>5E3091A3758928685DEBA010C7D90109</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DD00C00184D597CBA613CE83D681648B</string>
+			<string>6E7730A9ADAAAFD1425644B9F095EAC1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1779,10 +1953,40 @@
 				</array>
 			</dict>
 		</dict>
+		<key>5E688CFACBC5079D14CBA7DC8A256F26</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BFExecutor.m</string>
+			<key>path</key>
+			<string>Bolts/Common/BFExecutor.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5EF36EAA66FD8548464951A1D986FF15</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFPurchaseTableViewCell.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Cells/PFPurchaseTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>5EF3AD62AC95D88958FB6D08A2CF50BD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>45FD44D02B5C14D6B44F8C1EBDA0431F</string>
+			<string>53ECA1952D0F3C7818544F550276EBFF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1792,19 +1996,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>5F166FCD8C741627A636C57D51CEAD64</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Parse.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>602CF0240BDFC86A9E3F867F071AC398</key>
 		<dict>
@@ -1816,7 +2007,7 @@
 		<key>619CC8F7EEF2510B1C635844FB1A4505</key>
 		<dict>
 			<key>fileRef</key>
-			<string>25A31988041810EB59E1750C99DE510A</string>
+			<string>F4284A57ABD4246BC5AC2A40A79B2D7B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1834,47 +2025,59 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>621C75CC7C5A0E42F49D763C040CA4B3</key>
+		<key>6259D586E016FA62D5DF905F8A85719F</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>A347BA07C5386429C7FE636A2F54CED5</string>
+				<string>D7FBAC971F88D6752FA7FFA2F235E96B</string>
+				<string>D0D8C577AD4C760027D45BD662C977FB</string>
+				<string>1DC7534431C7143D8196AF9BFF7F0A67</string>
+				<string>F4284A57ABD4246BC5AC2A40A79B2D7B</string>
+				<string>072E5E5FE68796881F10295225F414CF</string>
+				<string>323AF5EF8148AA937B55AD5C5321FA71</string>
+				<string>3309483898C42D4297B2FB098B2771F1</string>
+				<string>A189949E6A6D43E0062404C2060F700D</string>
+				<string>D37FF161736A8DFEF3C26B9D86799E11</string>
+				<string>8ABB1170A5CC7562B104BB4F93B13F24</string>
+				<string>4248172C855F86619FA6573FE8C5DBD4</string>
+				<string>1FA631C5AC15A29BCBC7CCF1081F2834</string>
+				<string>0649EA51EEB02F91BF45EEA453C939C6</string>
+				<string>D10359A4E7BF9C006F94E18D4DA914D6</string>
+				<string>CA5E835E0FAA64740E769A414307DAA7</string>
+				<string>99320EDE5798690FE9EBC241BA813978</string>
+				<string>199BC0F05F1FD6D8482DDEA7554FF75C</string>
+				<string>0A0BF7FBBD8ED8EF387E245412707857</string>
+				<string>5D7AE991D322832C36BB8C98BD15B521</string>
+				<string>841401B03FFD34C5BCA63912DFDE25C8</string>
+				<string>9CD73C2082B8BE62EFE766A1838B3874</string>
+				<string>4215940A78C8CD6EC5375FFA7BB77E28</string>
+				<string>3177520AB56113C340C01443F0CD7E9B</string>
+				<string>4EBFDD3CC9544C417059FA340AA121A2</string>
+				<string>212676B512BFE8C236771333EAA09CDC</string>
+				<string>E61F4C734E876F5A99AF00BCD71FD9B9</string>
+				<string>8581ABC3E844685A2C0A2DDD298646C8</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>PFAlertView.m</string>
+			<string>Parse</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFAlertView.m</string>
+			<string>Parse</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>62827169346CF49F1DC42B506B78C335</key>
 		<dict>
 			<key>fileRef</key>
-			<string>92865B58A3582A66EE601FF8DC679B64</string>
+			<string>442AC7D492FE80025A63AACC1693D590</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>65D40472B1B793A5C247C82C43B5685A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BoltsVersion.h</string>
-			<key>path</key>
-			<string>Bolts/Common/BoltsVersion.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>65EC71583348BF5A5F1F9FEA5CD986F0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4B4C07A9752FB24AE6C5C8E6069B982B</string>
+			<string>5D7AE991D322832C36BB8C98BD15B521</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1884,32 +2087,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>660ABD1355C88BA9A2B50250D47E8808</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFPurchase.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6681E3E3DF180EB5CC0FE1B2EE5799DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFProduct.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6911BECA35E7518D864239B7E898EEF3</key>
 		<dict>
@@ -1924,53 +2101,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>69C74CB000ECB5B8B0C75CEA0A513A79</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>138CDCFAEF3A4C2122BA853AAF3C8BDA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C271DD04648AA978191E8FAA8121A87</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFResources.m</string>
-			<key>path</key>
-			<string>ParseUI/Generated/PFResources.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C8E02B3DF41BA8E7340127D436B37ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFDismissButton.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFDismissButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>6DA34A69B8E055768BB3805267EEBD91</key>
 		<dict>
 			<key>fileRef</key>
-			<string>DCB8877D96F1960781EBF34F3BA39AED</string>
+			<string>928C4C64A8D5AB87274B36D64A943DFE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1981,7 +2115,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>6DCDF431FB75CA656C8CA2CBF9E39F63</key>
+		<key>6E7730A9ADAAAFD1425644B9F095EAC1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1990,9 +2124,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Bolts.h</string>
+			<string>PFActionButton.h</string>
 			<key>path</key>
-			<string>Bolts/Common/Bolts.h</string>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFActionButton.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2016,10 +2150,25 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>6FFFFEC6272D9590E3431721C6A019A3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFDismissButton.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFDismissButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7196C475744FE1CAEECD8D5C366186B8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>92BD7F41B1561909E828F98C25FA859F</string>
+			<string>841401B03FFD34C5BCA63912DFDE25C8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2114,36 +2263,10 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>74D497BF24F4D977DB03D13B7CF03B38</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFRole.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>785DF5075F24B4D10FAE01391771B14F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFGeoPoint.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>78A9ADE8F6F3BA7AF3E9D3DDDABB6D54</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3E6B52C0AD1DF7119678860653E62CF4</string>
+			<string>2652133B644676064A1D58666CFBADE0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2153,6 +2276,21 @@
 					<string>Project</string>
 				</array>
 			</dict>
+		</dict>
+		<key>79A27A6D1D152573F9213C0040568A78</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BFExecutor.h</string>
+			<key>path</key>
+			<string>Bolts/Common/BFExecutor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>79B5982912FDC73EADD4279FFEEE349A</key>
 		<dict>
@@ -2187,31 +2325,33 @@
 			<key>targetProxy</key>
 			<string>4900603E356C93863928CBCF00AB2C3A</string>
 		</dict>
-		<key>7CC94D5E1B58F8C1F118AC1C280DF1DD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>en.lproj</string>
-			<key>path</key>
-			<string>ParseUI/Resources/Localization/en.lproj</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>876F80F8AFD1240ED0B7B9EA9C5BFAD8</string>
-				<string>88803BC44A36D41CF25E80C2C441353E</string>
+				<string>2F554C6C665514D4AEF9CC3B141C4D05</string>
 				<string>9B67B90CB14A0ADECD43A02DEF908C92</string>
 				<string>037C0CA694176A3C0915F62C9D20B3E6</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EC65363CDDAEAD9F53AC8722B8C398F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFColor.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Extensions/PFColor.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2231,7 +2371,7 @@
 		<key>7F2487612665BD0930E6268F1E1028D2</key>
 		<dict>
 			<key>fileRef</key>
-			<string>97DB141DA56499BD92933914FA54A56D</string>
+			<string>AFF649E30810621D264FE740E69E9E5C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2241,48 +2381,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>7F33A1BD96A2BE218084BA5649C0D5A1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AB29BB44956FF7A28915E1D5982F1978</string>
-				<string>5F166FCD8C741627A636C57D51CEAD64</string>
-				<string>8714C7F032B422D3AA2093A8288FB14C</string>
-				<string>D5F1A16678DC81F976AA2E7C022176EE</string>
-				<string>25A31988041810EB59E1750C99DE510A</string>
-				<string>5E2D5F5B17591A7EBABBC1A54460FE0C</string>
-				<string>DD0D66E928FC91F59D00C3E5DEA0BD0E</string>
-				<string>820979B11D37F54EF8EE5933DBFA5430</string>
-				<string>17ACBAC03F2B5877A17F31BFD9226BB8</string>
-				<string>4154D17D90957877084FA7B1F1E1DB86</string>
-				<string>785DF5075F24B4D10FAE01391771B14F</string>
-				<string>B29151028B38B6A3E3A21921A92EE855</string>
-				<string>D7D09CDFE7DB399AFF5CE6482206D940</string>
-				<string>999869B863B3218EA1471726B32ABA4D</string>
-				<string>81B556F8551565E0E492C3DFC761C089</string>
-				<string>22A2FF09D05B081DBC60615EFC8D963C</string>
-				<string>6681E3E3DF180EB5CC0FE1B2EE5799DB</string>
-				<string>660ABD1355C88BA9A2B50250D47E8808</string>
-				<string>84ABC185997D14AA591E33E4143927AF</string>
-				<string>4B4C07A9752FB24AE6C5C8E6069B982B</string>
-				<string>92BD7F41B1561909E828F98C25FA859F</string>
-				<string>74D497BF24F4D977DB03D13B7CF03B38</string>
-				<string>12E32222E0013D377A06850AF36F0066</string>
-				<string>2BC750A6C7C22C7BAF7AE1A73CDF8372</string>
-				<string>428B9F9767EC8B9F52B623950306A81F</string>
-				<string>BD1D331D32366FB313201EAEEAA12588</string>
-				<string>69C74CB000ECB5B8B0C75CEA0A513A79</string>
-				<string>D95FE95F9E8E614B0A1B6C7C7872CBE2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Parse</string>
-			<key>path</key>
-			<string>Parse</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>815674DB8B7A527B797611286AD91FFE</key>
 		<dict>
@@ -2333,36 +2431,10 @@
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>81B556F8551565E0E492C3DFC761C089</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>820979B11D37F54EF8EE5933DBFA5430</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFConfig.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8233BEAAE180E033847D316838A3406A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>BE1301FF9A3B2D1ED5AA327D7E2A1345</string>
+			<string>E78D4B5F3AC560330959D9A13C3F3D01</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2373,49 +2445,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>825E02BF678E9D126D77C2648EA960E0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F44F2728D7D52A90CFFC6EB62B46EF1D</string>
-				<string>E63FC6F85DCCC824D6F11E9C581DDD2E</string>
-				<string>B7715E72BFC2C85A2E7AAA599A3C1D51</string>
-				<string>12067EEF2CF0FCC39A4E3F80A466016C</string>
-				<string>DCB8877D96F1960781EBF34F3BA39AED</string>
-				<string>F02F2D291E4237BED63787AE7DA2C295</string>
-				<string>F870863DB46D45B91707B5572892E40D</string>
-				<string>1FBAE04013F2D0D3ED92ACDAA4EB7C00</string>
-				<string>9102B11129EEFF1279DC3A09A3D250DB</string>
-				<string>FCFB095A22D0C45E54C65678126AA9DA</string>
-				<string>92CBE18F1FCB839E2D5F08821545B772</string>
-				<string>3552F466066D3B20ABE2ADDCA2A48147</string>
-				<string>6DCDF431FB75CA656C8CA2CBF9E39F63</string>
-				<string>F8CEC99C6151471652A501EEA0FF2F2E</string>
-				<string>65D40472B1B793A5C247C82C43B5685A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Tasks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>832189949653E4A7A2F5938A161B841C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFActivityIndicatorCollectionReusableView.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorCollectionReusableView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84ABC185997D14AA591E33E4143927AF</key>
+		<key>841401B03FFD34C5BCA63912DFDE25C8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2424,76 +2454,39 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>PFPush.h</string>
+			<string>PFRelation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>85DA9862AD675AC6E486D65BF02C146D</key>
+		<key>856A123F3837A101683820B5CF6533CC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFRect.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Extensions/PFRect.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8581ABC3E844685A2C0A2DDD298646C8</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>AD8D879816177D0A2A5090491868113C</string>
-				<string>97DB141DA56499BD92933914FA54A56D</string>
-				<string>DD00C00184D597CBA613CE83D681648B</string>
-				<string>4827B300F42B7B097DC7E392970D5183</string>
-				<string>832189949653E4A7A2F5938A161B841C</string>
-				<string>4012CFEC0EE1ED9C09717947B201ECD2</string>
-				<string>3E6B52C0AD1DF7119678860653E62CF4</string>
-				<string>30D7CD47E1EFA8A1EC09AD6E16A15AA9</string>
-				<string>BE1301FF9A3B2D1ED5AA327D7E2A1345</string>
-				<string>621C75CC7C5A0E42F49D763C040CA4B3</string>
-				<string>DD7A72BDCE82506102DA357F369F47A9</string>
-				<string>0EABC66DBF11D415B26686DDA5CB42A0</string>
-				<string>BCB1EAE8712DE45F23D32B698F280F63</string>
-				<string>539F185D0C975B992F4EC56796519ABE</string>
-				<string>6C8E02B3DF41BA8E7340127D436B37ED</string>
-				<string>3BA61CE4F95AAEFCD09230DC48D706C3</string>
-				<string>8C88AE3DB54B4DFBF32D8F7C3032C1A7</string>
-				<string>5D62B1404B97AF6C6B9C2C47BF2E97F6</string>
-				<string>D6F4E54CEA3277AEE3CB837B7CDAA2A2</string>
-				<string>46A058FA94D65FEC96B77A777BA4A9DD</string>
-				<string>0DC66C6394017D57525A938357F870F9</string>
-				<string>F2B046D4879232D69BF018DA14798421</string>
-				<string>A059C2606E6F7D8135B28DE491665915</string>
-				<string>A1F1D26E1126068883EBC40EBE5386DF</string>
-				<string>CC2E4CB12A14FA8DF212A12871DB7A24</string>
-				<string>A973477ADCE0E0E078C4B2A62DC22502</string>
-				<string>9ED07711B017425E4472F751195FAAB5</string>
-				<string>F6990A4D483C4F5DA78BD5A2BBFCA25B</string>
-				<string>8FBAC0144F68FBFCBFA5642F3FA81E0D</string>
-				<string>F03B0B7A58D155E3452DB984C09BF336</string>
-				<string>8A865EC7A59469AE6EBFDA9D297A5A27</string>
-				<string>FF7EC34CEC4452733A4DB98AB03F2CE8</string>
-				<string>2BFEC8CCC08D72D550E7C5E0DA3B9D32</string>
-				<string>345B2F5171D6C01C78E3492B1BFC6809</string>
-				<string>2CA51EF42850F12FA4AA35704E21810A</string>
-				<string>20985CD463DD0871E4CD82E55B40EAC9</string>
-				<string>092C3FBAAA04F5744A7ADDEC24DC1D4A</string>
-				<string>A79367D60278AFE69A3630E0ABC0AF04</string>
-				<string>B69FCCDEE6F6E19FE212AD5D46F3E3B2</string>
-				<string>05FD24FC1AAEC77DF5B9FC4218DE71E3</string>
-				<string>572119A4B19985E5AEBB6044FB371C5D</string>
-				<string>12FDBD75ABE82A6A717E9E7F3A5C51B8</string>
-				<string>6C271DD04648AA978191E8FAA8121A87</string>
-				<string>DBBE7012CDCD78376A88DB9C18C45BD1</string>
-				<string>0AF5F8F6A6F9C3CC3739417F882B09D6</string>
-				<string>D216FC61C254DF2BB6F6CC61E093078E</string>
-				<string>8E723BD690D0D905C4107DF8D7BC87C8</string>
-				<string>45FD44D02B5C14D6B44F8C1EBDA0431F</string>
-				<string>3D42ECC6BFABC448BC37FA0473E2C5F6</string>
-				<string>3F05F18763934439B1255C370434F248</string>
-				<string>8FE04FF60C12F718C3B8016EB2D77837</string>
-				<string>36BD20A5E6B5E33D4E5D9E998552CD57</string>
-				<string>B6D8AC212E0A11F894C4B3B30230B3F9</string>
-				<string>95B4D157FE9732F7ABBFB24399AF4AC5</string>
-				<string>2F6CAA077C4074928CAE586F64C4F575</string>
+				<string>B539BAF4124CBF25759BC59051774844</string>
+				<string>A9DDFDBB63CFF8CB6F6114AA8275EE50</string>
+				<string>4E32B7AFF293BF3C57A025CF85AEDE78</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>ParseUI</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>ParseUI</string>
+			<string>../Target Support Files/Parse</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2513,22 +2506,9 @@
 		<key>862CFCC6A053CF981E281A0ECE226DA6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8E723BD690D0D905C4107DF8D7BC87C8</string>
+			<string>4F0BE56B7F1AD77B29FF4E025A0F3FC9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>8714C7F032B422D3AA2093A8288FB14C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PF_Twitter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>876F80F8AFD1240ED0B7B9EA9C5BFAD8</key>
 		<dict>
@@ -2543,44 +2523,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>88803BC44A36D41CF25E80C2C441353E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>23972BF4B27D076B83BB96C1F29D2D49</string>
-				<string>7F33A1BD96A2BE218084BA5649C0D5A1</string>
-				<string>85DA9862AD675AC6E486D65BF02C146D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8A865EC7A59469AE6EBFDA9D297A5A27</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFPrimaryButton.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFPrimaryButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8C203762CF35D044F1552802E41BC04A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4827B300F42B7B097DC7E392970D5183</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8C88AE3DB54B4DFBF32D8F7C3032C1A7</key>
+		<key>87E819E3D709CD59F178D27406DCB8DB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2589,31 +2532,36 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFImage.h</string>
+			<string>BFCancellationToken.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFImage.h</string>
+			<string>Bolts/Common/BFCancellationToken.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8E723BD690D0D905C4107DF8D7BC87C8</key>
+		<key>8ABB1170A5CC7562B104BB4F93B13F24</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFSignUpViewController.m</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/SignUpViewController/PFSignUpViewController.m</string>
+			<string>PFGeoPoint.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8C203762CF35D044F1552802E41BC04A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CAE80756DFE0A7EC30F03711076FFF33</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>8F306E899C93DCC12F34777B47E72125</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5F166FCD8C741627A636C57D51CEAD64</string>
+			<string>D7FBAC971F88D6752FA7FFA2F235E96B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2637,40 +2585,10 @@
 			<key>remoteInfo</key>
 			<string>Bolts</string>
 		</dict>
-		<key>8FBAC0144F68FBFCBFA5642F3FA81E0D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFLogInViewController.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/LogInViewController/PFLogInViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8FE04FF60C12F718C3B8016EB2D77837</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFTextButton.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFTextButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>90A2805C5E4325100F9E4601A7F5D0A8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>AB29BB44956FF7A28915E1D5982F1978</string>
+			<string>A347BA07C5386429C7FE636A2F54CED5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2678,21 +2596,6 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-fno-objc-arc</string>
 			</dict>
-		</dict>
-		<key>9102B11129EEFF1279DC3A09A3D250DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BFTask.h</string>
-			<key>path</key>
-			<string>Bolts/Common/BFTask.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>917EC098B88999FDFA70B98CE3A0CCE1</key>
 		<dict>
@@ -2726,33 +2629,7 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>92865B58A3582A66EE601FF8DC679B64</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Bolts-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92BD7F41B1561909E828F98C25FA859F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFRelation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92CBE18F1FCB839E2D5F08821545B772</key>
+		<key>928C4C64A8D5AB87274B36D64A943DFE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2761,42 +2638,47 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>BFTaskCompletionSource.h</string>
+			<string>BFCancellationTokenSource.h</string>
 			<key>path</key>
-			<string>Bolts/Common/BFTaskCompletionSource.h</string>
+			<string>Bolts/Common/BFCancellationTokenSource.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>94C6FCD13A83972160293D94622427C1</key>
+		<key>92CEFDF5B9EFA61670F668A08210AE4A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFQueryTableViewController.h</string>
 			<key>path</key>
-			<string>ParseUI-dummy.m</string>
+			<string>ParseUI/Classes/QueryTableViewController/PFQueryTableViewController.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>95B4D157FE9732F7ABBFB24399AF4AC5</key>
+		<key>92E47F18124DB0B35DC5A92701A953BA</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>7CC94D5E1B58F8C1F118AC1C280DF1DD</string>
+				<string>ECF7147084660E77CC418748972EB7ED</string>
+				<string>0758D281980EFF73FFF8B7995F857167</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Resources</string>
+			<string>Bolts</string>
+			<key>path</key>
+			<string>Bolts</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>95B678A6B6C227750A4D109D50781234</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6681E3E3DF180EB5CC0FE1B2EE5799DB</string>
+			<string>99320EDE5798690FE9EBC241BA813978</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2810,11 +2692,11 @@
 		<key>9749C33ECDF2FC21A231D2330864A63B</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F02F2D291E4237BED63787AE7DA2C295</string>
+			<string>10BDCEF298AB7A5C3B1C69025F52DA20</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>97DB141DA56499BD92933914FA54A56D</key>
+		<key>9804D490001CB210923E9701B8E982EB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2823,16 +2705,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>ParseUIConstants.h</string>
+			<string>PFImageView.h</string>
 			<key>path</key>
-			<string>ParseUI/Other/ParseUIConstants.h</string>
+			<string>ParseUI/Classes/Views/PFImageView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>98914FAB67F86D60E103D31B8745076D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F8CEC99C6151471652A501EEA0FF2F2E</string>
+			<string>EDFAD2A2DAED692136B8433A2C2BF151</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -2852,11 +2734,11 @@
 		<key>98CDED11A923AB9140CFB9F46975846D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>30D7CD47E1EFA8A1EC09AD6E16A15AA9</string>
+			<string>0E63C1684BB9CD55E1C398DFA6C2A1B4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>999869B863B3218EA1471726B32ABA4D</key>
+		<key>99320EDE5798690FE9EBC241BA813978</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2865,7 +2747,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>PFNullability.h</string>
+			<string>PFProduct.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2899,7 +2781,7 @@
 		<key>9B94A36C63491A0CF9A26AF2A6DD95E6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B29151028B38B6A3E3A21921A92EE855</string>
+			<string>4248172C855F86619FA6573FE8C5DBD4</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2910,29 +2792,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>9E8C34C83F26FB50D167FD3548541B97</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0AF5F8F6A6F9C3CC3739417F882B09D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9ED07711B017425E4472F751195FAAB5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFLogInView.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/LogInViewController/PFLogInView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A059C2606E6F7D8135B28DE491665915</key>
+		<key>9CD73C2082B8BE62EFE766A1838B3874</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2940,10 +2800,41 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFLoadingView.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/PFLoadingView.h</string>
+			<string>PFRole.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E8C34C83F26FB50D167FD3548541B97</key>
+		<dict>
+			<key>fileRef</key>
+			<string>074065A22BE0BF7C5F9D16BABF0512B2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A0025E5B8BE034175675CA8E5776494E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ParseUI-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A189949E6A6D43E0062404C2060F700D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFConstants.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2960,18 +2851,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A1F1D26E1126068883EBC40EBE5386DF</key>
+		<key>A2A205B3D884119C07D3F5BE77A74592</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFLoadingView.m</string>
+			<string>en.lproj</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/PFLoadingView.m</string>
+			<string>ParseUI/Resources/Localization/en.lproj</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2989,17 +2878,30 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>A347BA07C5386429C7FE636A2F54CED5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Empty.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A3B86F1D71B1E2AAFA70ECC516CCFFB4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>94C6FCD13A83972160293D94622427C1</string>
+			<string>A3FDCCEAF1E8F36DD37D7E4C497B4674</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>A3CD66CFDAE49EA5F66E324C53B17F85</key>
 		<dict>
 			<key>fileRef</key>
-			<string>22A2FF09D05B081DBC60615EFC8D963C</string>
+			<string>CA5E835E0FAA64740E769A414307DAA7</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3047,38 +2949,23 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>A3F99E6CBF50BC340327B3303D416D20</key>
+		<key>A3FDCCEAF1E8F36DD37D7E4C497B4674</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Parse-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A79367D60278AFE69A3630E0ABC0AF04</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFQueryTableViewController.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/QueryTableViewController/PFQueryTableViewController.h</string>
+			<string>ParseUI-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A8681AFE9DE7CAE359376B3F0C93A187</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B7715E72BFC2C85A2E7AAA599A3C1D51</string>
+			<string>43A9F0780AEEC8D14D56BFDB796BD8D8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3092,7 +2979,7 @@
 		<key>A888294BA24043F8C18D426B5E218BF7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FF7EC34CEC4452733A4DB98AB03F2CE8</string>
+			<string>098684E58720F0B948C67B5F92E263B2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3102,26 +2989,11 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>A973477ADCE0E0E078C4B2A62DC22502</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFLogInView.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/LogInViewController/PFLogInView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A9D0F8243778490C311EDFD2B7573223</key>
 		<dict>
 			<key>fileRef</key>
-			<string>2BC750A6C7C22C7BAF7AE1A73CDF8372</string>
+			<string>3177520AB56113C340C01443F0CD7E9B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3132,14 +3004,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>AB19E0E1A405022C9716581696DE7822</key>
-		<dict>
-			<key>fileRef</key>
-			<string>12067EEF2CF0FCC39A4E3F80A466016C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AB29BB44956FF7A28915E1D5982F1978</key>
+		<key>A9DDFDBB63CFF8CB6F6114AA8275EE50</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3148,21 +3013,43 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Empty.m</string>
+			<string>Parse-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB19E0E1A405022C9716581696DE7822</key>
+		<dict>
+			<key>fileRef</key>
+			<string>515F0028C53B32543AE54439A73C625B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>AB2C959A82D52BE4171ABB55714D391D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8A865EC7A59469AE6EBFDA9D297A5A27</string>
+			<string>2A0A615E79B46E6043569EFB066182A8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>AB5894B7D679F9D9CF499D57503094B3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFLogInViewController.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/LogInViewController/PFLogInViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>ACA412AEDD0EF432EA2738E097573EFA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1FBAE04013F2D0D3ED92ACDAA4EB7C00</string>
+			<string>5E688CFACBC5079D14CBA7DC8A256F26</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3206,21 +3093,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>AD8D879816177D0A2A5090491868113C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ParseUI.h</string>
-			<key>path</key>
-			<string>ParseUI/Other/ParseUI.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>ADF3D5C6EA28F7191DBFF2E370DB29A2</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -3249,42 +3121,7 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>B0581D85F00B052E9DB620875831F2E4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DD7A72BDCE82506102DA357F369F47A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B149219B1BCB79D1A018388E865B87B5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8FBAC0144F68FBFCBFA5642F3FA81E0D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B1FB0317CB75C82AFAA39BDF4B2D99A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4154D17D90957877084FA7B1F1E1DB86</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B29151028B38B6A3E3A21921A92EE855</key>
+		<key>AFF649E30810621D264FE740E69E9E5C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3292,15 +3129,80 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>ParseUIConstants.h</string>
 			<key>path</key>
-			<string>PFInstallation.h</string>
+			<string>ParseUI/Other/ParseUIConstants.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B0581D85F00B052E9DB620875831F2E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D8F3F15F9448AB765EDCFA37146F9D5E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B1396871A03269D81DBA67B9F57A7F96</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Reveal.framework</string>
+			<key>path</key>
+			<string>Reveal-Framework-iOS-1.6.2/Reveal.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B149219B1BCB79D1A018388E865B87B5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B59E2BF6E7DB88FF318D1BE512E8A1EE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B1E2DC6A1B29C22926F96667D1EEB725</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFResources.m</string>
+			<key>path</key>
+			<string>ParseUI/Generated/PFResources.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B1FB0317CB75C82AFAA39BDF4B2D99A2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D37FF161736A8DFEF3C26B9D86799E11</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>B325A068842886555D786F08C9759096</key>
 		<dict>
 			<key>fileRef</key>
-			<string>539F185D0C975B992F4EC56796519ABE</string>
+			<string>7EC65363CDDAEAD9F53AC8722B8C398F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3328,7 +3230,7 @@
 		<key>B415E3D68A65B220480A02B60592B7C1</key>
 		<dict>
 			<key>fileRef</key>
-			<string>660ABD1355C88BA9A2B50250D47E8808</string>
+			<string>199BC0F05F1FD6D8482DDEA7554FF75C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3339,7 +3241,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>B69FCCDEE6F6E19FE212AD5D46F3E3B2</key>
+		<key>B5183666C931CE8480520CB6ADCA2CB9</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3348,13 +3250,26 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFQueryTableViewController.m</string>
+			<string>PFImageCache.m</string>
 			<key>path</key>
-			<string>ParseUI/Classes/QueryTableViewController/PFQueryTableViewController.m</string>
+			<string>ParseUI/Classes/Internal/PFImageCache.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B6D8AC212E0A11F894C4B3B30230B3F9</key>
+		<key>B539BAF4124CBF25759BC59051774844</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Parse.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B59E2BF6E7DB88FF318D1BE512E8A1EE</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3363,24 +3278,9 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>PFTextField.m</string>
+			<string>PFLogInViewController.m</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Views/PFTextField.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B7715E72BFC2C85A2E7AAA599A3C1D51</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BFCancellationTokenRegistration.h</string>
-			<key>path</key>
-			<string>Bolts/Common/BFCancellationTokenRegistration.h</string>
+			<string>ParseUI/Classes/LogInViewController/PFLogInViewController.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3390,6 +3290,36 @@
 			<string>BA9A2CCF3A503CB64BF8AD5F59D0A85F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>B7F6B875E4928FDDD920DE3A80396991</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFTextButton.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFTextButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8FB139AC114A3A868AE3B593327DA72</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFTextField.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Views/PFTextField.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
@@ -3424,18 +3354,11 @@
 		<key>BBDC7CD3CC6BA332195CD793D3D30ADA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>572119A4B19985E5AEBB6044FB371C5D</string>
+			<string>856A123F3837A101683820B5CF6533CC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>BC9A609B4709B08AC7ED7BEE121E7E8B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2E0118151BA19EB0C69B142D84F0F4F8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BCB1EAE8712DE45F23D32B698F280F63</key>
+		<key>BC5D5E72656E9159DA65156A59047D47</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3444,13 +3367,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFColor.h</string>
+			<string>PFRect.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFColor.h</string>
+			<string>ParseUI/Classes/Internal/Extensions/PFRect.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BD1D331D32366FB313201EAEEAA12588</key>
+		<key>BC9A609B4709B08AC7ED7BEE121E7E8B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A9DDFDBB63CFF8CB6F6114AA8275EE50</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BDBA12BB1FF533646D4FA8B9AEE6BC33</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3458,19 +3388,21 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFLogInView.h</string>
 			<key>path</key>
-			<string>PFUser.h</string>
+			<string>ParseUI/Classes/LogInViewController/PFLogInView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BDC079A4D5766FA1137C3F80F31361AE</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E63FC6F85DCCC824D6F11E9C581DDD2E</string>
+			<string>3282B77147A7636A6C745F1AD1D511A1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>BE1301FF9A3B2D1ED5AA327D7E2A1345</key>
+		<key>BDDAA949F6203821B83A1B355B2513BB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3479,9 +3411,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFAlertView.h</string>
+			<string>ParseUI.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/Extensions/PFAlertView.h</string>
+			<string>ParseUI/Other/ParseUI.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BDFA21F6EEAA3C08B3A9D9400322F0DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BFTaskCompletionSource.h</string>
+			<key>path</key>
+			<string>Bolts/Common/BFTaskCompletionSource.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3496,10 +3443,25 @@
 			<key>targetProxy</key>
 			<string>2FCCB391BDC4327431CCE73547319EA9</string>
 		</dict>
+		<key>BFE1608E20BD3861468A9DFD295F8376</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFPrimaryButton.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFPrimaryButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C0CC194E1CC8D20B972E7A79E2BA9971</key>
 		<dict>
 			<key>fileRef</key>
-			<string>36BD20A5E6B5E33D4E5D9E998552CD57</string>
+			<string>B8FB139AC114A3A868AE3B593327DA72</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3539,7 +3501,7 @@
 		<key>C205C1160458812A3981811A154DEA10</key>
 		<dict>
 			<key>fileRef</key>
-			<string>12FDBD75ABE82A6A717E9E7F3A5C51B8</string>
+			<string>FB419E4B82FDC8C584932C3B8A16C816</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3553,7 +3515,7 @@
 		<key>C31AB490A461B251776377999CD66EA1</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F44F2728D7D52A90CFFC6EB62B46EF1D</string>
+			<string>87E819E3D709CD59F178D27406DCB8DB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3564,10 +3526,25 @@
 				</array>
 			</dict>
 		</dict>
+		<key>C3DF72429B7335CE1241BD58B15445A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFImageCache.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/PFImageCache.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>C3F4FE8AD9301296892CAA640229641C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8714C7F032B422D3AA2093A8288FB14C</string>
+			<string>D0D8C577AD4C760027D45BD662C977FB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3577,6 +3554,21 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>C53B85CA79AEE0B6303014B230CA4AD7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFActivityIndicatorCollectionReusableView.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Cells/PFActivityIndicatorCollectionReusableView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C581B67632B9355887A8033B330453FF</key>
 		<dict>
@@ -3590,6 +3582,19 @@
 			<string>C8D5127E98DA500721D42EF4C07BEE9C</string>
 			<key>remoteInfo</key>
 			<string>Parse</string>
+		</dict>
+		<key>C730382540772CCEBE42F0B664882380</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A2A205B3D884119C07D3F5BE77A74592</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C8D5127E98DA500721D42EF4C07BEE9C</key>
 		<dict>
@@ -3621,7 +3626,7 @@
 		<key>C8E41E5B29EB2E2FF6B3682143C2A76D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6C8E02B3DF41BA8E7340127D436B37ED</string>
+			<string>6FFFFEC6272D9590E3431721C6A019A3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3632,7 +3637,50 @@
 				</array>
 			</dict>
 		</dict>
-		<key>CC2E4CB12A14FA8DF212A12871DB7A24</key>
+		<key>CA5E835E0FAA64740E769A414307DAA7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFObject+Subclass.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA604C67CAB72A4B65C40013518326F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFImageView.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Views/PFImageView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAE80756DFE0A7EC30F03711076FFF33</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFActionButton.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFActionButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CBE356C006EF794246C95F736E332460</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3641,16 +3689,31 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFLocalization.h</string>
+			<string>Bolts.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/Internal/PFLocalization.h</string>
+			<string>Bolts/Common/Bolts.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CD4AA0F4BCEC8752F788FE971403357E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>BoltsVersion.h</string>
+			<key>path</key>
+			<string>Bolts/Common/BoltsVersion.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>CE0E127A1FFA376B57920C467DC05EC5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5D62B1404B97AF6C6B9C2C47BF2E97F6</string>
+			<string>30FE71154943719A8FAEF53A423B50A6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -3661,7 +3724,22 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D216FC61C254DF2BB6F6CC61E093078E</key>
+		<key>CFED606410B2BB5FB4B14D1E65128E35</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>BFTaskCompletionSource.m</string>
+			<key>path</key>
+			<string>Bolts/Common/BFTaskCompletionSource.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D0D8C577AD4C760027D45BD662C977FB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3669,10 +3747,34 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFSignUpViewController.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/SignUpViewController/PFSignUpViewController.h</string>
+			<string>PF_Twitter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D10359A4E7BF9C006F94E18D4DA914D6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D37FF161736A8DFEF3C26B9D86799E11</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PFFile.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3720,7 +3822,7 @@
 		<key>D58F8046349D0BE803391F6DBFA502CC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>BCB1EAE8712DE45F23D32B698F280F63</string>
+			<string>4FF883B4C309BB6905F69FEFDAE189DF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3730,34 +3832,6 @@
 					<string>Project</string>
 				</array>
 			</dict>
-		</dict>
-		<key>D5F1A16678DC81F976AA2E7C022176EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFACL.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D6F4E54CEA3277AEE3CB837B7CDAA2A2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFImageCache.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/PFImageCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D72BED16FAEF5EC74CE9655CBD309715</key>
 		<dict>
@@ -3772,7 +3846,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>D7D09CDFE7DB399AFF5CE6482206D940</key>
+		<key>D7FBAC971F88D6752FA7FFA2F235E96B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3781,7 +3855,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>PFNetworkActivityIndicatorManager.h</string>
+			<string>Parse.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3792,89 +3866,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>D95FE95F9E8E614B0A1B6C7C7872CBE2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>26F1320A0D47462FB138A277F0F16732</string>
-				<string>2E0118151BA19EB0C69B142D84F0F4F8</string>
-				<string>A3F99E6CBF50BC340327B3303D416D20</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Parse</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBBE7012CDCD78376A88DB9C18C45BD1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFSignUpView.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/SignUpViewController/PFSignUpView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DCB8877D96F1960781EBF34F3BA39AED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BFCancellationTokenSource.h</string>
-			<key>path</key>
-			<string>Bolts/Common/BFCancellationTokenSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DCF3E5F0AF5B91BA18F0ED855FED6B4A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4012CFEC0EE1ED9C09717947B201ECD2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DD00C00184D597CBA613CE83D681648B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFActionButton.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFActionButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD0D66E928FC91F59D00C3E5DEA0BD0E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>PFCloud.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD7A72BDCE82506102DA357F369F47A9</key>
+		<key>D8F3F15F9448AB765EDCFA37146F9D5E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -3889,10 +3881,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>DCF3E5F0AF5B91BA18F0ED855FED6B4A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C53B85CA79AEE0B6303014B230CA4AD7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>E0255DEF342841C818DDD62EEF613996</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D216FC61C254DF2BB6F6CC61E093078E</string>
+			<string>4949404D15C97A2C3D82579375DF348D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3913,7 +3912,7 @@
 		<key>E3B9118D3AC09742CF7FD9B60A40F82E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>AD8D879816177D0A2A5090491868113C</string>
+			<string>BDDAA949F6203821B83A1B355B2513BB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3927,29 +3926,27 @@
 		<key>E55E5E0F5E5265738144DE75A62CB4FD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>8FE04FF60C12F718C3B8016EB2D77837</string>
+			<string>FA9FC03FBFC116CC4A7C5CC3A1CE236A</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E63FC6F85DCCC824D6F11E9C581DDD2E</key>
+		<key>E61F4C734E876F5A99AF00BCD71FD9B9</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>47BA35A7AFD6311ADF5E9EC54B9A0F42</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>BFCancellationToken.m</string>
-			<key>path</key>
-			<string>Bolts/Common/BFCancellationToken.m</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E7177CCE727FF5010FCBD9D63F8AD218</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>2B6B5AF48A70C96386462A5B16087121</string>
+			<string>FA5D4D829CC54BE91BBEB81926374F4D</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -3983,7 +3980,7 @@
 		<key>E77DD9CF13C570BE2E1C030D3B2D74E7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0DC66C6394017D57525A938357F870F9</string>
+			<string>9804D490001CB210923E9701B8E982EB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -3994,10 +3991,25 @@
 				</array>
 			</dict>
 		</dict>
+		<key>E78D4B5F3AC560330959D9A13C3F3D01</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFAlertView.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Internal/Extensions/PFAlertView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>E8DECE2DA4E0B4D54B288927FEE66848</key>
 		<dict>
 			<key>fileRef</key>
-			<string>F870863DB46D45B91707B5572892E40D</string>
+			<string>79A27A6D1D152573F9213C0040568A78</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4007,6 +4019,21 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>E8EABC50977C7AFCBF86FB39587993C8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>PFQueryCollectionViewController.m</string>
+			<key>path</key>
+			<string>ParseUI/Classes/QueryCollectionViewController/PFQueryCollectionViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>E9381756FA3D8D5DC0EE8CB5D89ED2C6</key>
 		<dict>
@@ -4036,14 +4063,29 @@
 		<key>EAE5FBABE87F0E605EF6016554FBB037</key>
 		<dict>
 			<key>fileRef</key>
-			<string>0EABC66DBF11D415B26686DDA5CB42A0</string>
+			<string>22EA785FBF5463B8B20154A4A7998C43</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>EAED8908A01AFC758870D1EB15BEAA94</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5A7F573BA3466CC238E1CD6187924D88</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Reveal-iOS-SDK</string>
+			<key>path</key>
+			<string>Reveal-iOS-SDK</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>EB31881D9530A17948FA7CA696AC2414</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6DCDF431FB75CA656C8CA2CBF9E39F63</string>
+			<string>CBE356C006EF794246C95F736E332460</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4053,6 +4095,23 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>ECF7147084660E77CC418748972EB7ED</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FA5D4D829CC54BE91BBEB81926374F4D</string>
+				<string>442AC7D492FE80025A63AACC1693D590</string>
+				<string>57932A6B08E4EAC14C1324B47ABFED99</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Bolts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>ED38A6E022CEC6362CF334EF10C78088</key>
 		<dict>
@@ -4068,6 +4127,36 @@
 			<string>libBolts.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>EDFAD2A2DAED692136B8433A2C2BF151</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Bolts.m</string>
+			<key>path</key>
+			<string>Bolts/Common/Bolts.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EED843A09E78D25D86D1CBAFF3EF1C25</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFPurchaseTableViewCell.h</string>
+			<key>path</key>
+			<string>ParseUI/Classes/Cells/PFPurchaseTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>EF42C2AF6A5B56629BE2C841EF0A2458</key>
 		<dict>
@@ -4085,66 +4174,21 @@
 		<key>EFCABD86E64AC8FABB4DCC82B7B88645</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6C271DD04648AA978191E8FAA8121A87</string>
+			<string>B1E2DC6A1B29C22926F96667D1EEB725</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>F02F2D291E4237BED63787AE7DA2C295</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>BFCancellationTokenSource.m</string>
-			<key>path</key>
-			<string>Bolts/Common/BFCancellationTokenSource.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F03B0B7A58D155E3452DB984C09BF336</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFPrimaryButton.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Internal/Views/Buttons/PFPrimaryButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F259B531997C2FFF7611BF7A121D555F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>46A058FA94D65FEC96B77A777BA4A9DD</string>
+			<string>B5183666C931CE8480520CB6ADCA2CB9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>F2B046D4879232D69BF018DA14798421</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>PFImageView.m</string>
-			<key>path</key>
-			<string>ParseUI/Classes/Views/PFImageView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F34CBB9930AEC2B7D55BB76F077FF3EA</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>532935540613E6E77D955E3A8E0C254E</string>
+			<string>3259463222EC54873D7B7D305BC42CF3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -4178,7 +4222,7 @@
 		<key>F396580DE8B943D046AA39B68B92817C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D7D09CDFE7DB399AFF5CE6482206D940</string>
+			<string>1FA631C5AC15A29BCBC7CCF1081F2834</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4189,7 +4233,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>F44F2728D7D52A90CFFC6EB62B46EF1D</key>
+		<key>F4284A57ABD4246BC5AC2A40A79B2D7B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4197,10 +4241,8 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BFCancellationToken.h</string>
 			<key>path</key>
-			<string>Bolts/Common/BFCancellationToken.h</string>
+			<string>PFAnalytics.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4214,7 +4256,7 @@
 		<key>F5CAC78ECFF676770744E54052FCB192</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3F05F18763934439B1255C370434F248</string>
+			<string>B7F6B875E4928FDDD920DE3A80396991</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4228,7 +4270,7 @@
 		<key>F5DF8E8AFE3B1CBFCEC1BA2E32F86A71</key>
 		<dict>
 			<key>fileRef</key>
-			<string>832189949653E4A7A2F5938A161B841C</string>
+			<string>1198830E5B1F79540FD3ADEF1A04183C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4239,7 +4281,24 @@
 				</array>
 			</dict>
 		</dict>
-		<key>F6990A4D483C4F5DA78BD5A2BBFCA25B</key>
+		<key>F78CE00BBB5F9B3D4B94421C7D22D2B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3259463222EC54873D7B7D305BC42CF3</string>
+				<string>A3FDCCEAF1E8F36DD37D7E4C497B4674</string>
+				<string>A0025E5B8BE034175675CA8E5776494E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/ParseUI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F78E7B4306C14B37418D20802BFC42AA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4248,28 +4307,33 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>PFLogInViewController.h</string>
+			<string>PFLoadingView.h</string>
 			<key>path</key>
-			<string>ParseUI/Classes/LogInViewController/PFLogInViewController.h</string>
+			<string>ParseUI/Classes/Internal/Views/PFLoadingView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F870863DB46D45B91707B5572892E40D</key>
+		<key>FA441B36123D094FEF9B0FA982495F3D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CFED606410B2BB5FB4B14D1E65128E35</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FA5D4D829CC54BE91BBEB81926374F4D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BFExecutor.h</string>
+			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Bolts/Common/BFExecutor.h</string>
+			<string>Bolts.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F8CEC99C6151471652A501EEA0FF2F2E</key>
+		<key>FA9FC03FBFC116CC4A7C5CC3A1CE236A</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4278,23 +4342,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Bolts.m</string>
+			<string>PFTextButton.m</string>
 			<key>path</key>
-			<string>Bolts/Common/Bolts.m</string>
+			<string>ParseUI/Classes/Internal/Views/Buttons/PFTextButton.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA441B36123D094FEF9B0FA982495F3D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3552F466066D3B20ABE2ADDCA2A48147</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>FB28FFB90B54954863C69501218F2D1A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5E2D5F5B17591A7EBABBC1A54460FE0C</string>
+			<string>072E5E5FE68796881F10295225F414CF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4305,17 +4362,32 @@
 				</array>
 			</dict>
 		</dict>
+		<key>FB419E4B82FDC8C584932C3B8A16C816</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>PFResources.h</string>
+			<key>path</key>
+			<string>ParseUI/Generated/PFResources.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>FB7096DA101B014F0D660645DD573CF6</key>
 		<dict>
 			<key>fileRef</key>
-			<string>9ED07711B017425E4472F751195FAAB5</string>
+			<string>0CDCE201A90803703D413FE8D9D1BE2F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>FB81A1E5118EDA15EBF7FB12CD716B4D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>81B556F8551565E0E492C3DFC761C089</string>
+			<string>D10359A4E7BF9C006F94E18D4DA914D6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4329,7 +4401,7 @@
 		<key>FCA0B4222614D86BBAA962BF7BDD74D1</key>
 		<dict>
 			<key>fileRef</key>
-			<string>20985CD463DD0871E4CD82E55B40EAC9</string>
+			<string>1DC5CD9D5BE92DEB0FCB26AC176BB7A8</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -4339,36 +4411,6 @@
 					<string>Public</string>
 				</array>
 			</dict>
-		</dict>
-		<key>FCFB095A22D0C45E54C65678126AA9DA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>BFTask.m</string>
-			<key>path</key>
-			<string>Bolts/Common/BFTask.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF7EC34CEC4452733A4DB98AB03F2CE8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>PFProductTableViewController.h</string>
-			<key>path</key>
-			<string>ParseUI/Classes/ProductTableViewController/PFProductTableViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

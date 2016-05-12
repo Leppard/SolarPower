@@ -251,4 +251,28 @@ class DataApi {
                 }
         }
     }
+    
+    // MARK: Weather
+    
+    static func getWeatherData(success: (NSDictionary) -> Void) {
+        self.dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        let urlString = kWEATHER.stringByAppendingString(dateFormatter.stringFromDate(self.date)).stringByAppendingString("/上海")
+        let fullUrlString = urlSchema.stringByAppendingString(urlString)
+        let params = ["Content-type": "application/json", ]
+
+        Alamofire.request(.GET, fullUrlString, parameters: params)
+            .responseJSON { response in
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value as? [String: AnyObject] {
+                        success(value)
+                    }
+                    break
+                case .Failure:
+                    break
+                }
+        }
+    }
+
 }

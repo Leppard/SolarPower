@@ -21,7 +21,7 @@ let kCONSUME_AIR = "/TAN/powerconsumption/airconditioning/"
 
 let kGENERATE_TOTAL = "/TAN/powergeneration/"
 
-let kWEATHER_SHANGHAI = "/weather/2016-04-28/上海"
+let kWEATHER = "/weather/"
 
 // MARK: Global Variables
 var yearConsume: Double = 0.0

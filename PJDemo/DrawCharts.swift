@@ -102,9 +102,8 @@ func drawMultiLineCharts(lineChartView:LineChartView,dataPoints:[String],values:
 //    lineChartView.xAxis.labelPosition = .Bottom
 }
 
-func drawLineCharts(lineChartView:LineChartView,dataPoints : [String],values: [Double])
+func drawSingleLineChart(lineChartView:LineChartView,dataPoints : [String],values: [Double], color: UIColor)
 {
-    
     var dataEntries : [ChartDataEntry] = []
     for i in 0 ..< dataPoints.count{
         let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
@@ -112,14 +111,17 @@ func drawLineCharts(lineChartView:LineChartView,dataPoints : [String],values: [D
     }
     let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "")
     lineChartDataSet.lineWidth = 5
-    lineChartDataSet.circleRadius = 0.2
+    lineChartDataSet.drawCirclesEnabled = false
+    lineChartDataSet.drawValuesEnabled = false
+    lineChartDataSet.drawFilledEnabled = true
+    lineChartDataSet.fillColor = color
+    lineChartDataSet.drawCubicEnabled = true
     
-    setChartLineData(lineChartDataSet, color: UIColor.lightGrayColor().colorWithAlphaComponent(0.5))
+    setChartLineData(lineChartDataSet, color: color)
     let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
     lineChartView.data = lineChartData
     lineChartView.descriptionText = ""
     lineChartView.animate(xAxisDuration: 2.0, easingOption: ChartEasingOption.Linear)
-    
 }
 
 

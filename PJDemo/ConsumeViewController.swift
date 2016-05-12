@@ -115,32 +115,4 @@ class ConsumeViewController: UIViewController, ChartViewDelegate {
         default : break
         }
     }
-//    
-//    func setChart(dataPoints : [String],values: [Double]){
-//        var dataEntries : [ChartDataEntry] = []
-//        for i in 0 ..< dataPoints.count{
-//            let dataEntry = ChartDataEntry(value: values[i], xIndex: i)
-//            dataEntries.append(dataEntry)
-//        }
-//        
-//        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Unit Sold")
-//        setChartLineData(lineChartDataSet, color: UIColor.darkGrayColor())
-//        let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
-//        lineChartData.setValueTextColor(UIColor.darkGrayColor())
-//        lineChartView.data = lineChartData
-//       
-//    }
-//    
-//    func setChartLineData(set: LineChartDataSet, color: UIColor)
-//    {
-//        let lineColor = color.colorWithAlphaComponent(0.5)
-//        set.setColor(lineColor)
-//        set.setCircleColor(color)
-//        set.lineWidth = 2.0
-//        set.circleRadius = 4.0
-//        set.fillAlpha = 65 / 255.0
-//        set.fillColor = color
-//        set.highlightColor = UIColor.whiteColor()
-//        set.drawCircleHoleEnabled = true
-//    }
 }
