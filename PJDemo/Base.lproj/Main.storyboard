@@ -42,14 +42,14 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-K5-XDL" customClass="LineChartView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-K5-XDL" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="119" width="153" height="128"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eo4-K5-XDL" secondAttribute="height" multiplier="153:128" id="KRI-pz-VKA"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFX-eE-vLC" customClass="LineChartView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mFX-eE-vLC" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="161" y="119" width="159" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -123,7 +123,7 @@
                             <constraint firstItem="RLt-MI-7Jz" firstAttribute="centerX" secondItem="Fo8-Nj-tI4" secondAttribute="centerX" id="4wX-kd-sr7"/>
                             <constraint firstItem="dfe-Vf-WVv" firstAttribute="centerY" secondItem="4Ds-c4-ODn" secondAttribute="centerY" id="9sD-a7-TgN"/>
                             <constraint firstItem="lha-fT-XhA" firstAttribute="leading" secondItem="Sxm-5n-03D" secondAttribute="trailing" id="BJP-ST-cRL"/>
-                            <constraint firstItem="eo4-K5-XDL" firstAttribute="top" secondItem="4Ds-c4-ODn" secondAttribute="bottom" constant="50" id="BKA-mp-mIH"/>
+                            <constraint firstItem="eo4-K5-XDL" firstAttribute="top" secondItem="4Ds-c4-ODn" secondAttribute="bottom" constant="150" id="BKA-mp-mIH"/>
                             <constraint firstItem="lha-fT-XhA" firstAttribute="top" secondItem="svZ-3d-ucd" secondAttribute="bottom" constant="12.5" id="CgK-Xn-NDA"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4Ds-c4-ODn" secondAttribute="leading" id="CiX-Qx-1su"/>
                             <constraint firstItem="4Ds-c4-ODn" firstAttribute="top" secondItem="Avk-mu-hPi" secondAttribute="bottom" constant="80" id="Dy6-FH-KGF"/>
@@ -135,6 +135,7 @@
                             <constraint firstItem="v04-TB-jvs" firstAttribute="centerX" secondItem="sLI-gS-GtY" secondAttribute="centerX" id="O74-Ls-Wvh"/>
                             <constraint firstItem="sLI-gS-GtY" firstAttribute="baseline" secondItem="Sxm-5n-03D" secondAttribute="baseline" id="Qun-Md-f2o"/>
                             <constraint firstItem="svZ-3d-ucd" firstAttribute="centerX" secondItem="lha-fT-XhA" secondAttribute="centerX" id="SCU-qR-beQ"/>
+                            <constraint firstItem="mFX-eE-vLC" firstAttribute="height" secondItem="eo4-K5-XDL" secondAttribute="height" id="VAB-le-J0z"/>
                             <constraint firstItem="nNK-uJ-EfL" firstAttribute="width" secondItem="sLI-gS-GtY" secondAttribute="width" id="XlM-EF-l7f"/>
                             <constraint firstItem="nNK-uJ-EfL" firstAttribute="centerX" secondItem="sLI-gS-GtY" secondAttribute="centerX" id="YIX-aL-sKn"/>
                             <constraint firstItem="Fo8-Nj-tI4" firstAttribute="top" secondItem="RLt-MI-7Jz" secondAttribute="bottom" constant="14" id="YXz-5D-z3E"/>
@@ -148,6 +149,7 @@
                             <constraint firstItem="RLt-MI-7Jz" firstAttribute="width" secondItem="Fo8-Nj-tI4" secondAttribute="width" id="khe-T8-hDV"/>
                             <constraint firstItem="svZ-3d-ucd" firstAttribute="width" secondItem="lha-fT-XhA" secondAttribute="width" id="kpP-z7-agu"/>
                             <constraint firstItem="PUE-yb-dQY" firstAttribute="leading" secondItem="4Ds-c4-ODn" secondAttribute="trailing" constant="8" id="mby-cL-UpA"/>
+                            <constraint firstItem="mFX-eE-vLC" firstAttribute="width" secondItem="eo4-K5-XDL" secondAttribute="width" id="pVX-sr-ZO1"/>
                             <constraint firstItem="PWn-Bl-uwn" firstAttribute="centerX" secondItem="Zce-ke-2ng" secondAttribute="centerX" id="pjt-nj-p6J"/>
                             <constraint firstItem="Sxm-5n-03D" firstAttribute="leading" secondItem="Zce-ke-2ng" secondAttribute="leadingMargin" constant="-20" id="ptx-A7-Li8"/>
                             <constraint firstItem="mFX-eE-vLC" firstAttribute="leading" secondItem="eo4-K5-XDL" secondAttribute="trailing" constant="8" id="qzh-9v-PXa"/>

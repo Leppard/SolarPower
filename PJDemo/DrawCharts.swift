@@ -111,6 +111,7 @@ func drawSingleLineChart(lineChartView:LineChartView,dataPoints : [String],value
     }
     let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "")
     lineChartDataSet.lineWidth = 5
+    lineChartDataSet.circleRadius = 0.2
     lineChartDataSet.drawCirclesEnabled = false
     lineChartDataSet.drawValuesEnabled = false
     lineChartDataSet.drawFilledEnabled = true

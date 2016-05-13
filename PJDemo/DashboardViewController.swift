@@ -9,7 +9,7 @@
 import UIKit
 import Charts
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
@@ -29,6 +29,14 @@ class DashboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.consumeLineChartView.delegate = self
+        self.generateLineChartView.delegate = self
+        self.consumeLineChartView.leftAxis.labelPosition = .InsideChart
+        self.consumeLineChartView.descriptionText = ""
+        self.generateLineChartView.leftAxis.labelPosition = .InsideChart
+        self.generateLineChartView.descriptionText = ""
+        
         
         self.dateFormatter.dateFormat = "yyyy-MM-dd"
         self.dateLabel.text = dateFormatter.stringFromDate(date)
