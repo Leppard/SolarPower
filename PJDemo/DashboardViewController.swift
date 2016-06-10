@@ -16,7 +16,6 @@ class DashboardViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var humidityLabel: UILabel!
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var generateLineChartView: LineChartView!
     @IBOutlet weak var consumeLineChartView: LineChartView!
     
     @IBOutlet weak var generateSpinningView: SpinningView!
@@ -31,11 +30,8 @@ class DashboardViewController: UIViewController, ChartViewDelegate {
         super.viewDidLoad()
         
         self.consumeLineChartView.delegate = self
-        self.generateLineChartView.delegate = self
         self.consumeLineChartView.leftAxis.labelPosition = .InsideChart
         self.consumeLineChartView.descriptionText = ""
-        self.generateLineChartView.leftAxis.labelPosition = .InsideChart
-        self.generateLineChartView.descriptionText = ""
         
         
         self.dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -47,16 +43,22 @@ class DashboardViewController: UIViewController, ChartViewDelegate {
         self.activityIndicator.startAnimating()
         self.activityIndicator.hidden = false
         self.consumeLineChartView.hidden = true
-        self.generateLineChartView.hidden = true
         
 //        DataApi.getWeatherData({(NSDictionary) -> Void in
 //            更新温度label
 //        })
         
-        self.generateSpinningView.updateAnimation(0.65, color: UIColor.greenColor())
-        self.earnSpinningView.updateAnimation(0.4, color: UIColor.orangeColor())
-        self.dayGenerateSpinningView.updateAnimation(0.8, color: UIColor.init(red: 0/255.0, green: 204/255.0, blue: 204/255.0, alpha: 1))
-        self.dayEarnSpinningView.updateAnimation(0.2, color: UIColor.redColor())
+        self.generateSpinningView.updateAnimation(1, color: UIColor.greenColor())
+        self.generateSpinningView.centerLabel.text = "330.0KW/h"
+        
+        self.earnSpinningView.updateAnimation(1, color: UIColor.orangeColor())
+        self.earnSpinningView.centerLabel.text = "144.0元"
+        
+        self.dayGenerateSpinningView.updateAnimation(1, color: UIColor.init(red: 0/255.0, green: 204/255.0, blue: 204/255.0, alpha: 1))
+        self.dayGenerateSpinningView.centerLabel.text = "1.2KW/h"
+        
+        self.dayEarnSpinningView.updateAnimation(1, color: UIColor.redColor())
+        self.dayEarnSpinningView.centerLabel.text = "0.48元"
         
         DataApi.queryConsumeTotalData("2015/10/01", success: {(data: NSDictionary) -> Void in
             let totalData = DataGroup.init(dictionary: data)
@@ -74,14 +76,34 @@ class DashboardViewController: UIViewController, ChartViewDelegate {
                     generateXCor.append(DataItem.time)
                     generateYCor.append(DataItem.value)
                 }
+                var weather = "上海 "
+                DataApi.getWeatherData( {(data:
+                    NSDictionary) -> Void in
+                    let min: String = (data.objectForKey("minTemperature") as? String)!
+                    let max: String = (data.objectForKey("maxTemperature") as? String)!
+                    let wind: String = (data.objectForKey("windDescription") as? String)!
+                    let desc: String = (data.objectForKey("weatherDescription") as? String)!
+                    weather = weather.stringByAppendingString(min + "~")
+                    weather = weather.stringByAppendingString(max + " ")
+                    weather = weather.stringByAppendingString(wind + " ")
+                    weather = weather.stringByAppendingString(desc)
+                    
+                    drawMultiLineCharts(self.consumeLineChartView, dataPoints: consumeXCor, values: [consumeYCor, generateYCor], lineColor:[consumeColor, UIColor.cyanColor()], labels:["今日耗电", "今日发电"])
+                    
+                    self.tempLabel.text = weather
+                    
+                    self.activityIndicator.stopAnimating()
+                    self.activityIndicator.hidden = true
+                    self.consumeLineChartView.hidden = false
+                })
                 
-                drawSingleLineChart(self.consumeLineChartView, dataPoints: consumeXCor, values: consumeYCor, color: consumeColor)
-                drawSingleLineChart(self.generateLineChartView, dataPoints: generateXCor, values: generateYCor, color: UIColor.cyanColor())
-                
-                self.activityIndicator.stopAnimating()
-                self.activityIndicator.hidden = true
-                self.consumeLineChartView.hidden = false
-                self.generateLineChartView.hidden = false
+//                drawMultiLineCharts(self.consumeLineChartView, dataPoints: consumeXCor, values: [consumeYCor, generateYCor], lineColor:[consumeColor, UIColor.cyanColor()], labels:["今日耗电", "今日发电"])
+//                
+//                self.tempLabel.text = "19~23°C 无持续风向微风 多云"
+//                
+//                self.activityIndicator.stopAnimating()
+//                self.activityIndicator.hidden = true
+//                self.consumeLineChartView.hidden = false
             })
         })
     }

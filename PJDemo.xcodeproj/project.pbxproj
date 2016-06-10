@@ -297,11 +297,11 @@
 		9416E4E11C47776B003EE611 /* PJDemo */ = {
 			isa = PBXGroup;
 			children = (
+				94F5E0771CB2523600211152 /* Login */,
 				9416E4E21C47776B003EE611 /* AppDelegate.swift */,
 				8C3680D61CD1DCCE003F20D6 /* DataApi.swift */,
 				8CD2A8C51CD109B900505B4A /* Model */,
-				94F5E0791CB252C600211152 /* Source */,
-				94F5E0771CB2523600211152 /* Login */,
+				94F5E0791CB252C600211152 /* View */,
 				94F5E0781CB2529300211152 /* ViewController */,
 				9416E4EB1C47776B003EE611 /* Assets.xcassets */,
 				9416E4ED1C47776B003EE611 /* LaunchScreen.storyboard */,
@@ -374,7 +374,7 @@
 			name = ViewController;
 			sourceTree = "<group>";
 		};
-		94F5E0791CB252C600211152 /* Source */ = {
+		94F5E0791CB252C600211152 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				941A3C9F1CB2821200621E84 /* DataTableViewCell.swift */,
@@ -383,7 +383,7 @@
 				945D2FAB1CCE6A6200DB3138 /* SpinningView.swift */,
 				8C3680DA1CD1EB38003F20D6 /* GlobalConstants.swift */,
 			);
-			name = Source;
+			name = View;
 			sourceTree = "<group>";
 		};
 		A3A6BCE5360A20B00DE5FD17 /* Frameworks */ = {

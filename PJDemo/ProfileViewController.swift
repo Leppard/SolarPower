@@ -14,13 +14,13 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @IBOutlet weak var usrImageView: UIImageView!
     let picker = UIImagePickerController()
     
-    @IBAction func changePic(sender: AnyObject) {
-        let alertVC = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
-        alertVC.addAction(UIAlertAction(title: "Take a photo", style: .Default, handler: {action in self.shootPhoto()}))
-        alertVC.addAction(UIAlertAction(title: "From Library", style: .Default, handler: {action in self.photoFromLibrary()}))
-        alertVC.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-        presentViewController(alertVC, animated: true, completion: nil)
-    }
+//    @IBAction func changePic(sender: AnyObject) {
+//        let alertVC = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
+//        alertVC.addAction(UIAlertAction(title: "Take a photo", style: .Default, handler: {action in self.shootPhoto()}))
+//        alertVC.addAction(UIAlertAction(title: "From Library", style: .Default, handler: {action in self.photoFromLibrary()}))
+//        alertVC.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+//        presentViewController(alertVC, animated: true, completion: nil)
+//    }
     
     func shootPhoto(){
         if UIImagePickerController.availableCaptureModesForCameraDevice(.Rear) != nil{

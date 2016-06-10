@@ -18,7 +18,7 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let addExisting = UIBarButtonItem(title: "Add Existing", style: .Plain, target: self, action: "addExistingContact")
+        let addExisting = UIBarButtonItem(title: "从通讯录添加", style: .Plain, target: self, action: "addExistingContact")
         self.navigationItem.leftBarButtonItem = addExisting
 
 //        if let split = {

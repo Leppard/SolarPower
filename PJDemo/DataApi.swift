@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-let urlSchema = "http://15013vr175.imwork.net:7777"
+let urlSchema = "http://192.168.0.122:7777"
 
 let needFakeData: Bool = true
 
@@ -257,7 +257,7 @@ class DataApi {
     static func getWeatherData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        let urlString = kWEATHER.stringByAppendingString(dateFormatter.stringFromDate(self.date)).stringByAppendingString("/上海")
+        let urlString = kWEATHER.stringByAppendingString(dateFormatter.stringFromDate(self.date)).stringByAppendingString("/%E4%B8%8A%E6%B5%B7")
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
 

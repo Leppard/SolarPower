@@ -55,7 +55,7 @@ class QueryConsumeViewController: UIViewController, ChartViewDelegate {
                     airArray.append(DataItem.value)
                 }
             
-                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [totalArray, airArray], lineColor:[consumeColor, UIColor.lightGrayColor()], labels:["总耗", "空调"])
+                drawMultiLineCharts(self.lineChartView, dataPoints: xArray, values: [totalArray, airArray], lineColor:[consumeColor, UIColor.cyanColor()], labels:["总耗", "空调"])
             
                 self.activityIndicator.stopAnimating()
                 self.activityIndicator.hidden = true
