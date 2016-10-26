@@ -53,9 +53,9 @@ class ProfileViewController: UIViewController,UIImagePickerControllerDelegate,UI
     
     
     @IBAction func logOut(sender: AnyObject) {
-        PFUser.logOut()
-        let viewController : UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") as! UIViewController
-        self.presentViewController(viewController, animated: true, completion: nil)
+//        PFUser.logOut()
+//        let viewController : UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Login") as! UIViewController
+//        self.presentViewController(viewController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

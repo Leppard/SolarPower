@@ -37,7 +37,7 @@ class SpinningView: UIView {
     
     func updateAnimation(percent: Double, color: UIColor) {
         let center = CGPoint(x: circleLayer.bounds.width/2, y: circleLayer.bounds.height/2)
-        let path = UIBezierPath.init(arcCenter: center, radius: circleLayer.bounds.width/2-30, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: true)
+        let path = UIBezierPath.init(arcCenter: center, radius: circleLayer.bounds.width/2-40, startAngle: 0, endAngle: CGFloat(M_PI*2), clockwise: true)
         
         circleLayer.position = center
         circleLayer.path = path.CGPath

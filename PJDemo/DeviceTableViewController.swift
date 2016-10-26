@@ -11,7 +11,7 @@ import UIKit
 class DeviceTableViewController: UITableViewController{
 
     var parseObject : PFObject?
-    let deviceTable = ["Building Comsumption","Photovoltaic Generation","Building Efficiency"]
+    let deviceTable = ["建筑能耗","光伏发电","建筑能效"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

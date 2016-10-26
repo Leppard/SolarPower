@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -7,7 +7,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Dashboard-->
+        <!--首页-->
         <scene sceneID="js1-R3-wXe">
             <objects>
                 <viewController id="nvQ-rs-Wl8" customClass="DashboardViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -152,7 +152,7 @@
                             <constraint firstItem="lha-fT-XhA" firstAttribute="centerY" secondItem="Sxm-5n-03D" secondAttribute="centerY" id="yMY-ES-yn4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="Dashboard" selectedImage="Dashboard" id="CcW-aj-6ZD"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="Dashboard" selectedImage="Dashboard" id="CcW-aj-6ZD"/>
                     <connections>
                         <outlet property="activityIndicator" destination="PWn-Bl-uwn" id="OFH-LF-xlC"/>
                         <outlet property="consumeLineChartView" destination="eo4-K5-XDL" id="Ng2-wj-XbL"/>
@@ -168,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="436" y="-357"/>
         </scene>
-        <!--Statistics-->
+        <!--统计-->
         <scene sceneID="oGF-1h-cmb">
             <objects>
                 <tableViewController id="Fnb-Ag-l28" customClass="DeviceTableViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,7 +221,7 @@
                             <outlet property="delegate" destination="Fnb-Ag-l28" id="Q5Y-GI-9ok"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Statistics" id="JwL-dP-hB7"/>
+                    <navigationItem key="navigationItem" title="统计" id="JwL-dP-hB7"/>
                     <connections>
                         <segue destination="Yfy-8d-nHd" kind="push" identifier="consumeSegue" id="aE2-ra-G5w"/>
                         <segue destination="X3J-qP-gBW" kind="push" identifier="efficientSegue" id="VkU-gg-eGE"/>
@@ -432,7 +432,7 @@
             </objects>
             <point key="canvasLocation" x="-44" y="4"/>
         </scene>
-        <!--Profile-->
+        <!--用户-->
         <scene sceneID="H7Q-ou-mDX">
             <objects>
                 <viewController storyboardIdentifier="Profile" id="uCY-qh-cRP" customClass="ProfileViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -447,7 +447,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-uE-4Wg">
                                 <rect key="frame" x="25" y="94" width="270" height="346"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBc-17-zhf">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBc-17-zhf">
                                         <rect key="frame" x="15" y="170" width="241" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="241" id="kUc-t6-f28"/>
@@ -505,7 +505,7 @@
                             <constraint firstItem="JhQ-uE-4Wg" firstAttribute="top" secondItem="u5j-Ma-cKy" secondAttribute="bottom" constant="74" id="Ofa-PE-9Sf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile" id="BNE-49-tfh"/>
+                    <tabBarItem key="tabBarItem" title="用户" image="Profile" selectedImage="Profile" id="BNE-49-tfh"/>
                     <connections>
                         <outlet property="usernameField" destination="uBc-17-zhf" id="srD-0r-h9V"/>
                         <outlet property="usrImageView" destination="cLG-jH-ykV" id="rig-IW-cIF"/>
@@ -588,7 +588,7 @@
             </objects>
             <point key="canvasLocation" x="605" y="1853"/>
         </scene>
-        <!--Predict-->
+        <!--预测-->
         <scene sceneID="Ilj-19-mi0">
             <objects>
                 <viewController storyboardIdentifier="Calculate" id="SGG-qR-Ckf" customClass="PredictViewController" customModule="PJDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -620,9 +620,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0C-dw-O6X">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0C-dw-O6X">
                                 <rect key="frame" x="242" y="28" width="71" height="30"/>
-                                <state key="normal" title="Statement"/>
+                                <state key="normal" title="说明"/>
                                 <connections>
                                     <segue destination="xA8-W1-HJ1" kind="modal" id="dYI-k7-jFk"/>
                                 </connections>
@@ -641,7 +641,7 @@
                             <constraint firstItem="4Cr-Vv-eSj" firstAttribute="top" secondItem="9Ym-YU-ITX" secondAttribute="bottom" constant="-1" id="ucW-IH-2YJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Predict" image="Predict" selectedImage="Predict" id="a4G-5q-baA"/>
+                    <tabBarItem key="tabBarItem" title="预测" image="Predict" selectedImage="Predict" id="a4G-5q-baA"/>
                     <connections>
                         <outlet property="predictChartView" destination="9Ym-YU-ITX" id="VfC-WK-qoq"/>
                         <outlet property="predictTableView" destination="4Cr-Vv-eSj" id="Ve1-cG-8S9"/>
@@ -651,11 +651,11 @@
             </objects>
             <point key="canvasLocation" x="342.93333333333334" y="1134.1066666666666"/>
         </scene>
-        <!--Statistics-->
+        <!--统计-->
         <scene sceneID="JKs-RA-Ok0">
             <objects>
                 <navigationController storyboardIdentifier="List" automaticallyAdjustsScrollViewInsets="NO" id="hyJ-lV-1Jf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Statistics" image="Statistic" selectedImage="Statistic" id="elv-uR-J6I"/>
+                    <tabBarItem key="tabBarItem" title="统计" image="Statistic" selectedImage="Statistic" id="elv-uR-J6I"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cAc-SX-jm6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1048,20 +1048,20 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCN-Fh-QjU">
                                 <rect key="frame" x="20" y="456" width="156" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Consume vs. Generate">
+                                <state key="normal" title="耗电对比发电">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="hw8-An-Ija" kind="push" id="8dB-bu-pXN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypy-Q5-wmu">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypy-Q5-wmu">
                                 <rect key="frame" x="252" y="456" width="122" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="IwS-ld-939"/>
                                 </constraints>
-                                <state key="normal" title="Substitution Rate">
+                                <state key="normal" title="占比率对比">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1679,11 +1679,11 @@
             </objects>
             <point key="canvasLocation" x="-136" y="2851"/>
         </scene>
-        <!--Compare-->
+        <!--对比-->
         <scene sceneID="K9r-cG-UcO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9aB-RN-6HA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Compare" image="Compare" selectedImage="Compare" id="OYY-91-aKv"/>
+                    <tabBarItem key="tabBarItem" title="对比" image="Compare" selectedImage="Compare" id="OYY-91-aKv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="l6h-bt-KxV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

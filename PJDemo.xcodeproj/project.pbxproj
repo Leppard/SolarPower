@@ -468,7 +468,7 @@
 				TargetAttributes = {
 					9416E4DE1C47776B003EE611 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = L5B4TBT7H9;
+						DevelopmentTeam = GDCPERAN5R;
 					};
 					9416E4F41C47776B003EE611 = {
 						CreatedOnToolsVersion = 7.0;
@@ -847,10 +847,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jane.project.PJDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = Leppard.project.PJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PJDemo/PJDemo-Bridging-Header.h";
@@ -867,10 +868,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PJDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jane.project.PJDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = Leppard.project.PJDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PJDemo/PJDemo-Bridging-Header.h";

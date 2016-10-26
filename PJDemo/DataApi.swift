@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-let urlSchema = "http://192.168.0.122:7777"
+let urlSchema = "http://112.74.83.52:8085/PVEDServer-1.0-SNAPSHOT"
 
 let needFakeData: Bool = true
 
@@ -24,7 +24,7 @@ class DataApi {
     static func consumeTotalDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
         
-        let urlString = kCONSUME_TOTAL.stringByAppendingString(needFakeData ? "2015/10/01" : dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(needFakeData ? "2015/11/01" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -43,7 +43,7 @@ class DataApi {
     
     static func consumeTotalMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
-        let urlString = kCONSUME_TOTAL.stringByAppendingString(needFakeData ? "2015/10" : dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_TOTAL.stringByAppendingString(needFakeData ? "2015/11" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -101,7 +101,7 @@ class DataApi {
     
     static func consumeAirDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
-        let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015/10/01" : dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015/11/01" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -120,7 +120,7 @@ class DataApi {
     
     static func consumeAirMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
-        let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015/10" : dateFormatter.stringFromDate(self.date))
+        let urlString = kCONSUME_AIR.stringByAppendingString(needFakeData ? "2015/11" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -179,7 +179,7 @@ class DataApi {
     
     static func generateTotalDayData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
-        let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015/10/01" : dateFormatter.stringFromDate(self.date))
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015/11/01" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -198,7 +198,7 @@ class DataApi {
     
     static func generateTotalMonthData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy/MM"
-        let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015/10" : dateFormatter.stringFromDate(self.date))
+        let urlString = kGENERATE_TOTAL.stringByAppendingString(needFakeData ? "2015/11" : dateFormatter.stringFromDate(self.date))
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
         Alamofire.request(.GET, fullUrlString, parameters: params)
@@ -257,7 +257,7 @@ class DataApi {
     static func getWeatherData(success: (NSDictionary) -> Void) {
         self.dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        let urlString = kWEATHER.stringByAppendingString(dateFormatter.stringFromDate(self.date)).stringByAppendingString("/%E4%B8%8A%E6%B5%B7")
+        let urlString = kWEATHER.stringByAppendingString(dateFormatter.stringFromDate(self.date)).stringByAppendingString("/shanghai")
         let fullUrlString = urlSchema.stringByAppendingString(urlString)
         let params = ["Content-type": "application/json", ]
 

@@ -47,8 +47,6 @@ class MasterViewController: UITableViewController, CNContactPickerDelegate {
     
     func retrieveContactsWithStore(store: CNContactStore){
         do{
-            let groups = try store.groupsMatchingPredicate(nil)
-            let predicate = CNContact.predicateForContactsInGroupWithIdentifier(groups[0].identifier)
             let keysToFetch = [CNContactFormatter.descriptorForRequiredKeysForStyle(.FullName),CNContactEmailAddressesKey]
             let fetchRequest = CNContactFetchRequest(keysToFetch: keysToFetch)
             do{

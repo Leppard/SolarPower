@@ -60,7 +60,7 @@ class DashboardViewController: UIViewController, ChartViewDelegate {
         self.dayEarnSpinningView.updateAnimation(1, color: UIColor.redColor())
         self.dayEarnSpinningView.centerLabel.text = "0.48元"
         
-        DataApi.queryConsumeTotalData("2015/10/01", success: {(data: NSDictionary) -> Void in
+        DataApi.queryConsumeTotalData("2015/11/03", success: {(data: NSDictionary) -> Void in
             let totalData = DataGroup.init(dictionary: data)
             var consumeXCor: [String] = []
             var consumeYCor: [Double] = []
@@ -68,7 +68,7 @@ class DashboardViewController: UIViewController, ChartViewDelegate {
                 consumeXCor.append(DataItem.time)
                 consumeYCor.append(DataItem.value)
             }
-            DataApi.queryGenerateTotalData("2015/10/01", success: {(data: NSDictionary) -> Void in
+            DataApi.queryGenerateTotalData("2015/11/03", success: {(data: NSDictionary) -> Void in
                 let totalData = DataGroup.init(dictionary: data)
                 var generateXCor: [String] = []
                 var generateYCor: [Double] = []
@@ -76,17 +76,19 @@ class DashboardViewController: UIViewController, ChartViewDelegate {
                     generateXCor.append(DataItem.time)
                     generateYCor.append(DataItem.value)
                 }
-                var weather = "上海 "
+                var weather = "上海"
                 DataApi.getWeatherData( {(data:
                     NSDictionary) -> Void in
-                    let min: String = (data.objectForKey("minTemperature") as? String)!
-                    let max: String = (data.objectForKey("maxTemperature") as? String)!
-                    let wind: String = (data.objectForKey("windDescription") as? String)!
-                    let desc: String = (data.objectForKey("weatherDescription") as? String)!
-                    weather = weather.stringByAppendingString(min + "~")
-                    weather = weather.stringByAppendingString(max + " ")
-                    weather = weather.stringByAppendingString(wind + " ")
-                    weather = weather.stringByAppendingString(desc)
+                    let min: String? = (data.objectForKey("minTemperature") as? String)
+                    let max: String? = (data.objectForKey("maxTemperature") as? String)
+                    let wind: String? = (data.objectForKey("windDescription") as? String)
+                    let desc: String? = (data.objectForKey("weatherDescription") as? String)
+                    if let str = min {
+                        weather = weather.stringByAppendingString(str + "~")
+                        weather = weather.stringByAppendingString(max! + " ")
+                        weather = weather.stringByAppendingString(wind! + " ")
+                        weather = weather.stringByAppendingString(desc!)
+                    }
                     
                     drawMultiLineCharts(self.consumeLineChartView, dataPoints: consumeXCor, values: [consumeYCor, generateYCor], lineColor:[consumeColor, UIColor.cyanColor()], labels:["今日耗电", "今日发电"])
                     
